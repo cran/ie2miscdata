@@ -1,0 +1,38 @@
+#' Global Engineering Weather Data
+#'
+#' "The data in this table were compiled by the Air Force Combat
+#' Climatology Center (AFCCC) at the request of the Air Force Civil Engineer
+#' Support Agency (HQ AFCESA). Sites were identified by AFCESA, US Army Corps
+#' of Engineers (USACE), and the Naval Facilities Engineering Command
+#' (NAVFACENGCOM). Final site selection was based upon availability of
+#' climatological data. Most sites are located at military installations
+#' supporting airfield operations or at local airports/airfields."
+#'
+#'
+#' @format A data.table data frame with 805 rows and 7 variables:
+#' \describe{
+#' \item{Site name}{Name of location}
+#' \item{WMO No.}{"World Meteorological Organization (WMO) number is a unique
+#' number assigned to every location in the world that takes and transmits
+#' regular weather observations."}
+#' \item{Latitude}{Location latitude, decimal degrees}
+#' \item{Longitude}{Location longitude, decimal degrees}
+#' \item{Elevation (feet)}{Location elevation, feet above mean sea level}
+#' \item{Design Value (degrees F)}{Location wet-bulb temperature (degrees F)
+#' design value for a 1.0 percent occurrence (based on the whole year)}
+#' \item{Mean Coincident Dry Bulb Temperature (degrees F)}{Location "mean
+#' coincident dry-bulb temperature" (degrees F) for a 1.0 percent occurrence
+#' (based on the whole year)}
+#' }
+#'
+#'
+#' @references
+#' This data is from the ENGINEERING WEATHER DATA PRODUCTS (EWD) CD-ROM, version 1.0, 23 December 1999. CD-ROM provided by the National Climatic Data Center Climate Services Division. See \url{https://www.ncdc.noaa.gov/nespls/olstore.prodspecific?prodnum=5005}.
+#'
+#'
+#' @docType data
+#' @name weather_results
+#' @usage weather_results
+#' @examples
+#' weather_results
+NULL
