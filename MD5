@@ -1,7 +1,7 @@
-bb2132c166c757da4105b22d57e09057 *DESCRIPTION
+c2f217269a16d63e45bd91c152d03ab1 *DESCRIPTION
 7bae63a234e80ee7c6427dce9fdba6cc *LICENSE.note
 dc21c19f0d6968ee25d441b2cf46017d *NAMESPACE
-47ced1feea74bc4ebed13f0c246516f2 *NEWS.md
+5d92710bcd1f171ebb62bdb096e9f84c *NEWS.md
 843bc79d49411502cfddbdcc2dc81354 *R/ie2miscdata.R
 50dc1f23764bfe258061cde20df24818 *R/pmcode_00041.R
 6ff2bd3c3f5e90c4287f1095f4a6551f *R/pmcode_00067.R
@@ -74,7 +74,7 @@ e49edc5df5c3fa0eb04a2b269ea2f775 *R/pmcode_99770.R
 920cda356e63b443d1b15342ddb9ebcb *R/tz_codes.R
 9fe66ac73e756bb31ec8c6186b379ce5 *R/weather_results.R
 c8aa3f8c4faae82ba7c21d17a6c1f408 *README.md
-968dc4b162b270a52612a46024b8f690 *build/vignette.rds
+2911e4a2c48cda589c23d888d49b6953 *build/vignette.rds
 df70df06a2f496dd51b4dbbcfe2e677b *data/pmcode_00041.RData
 fbebbad8630dc943b5689f8940bf640e *data/pmcode_00067.RData
 20bd097ca8625f72ddbe493fe3828915 *data/pmcode_00115.RData
@@ -145,9 +145,9 @@ da0430d8b51a7e8133fef6e1440149f2 *data/pmcode_99770.RData
 304c28a14ff85ce95a87b1467e7be340 *data/pmcode_99771.RData
 9897aa1f906f05b961e4b62c293d7406 *data/tz_codes.RData
 2e7abe1485f8d7367af98fa1108d3a59 *data/weather_results.RData
-f01568cfcf51aa8d0fdc30ab77cf7753 *inst/doc/Engineering-Weather-Map.R
-9857694e2f4c540886dee185454b5790 *inst/doc/Engineering-Weather-Map.Rmd
-8833006f996d5c367d5912ddd2eb8f82 *inst/doc/Engineering-Weather-Map.html
+c383aba274df07f38ddf7a81ce72079c *inst/doc/US-Engineering-Weather-Map.R
+413d48b3ec2ac9b44ddfc6cef001326b *inst/doc/US-Engineering-Weather-Map.Rmd
+bd23557bc3909343742c9f4ca67ebb79 *inst/doc/US-Engineering-Weather-Map.html
 5ae1eebb47b5c840b5d78122a1b106e7 *man/ie2miscdata.Rd
 50c5804b0adfaa8790bbc0f80b5e42af *man/pmcode_00041.Rd
 4ee10c2cbfd048070b1b9dd94776b699 *man/pmcode_00067.Rd
@@ -219,4 +219,4 @@ ef86cd995562ed2f2d6ad7f09d7eb7d9 *man/pmcode_99770.Rd
 59441ec9ac204773e833a7986c7e34c2 *man/pmcode_99771.Rd
 9bbfc48f5b9ef627aba0f0c19e5dbc63 *man/tz_codes.Rd
 6eed116e19231dcbcaea0eff03564df5 *man/weather_results.Rd
-9857694e2f4c540886dee185454b5790 *vignettes/Engineering-Weather-Map.Rmd
+413d48b3ec2ac9b44ddfc6cef001326b *vignettes/US-Engineering-Weather-Map.Rmd

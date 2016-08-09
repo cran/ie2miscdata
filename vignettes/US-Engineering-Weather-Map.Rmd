@@ -6,6 +6,9 @@ output:
   rmarkdown::html_document:
     highlight: kate
     theme: readable
+    fig_width: 9
+    fig_height: 9
+
 vignette: >
   %\VignetteIndexEntry{Creating ggplot2 Map of US Engineering Weather Sites}
   %\VignetteEngine{knitr::rmarkdown}
@@ -19,10 +22,10 @@ vignette: >
 
 ```{r}
 library(install.load)
-load_package("USGSstates2k", "ie2miscdata", "data.table", "spatstat", "maptools", "ggplot2") # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+load_package("states2k", "ie2miscdata", "data.table", "spatstat", "maptools", "ggplot2") # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
 
 data(weather_results) # load the weather_results data (containing the site information for US weather stations)
-data(states2k) # load the states2k data (for the US map)
+data(states2k_map) # load the states2k_map data (for the US map)
 
 weather_results_map <- copy(weather_results) # copy the weather_results using data.table
 setnames(weather_results_map, 3:4, c("lat", "lon")) # set the names of columns 3 and 4 using data.table
@@ -36,7 +39,7 @@ class(weather_results_map)
 
 proj4string(weather_results_map) <- CRS("+proj=longlat +datum=NAD83")
 
-weather_results_map <- spTransform(weather_results_map, CRS(proj4string(states2k)))
+weather_results_map <- spTransform(weather_results_map, CRS(proj4string(states2k_map)))
 
 weather_results_map <- data.frame(weather_results_map)
 
@@ -48,7 +51,7 @@ names(weather_results_map)[names(weather_results_map) == "lat"] <- "y"
 
 
 # read in shapefile with maptools, preferred for spatstat
-US <- readShapeSpatial(system.file("shapefiles", "states2k.shp", package = "USGSstates2k"))
+US <- readShapeSpatial(system.file("shapefiles", "states2k.shp", package = "states2k"))
 USpoly <- as(US, "SpatialPolygons")
 USregions <- slot(USpoly, "polygons")
 USregions <- lapply(USregions, function(x) { SpatialPolygons(list(x)) })
@@ -78,7 +81,7 @@ class(weather_results_map_keep)
 
 proj4string(weather_results_map_keep) <- CRS("+proj=longlat +datum=NAD83")
 
-weather_results_map_keep <- spTransform(weather_results_map_keep, CRS(proj4string(states2k)))
+weather_results_map_keep <- spTransform(weather_results_map_keep, CRS(proj4string(states2k_map)))
 
 weather_results_map_keep <- data.frame(weather_results_map_keep)
 
@@ -92,7 +95,7 @@ names(weather_results_map_keep)[names(weather_results_map_keep) == "lat"] <- "y"
 # plot the map using ggplot2
 colorsnow <- c("Weather Data Sites" = "#3591d1")
 
-p <- ggplot() + geom_polygon(data = states2k, aes(x = long, y = lat, group = group), colour = "black", fill = "white")
+p <- ggplot() + geom_polygon(data = states2k_map, aes(x = long, y = lat, group = group), colour = "black", fill = "white")
 p <- p + geom_point(data = weather_results_map_keep, aes(x = x, y = y, color = "Weather Data Sites"))
 p <- p + labs(x = "", y = "", title = "US Engineering Weather Sites Map")
 p <- p + scale_colour_manual(values = colorsnow, labels = c("Weather Data Sites"), name = "Legend")
