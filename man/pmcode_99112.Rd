@@ -4,12 +4,14 @@
 \name{pmcode_99112}
 \alias{pmcode_99112}
 \title{99112 Sulfide, Water, Filtered, Field, milligrams Per Liter}
-\format{A data frame with 10 rows and 3 variables:
+\format{
+A data frame with 10 rows and 3 variables:
 \describe{
 \item{Parameter Code}{USGS Parameter Code}
 \item{Fixed Value}{Fixed Value}
 \item{Fixed Text}{Fixed Text}
-}}
+}
+}
 \usage{
 pmcode_99112
 }
@@ -17,10 +19,7 @@ pmcode_99112
 A table containing the USGS Sulfide, Water, Filtered, Field, milligrams Per
 Liter parameter codes.
 }
-\examples{
-pmcode_99112
-}
 \references{
-This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{http://waterdata.usgs.gov/usa/nwis/qwdata?codes_table26_help}.
+This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{https://help.waterdata.usgs.gov/codes-and-parameters/}.
 }
-
+\keyword{datasets}

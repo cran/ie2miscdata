@@ -4,22 +4,21 @@
 \name{pmcode_01320}
 \alias{pmcode_01320}
 \title{01320 Garbage, Floating (Severity)}
-\format{A data frame with 5 rows and 3 variables:
+\format{
+A data frame with 5 rows and 3 variables:
 \describe{
 \item{Parameter Code}{USGS Parameter Code}
 \item{Fixed Value}{Fixed Value}
 \item{Fixed Text}{Fixed Text}
-}}
+}
+}
 \usage{
 pmcode_01320
 }
 \description{
 A table containing the USGS Garbage, Floating (Severity) parameter codes.
 }
-\examples{
-pmcode_01320
-}
 \references{
-This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{http://waterdata.usgs.gov/usa/nwis/qwdata?codes_table26_help}.
+This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{https://help.waterdata.usgs.gov/codes-and-parameters/}.
 }
-
+\keyword{datasets}

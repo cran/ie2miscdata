@@ -12,12 +12,10 @@
 #'
 #'
 #' @references
-#' This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{http://waterdata.usgs.gov/usa/nwis/qwdata?codes_table26_help}.
+#' This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{https://help.waterdata.usgs.gov/codes-and-parameters/}.
 #'
 #'
-#' @docType data
-#' @name pmcode_99103
-#' @usage pmcode_99103
-#' @examples
-#' pmcode_99103
-NULL
+#'
+#'
+"pmcode_99103"
+#> [1] "pmcode_99103"

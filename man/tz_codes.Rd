@@ -4,7 +4,8 @@
 \name{tz_codes}
 \alias{tz_codes}
 \title{Timezone (tz) codes}
-\format{A data.table data frame with 54 rows and 7 variables:
+\format{
+A data.table data frame with 54 rows and 7 variables:
 \describe{
 \item{Tz Cd}{Timezone Code}
 \item{Tz Nm}{Timezone Name}
@@ -13,17 +14,15 @@
 \item{Tz Dst Cd}{Timezone Daylight Savings Code}
 \item{Tz Dst Nm}{Timezone Daylight Savings Name}
 \item{Tz Dst Utc Offset Tm}{Timezone Daylight Savings UTC Offset}
-}}
+}
+}
 \usage{
 tz_codes
 }
 \description{
 A table containing the worldwide timezones and UTC offsets.
 }
-\examples{
-tz_codes
-}
 \references{
-This data is from National Water Information System: Help System Time Zone Codes. See \url{http://help.waterdata.usgs.gov/code/tz_query?fmt=html}.
+This data is from National Water Information System: Help System Time Zone Codes. See \url{https://help.waterdata.usgs.gov/code/tz_query?fmt=html}.
 }
-
+\keyword{datasets}

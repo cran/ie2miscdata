@@ -4,7 +4,8 @@
 \name{weather_results}
 \alias{weather_results}
 \title{Global Engineering Weather Data}
-\format{A data.table data frame with 805 rows and 7 variables:
+\format{
+A data.table data frame with 805 rows and 7 variables:
 \describe{
 \item{Site name}{Name of location}
 \item{WMO No.}{"World Meteorological Organization (WMO) number is a unique
@@ -18,7 +19,8 @@ design value for a 1.0 percent occurrence (based on the whole year)}
 \item{Mean Coincident Dry Bulb Temperature (degrees F)}{Location "mean
 coincident dry-bulb temperature" (degrees F) for a 1.0 percent occurrence
 (based on the whole year)}
-}}
+}
+}
 \usage{
 weather_results
 }
@@ -31,10 +33,7 @@ of Engineers (USACE), and the Naval Facilities Engineering Command
 climatological data. Most sites are located at military installations
 supporting airfield operations or at local airports/airfields."
 }
-\examples{
-weather_results
-}
 \references{
-This data is from the ENGINEERING WEATHER DATA PRODUCTS (EWD) CD-ROM, version 1.0, 23 December 1999. CD-ROM provided by the National Climatic Data Center Climate Services Division. See \url{https://www.ncdc.noaa.gov/nespls/olstore.prodspecific?prodnum=5005}.
+This data is from the ENGINEERING WEATHER DATA PRODUCTS (EWD) CD-ROM, version 1.0, 23 December 1999. CD-ROM provided by the National Climatic Data Center Climate Services Division. See \url{https://www.ncei.noaa.gov/nespls/olstore.prodspecific?prodnum=5005}.
 }
-
+\keyword{datasets}

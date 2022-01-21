@@ -1,9 +1,10 @@
-## ------------------------------------------------------------------------
-library(install.load)
-load_package("states2k", "ie2miscdata", "data.table", "spatstat", "maptools", "ggplot2") # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+## ---- warning = FALSE, message = FALSE, out.width = "100%", out.height = "100%"----
+install.load::load_package("ie2miscdata", "USA.state.boundaries", "data.table", "spatstat", "sp", "rgdal", "ggplot2", "spatstat.geom", "maptools")
+# load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+
 
 data(weather_results) # load the weather_results data (containing the site information for US weather stations)
-data(states2k_map) # load the states2k_map data (for the US map)
+data(USA_state_boundaries_map) # load the USA_state_boundaries_map data (for the US map)
 
 weather_results_map <- copy(weather_results) # copy the weather_results using data.table
 setnames(weather_results_map, 3:4, c("lat", "lon")) # set the names of columns 3 and 4 using data.table
@@ -17,7 +18,7 @@ class(weather_results_map)
 
 proj4string(weather_results_map) <- CRS("+proj=longlat +datum=NAD83")
 
-weather_results_map <- spTransform(weather_results_map, CRS(proj4string(states2k_map)))
+weather_results_map <- spTransform(weather_results_map, CRS(proj4string(USA_state_boundaries_map)))
 
 weather_results_map <- data.frame(weather_results_map)
 
@@ -28,16 +29,15 @@ names(weather_results_map)[names(weather_results_map) == "lon"] <- "x"
 names(weather_results_map)[names(weather_results_map) == "lat"] <- "y"
 
 
-# read in shapefile with maptools, preferred for spatstat
-US <- readShapeSpatial(system.file("shapefiles", "states2k.shp", package = "states2k"))
-USpoly <- as(US, "SpatialPolygons")
-USregions <- slot(USpoly, "polygons")
+# read in shapefile with rgdal
+US <- USA_state_boundaries_map
+USregions <- slot(US, "polygons")
 USregions <- lapply(USregions, function(x) { SpatialPolygons(list(x)) })
 USwindows <- lapply(USregions, as.owin)
 USh <- hyperframe(window = USwindows)
 USh <- cbind.hyperframe(USh, US@data)
 
-USowin <- as(USpoly, "owin") # Source 7
+USowin <- as(US, "owin") # Source 7
 
 
 # determine which locations are within the borders of the US (including Alaska, Hawai'i, and Puerto Rico)
@@ -59,7 +59,7 @@ class(weather_results_map_keep)
 
 proj4string(weather_results_map_keep) <- CRS("+proj=longlat +datum=NAD83")
 
-weather_results_map_keep <- spTransform(weather_results_map_keep, CRS(proj4string(states2k_map)))
+weather_results_map_keep <- spTransform(weather_results_map_keep, CRS(proj4string(USA_state_boundaries_map)))
 
 weather_results_map_keep <- data.frame(weather_results_map_keep)
 
@@ -73,7 +73,7 @@ names(weather_results_map_keep)[names(weather_results_map_keep) == "lat"] <- "y"
 # plot the map using ggplot2
 colorsnow <- c("Weather Data Sites" = "#3591d1")
 
-p <- ggplot() + geom_polygon(data = states2k_map, aes(x = long, y = lat, group = group), colour = "black", fill = "white")
+p <- ggplot() + geom_polygon(data = USA_state_boundaries_map, aes(x = long, y = lat, group = group), colour = "black", fill = "white")
 p <- p + geom_point(data = weather_results_map_keep, aes(x = x, y = y, color = "Weather Data Sites"))
 p <- p + labs(x = "", y = "", title = "US Engineering Weather Sites Map")
 p <- p + scale_colour_manual(values = colorsnow, labels = c("Weather Data Sites"), name = "Legend")

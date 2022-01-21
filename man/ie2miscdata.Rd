@@ -3,7 +3,6 @@
 \docType{package}
 \name{ie2miscdata}
 \alias{ie2miscdata}
-\alias{ie2miscdata-package}
 \title{ie2miscdata: Irucka Embry's Miscellaneous USGS Data Collection}
 \description{
 ie2miscdata provides various data sets [USGS Parameter codes with fixed
@@ -12,4 +11,3 @@ ie2miscdata provides various data sets [USGS Parameter codes with fixed
   Technology Solutions (CNTS) United States Geological Survey (USGS)
   Contractor and/or USGS employee.
 }
-

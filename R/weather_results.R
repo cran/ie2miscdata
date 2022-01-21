@@ -27,12 +27,10 @@
 #'
 #'
 #' @references
-#' This data is from the ENGINEERING WEATHER DATA PRODUCTS (EWD) CD-ROM, version 1.0, 23 December 1999. CD-ROM provided by the National Climatic Data Center Climate Services Division. See \url{https://www.ncdc.noaa.gov/nespls/olstore.prodspecific?prodnum=5005}.
+#' This data is from the ENGINEERING WEATHER DATA PRODUCTS (EWD) CD-ROM, version 1.0, 23 December 1999. CD-ROM provided by the National Climatic Data Center Climate Services Division. See \url{https://www.ncei.noaa.gov/nespls/olstore.prodspecific?prodnum=5005}.
 #'
 #'
-#' @docType data
-#' @name weather_results
-#' @usage weather_results
-#' @examples
-#' weather_results
-NULL
+#'
+#'
+"weather_results"
+#> [1] "weather_results"

@@ -1,0 +1,1915 @@
+00041 Weather
+00041$0$Cloudless
+00041$1$Partly cloudy
+00041$2$Cloudy
+00041$3$Overcast
+00041$10$Precipitation within sight
+00041$13$Ugly, threatening sky
+00041$40$Fog
+00041$50$Drizzle
+00041$51$Slight drizzle, intermittent
+00041$52$Slight drizzle, continuous
+00041$53$Moderate drizzle, intermittent
+00041$54$Moderate drizzle, continuous
+00041$55$Thick drizzle, intermittent
+00041$56$Thick drizzle, continuous
+00041$57$Drizzle and fog
+00041$58$Slight or moderate drizzle and rain
+00041$59$Thick drizzle and rain
+00041$60$Rain
+00041$61$Slight rain, intermittent
+00041$62$Slight rain, continuous
+00041$63$Moderate rain, intermittent
+00041$64$Moderate rain, continuous
+00041$65$Heavy rain, intermittent
+00041$66$Heavy rain, continuous
+00041$67$Rain and fog
+00041$68$Slight or moderate mixed rain and snow
+00041$69$Heavy mixed rain and snow
+00041$70$Snow or sleet
+00041$71$Slight snow in flakes, intermittent
+00041$72$Slight snow in flakes, continuous
+00041$73$Moderate snow in flakes, intermittent
+00041$74$Moderate snow in flakes, continuous
+00041$75$Heavy snow in flakes, intermittent
+00041$76$Heavy snow in flakes, continuous
+00041$77$Snow and fog
+00041$78$Granular snow (frozen drizzle)
+00041$79$Ice crystals
+00041$80$Shower(s)
+00041$81$Slight or moderate rain shower(s)
+00041$82$Heavy rain shower(s)
+00041$83$Slight or moderate snow shower(s)
+00041$84$Heavy snow shower(s)
+00041$85$Slight or moderate rain and snow shower(s)
+00041$86$Heavy rain and snow shower(s)
+00041$87$Granular snow shower(s)
+00041$88$Slight or moderate hail or rain and hail shower(s)
+00041$89$Heavy hail or rain and hail shower(s)
+00041$90$Thunderstorm
+00041$93$Slight thunderstorm with rain or snow
+00041$94$Slight thunderstorm with hail
+00041$95$Moderate thunderstorm with rain or snow
+00041$96$Moderate thunderstorm with hail
+00041$97$Heavy thunderstorm with rain or snow
+00041$99$Heavy thunderstorm with hail
+
+00067 Tide Stage, Code
+00067$1000.00$High water slack; wi 3 hrs
+00067$1001.00$High water slack; wi 3 hrs; Max ebb current
+00067$1002.00$High water slack; wi 3 hrs; Max flood current
+00067$1010.00$High water slack; wi 3 hrs; C&GS table
+00067$1011.00$High water slack; wi 3 hrs; C&GS table; Max ebb current
+00067$1012.00$High water slack; wi 3 hrs; C&GS table; Max flood current
+00067$1020.00$High water slack; wi 3 hrs; measured
+00067$1021.00$High water slack; wi 3 hrs; measured; Max ebb current
+00067$1022.00$High water slack; wi 3 hrs; measured; Max flood current
+00067$1100.00$High water slack; wi 2 hrs
+00067$1101.00$High water slack; wi 2 hrs; Max ebb current
+00067$1102.00$High water slack; wi 2 hrs; Max flood current
+00067$1110.00$High water slack; wi 2 hrs; C&GS table
+00067$1111.00$High water slack; wi 2 hrs; C&GS table; Max ebb current
+00067$1112.00$High water slack; wi 2 hrs; C&GS table; Max flood current
+00067$1120.00$High water slack; wi 2 hrs; measured
+00067$1121.00$High water slack; wi 2 hrs; measured; Max ebb current
+00067$1122.00$High water slack; wi 2 hrs; measured; Max flood current
+00067$1200.00$High water slack; wi 1 hr
+00067$1201.00$High water slack; wi 1 hr; Max ebb current
+00067$1202.00$High water slack; wi 1 hr; Max flood current
+00067$1210.00$High water slack; wi 1 hr; C&GS table
+00067$1211.00$High water slack; wi 1 hr; C&GS table; Max ebb current
+00067$1212.00$High water slack; wi 1 hr; C&GS table; Max flood current
+00067$1220.00$High water slack; wi 1 hr; measured
+00067$1221.00$High water slack; wi 1 hr; measured; Max ebb current
+00067$1222.00$High water slack; wi 1 hr; measured; Max flood current
+00067$1300.00$High water slack; wi 40 min
+00067$1301.00$High water slack; wi 40 min; Max ebb current
+00067$1302.00$High water slack; wi 40 min; Max flood current
+00067$1310.00$High water slack; wi 40 min; C&GS table
+00067$1311.00$High water slack; wi 40 min; C&GS table; Max ebb current
+00067$1312.00$High water slack; wi 40 min; C&GS table; Max flood current
+00067$1320.00$High water slack; wi 40 min; measured
+00067$1321.00$High water slack; wi 40 min; measured; Max ebb current
+00067$1322.00$High water slack; wi 40 min; measured; Max flood current
+00067$1400.00$High water slack; wi 20 min
+00067$1401.00$High water slack; wi 20 min; Max ebb current
+00067$1402.00$High water slack; wi 20 min; Max flood current
+00067$1410.00$High water slack; wi 20 min; C&GS table
+00067$1411.00$High water slack; wi 20 min; C&GS table; Max ebb current
+00067$1412.00$High water slack; wi 20 min; C&GS table; Max flood current
+00067$1420.00$High water slack; wi 20 min; measured
+00067$1421.00$High water slack; wi 20 min; measured; Max ebb current
+00067$1422.00$High water slack; wi 20 min; measured; Max flood current
+00067$1500.00$High water slack; wi 10 min
+00067$1501.00$High water slack; wi 10 min; Max ebb current
+00067$1502.00$High water slack; wi 10 min; Max flood current
+00067$1510.00$High water slack; wi 10 min; C&GS table
+00067$1511.00$High water slack; wi 10 min; C&GS table; Max ebb current
+00067$1512.00$High water slack; wi 10 min; C&GS table; Max flood current
+00067$1520.00$High water slack; wi 10 min; measured
+00067$1521.00$High water slack; wi 10 min; measured; Max ebb current
+00067$1522.00$High water slack; wi 10 min; measured; Max flood current
+00067$1600.00$High water slack; wi 5 min
+00067$1601.00$High water slack; wi 5 min; Max ebb current
+00067$1602.00$High water slack; wi 5 min; Max flood current
+00067$1610.00$High water slack; wi 5 min; C&GS table
+00067$1611.00$High water slack; wi 5 min; C&GS table; Max ebb current
+00067$1612.00$High water slack; wi 5 min; C&GS table; Max flood current
+00067$1620.00$High water slack; wi 5 min; measured
+00067$1621.00$High water slack; wi 5 min; measured; Max ebb current
+00067$1622.00$High water slack; wi 5 min; measured; Max flood current
+00067$2000.00$Ebb current; wi 3 hrs
+00067$2001.00$Ebb current; wi 3 hrs; Max ebb current
+00067$2002.00$Ebb current; wi 3 hrs; Max flood current
+00067$2010.00$Ebb current; wi 3 hrs; C&GS table
+00067$2011.00$Ebb current; wi 3 hrs; C&GS table; Max ebb current
+00067$2012.00$Ebb current; wi 3 hrs; C&GS table; Max flood current
+00067$2020.00$Ebb current; wi 3 hrs; measured
+00067$2021.00$Ebb current; wi 3 hrs; measured; Max ebb current
+00067$2022.00$Ebb current; wi 3 hrs; measured; Max flood current
+00067$2100.00$Ebb current; wi 2 hrs
+00067$2101.00$Ebb current; wi 2 hrs; Max ebb current
+00067$2102.00$Ebb current; wi 2 hrs; Max flood current
+00067$2110.00$Ebb current; wi 2 hrs; C&GS table
+00067$2111.00$Ebb current; wi 2 hrs; C&GS table; Max ebb current
+00067$2112.00$Ebb current; wi 2 hrs; C&GS table; Max flood current
+00067$2120.00$Ebb current; wi 2 hrs; measured
+00067$2121.00$Ebb current; wi 2 hrs; measured; Max ebb current
+00067$2122.00$Ebb current; wi 2 hrs; measured; Max flood current
+00067$2200.00$Ebb current; wi 1 hr
+00067$2201.00$Ebb current; wi 1 hr; Max ebb current
+00067$2202.00$Ebb current; wi 1 hr; Max flood current
+00067$2210.00$Ebb current; wi 1 hr; C&GS table
+00067$2211.00$Ebb current; wi 1 hr; C&GS table; Max ebb current
+00067$2212.00$Ebb current; wi 1 hr; C&GS table; Max flood current
+00067$2220.00$Ebb current; wi 1 hr; measured
+00067$2221.00$Ebb current; wi 1 hr; measured; Max ebb current
+00067$2222.00$Ebb current; wi 1 hr; measured; Max flood current
+00067$2300.00$Ebb current; wi 40 min
+00067$2301.00$Ebb current; wi 40 min; Max ebb current
+00067$2302.00$Ebb current; wi 40 min; Max flood current
+00067$2310.00$Ebb current; wi 40 min; C&GS table
+00067$2311.00$Ebb current; wi 40 min; C&GS table; Max ebb current
+00067$2312.00$Ebb current; wi 40 min; C&GS table; Max flood current
+00067$2320.00$Ebb current; wi 40 min; measured
+00067$2321.00$Ebb current; wi 40 min; measured; Max ebb current
+00067$2322.00$Ebb current; wi 40 min; measured; Max flood current
+00067$2400.00$Ebb current; wi 20 min
+00067$2401.00$Ebb current; wi 20 min; Max ebb current
+00067$2402.00$Ebb current; wi 20 min; Max flood current
+00067$2410.00$Ebb current; wi 20 min; C&GS table
+00067$2411.00$Ebb current; wi 20 min; C&GS table; Max ebb current
+00067$2412.00$Ebb current; wi 20 min; C&GS table; Max flood current
+00067$2420.00$Ebb current; wi 20 min; measured
+00067$2421.00$Ebb current; wi 20 min; measured; Max ebb current
+00067$2422.00$Ebb current; wi 20 min; measured; Max flood current
+00067$2500.00$Ebb current; wi 10 min
+00067$2501.00$Ebb current; wi 10 min; Max ebb current
+00067$2502.00$Ebb current; wi 10 min; Max flood current
+00067$2510.00$Ebb current; wi 10 min; C&GS table
+00067$2511.00$Ebb current; wi 10 min; C&GS table; Max ebb current
+00067$2512.00$Ebb current; wi 10 min; C&GS table; Max flood current
+00067$2520.00$Ebb current; wi 10 min; measured
+00067$2521.00$Ebb current; wi 10 min; measured; Max ebb current
+00067$2522.00$Ebb current; wi 10 min; measured; Max flood current
+00067$2600.00$Ebb current; wi 5 min
+00067$2601.00$Ebb current; wi 5 min; Max ebb current
+00067$2602.00$Ebb current; wi 5 min; Max flood current
+00067$2610.00$Ebb current; wi 5 min; C&GS table
+00067$2611.00$Ebb current; wi 5 min; C&GS table; Max ebb current
+00067$2612.00$Ebb current; wi 5 min; C&GS table; Max flood current
+00067$2620.00$Ebb current; wi 5 min; measured
+00067$2621.00$Ebb current; wi 5 min; measured; Max ebb current
+00067$2622.00$Ebb current; wi 5 min; measured; Max flood current
+00067$3000.00$Low water slack; wi 3 hrs
+00067$3001.00$Low water slack; wi 3 hrs; Max ebb current
+00067$3002.00$Low water slack; wi 3 hrs; Max flood current
+00067$3010.00$Low water slack; wi 3 hrs; C&GS table
+00067$3011.00$Low water slack; wi 3 hrs; C&GS table; Max ebb current
+00067$3012.00$Low water slack; wi 3 hrs; C&GS table; Max flood current
+00067$3020.00$Low water slack; wi 3 hrs; measured
+00067$3021.00$Low water slack; wi 3 hrs; measured; Max ebb current
+00067$3022.00$Low water slack; wi 3 hrs; measured; Max flood current
+00067$3100.00$Low water slack; wi 2 hrs
+00067$3101.00$Low water slack; wi 2 hrs; Max ebb current
+00067$3102.00$Low water slack; wi 2 hrs; Max flood current
+00067$3110.00$Low water slack; wi 2 hrs; C&GS table
+00067$3111.00$Low water slack; wi 2 hrs; C&GS table; Max ebb current
+00067$3112.00$Low water slack; wi 2 hrs; C&GS table; Max flood current
+00067$3120.00$Low water slack; wi 2 hrs; measured
+00067$3121.00$Low water slack; wi 2 hrs; measured; Max ebb current
+00067$3122.00$Low water slack; wi 2 hrs; measured; Max flood current
+00067$3200.00$Low water slack; wi 1 hr
+00067$3201.00$Low water slack; wi 1 hr; Max ebb current
+00067$3202.00$Low water slack; wi 1 hr; Max flood current
+00067$3210.00$Low water slack; wi 1 hr; C&GS table
+00067$3211.00$Low water slack; wi 1 hr; C&GS table; Max ebb current
+00067$3212.00$Low water slack; wi 1 hr; C&GS table; Max flood current
+00067$3220.00$Low water slack; wi 1 hr; measured
+00067$3221.00$Low water slack; wi 1 hr; measured; Max ebb current
+00067$3222.00$Low water slack; wi 1 hr; measured; Max flood current
+00067$3300.00$Low water slack; wi 40 min
+00067$3301.00$Low water slack; wi 40 min; Max ebb current
+00067$3302.00$Low water slack; wi 40 min; Max flood current
+00067$3310.00$Low water slack; wi 40 min; C&GS table
+00067$3311.00$Low water slack; wi 40 min; C&GS table; Max ebb current
+00067$3312.00$Low water slack; wi 40 min; C&GS table; Max flood current
+00067$3320.00$Low water slack; wi 40 min; measured
+00067$3321.00$Low water slack; wi 40 min; measured; Max ebb current
+00067$3322.00$Low water slack; wi 40 min; measured; Max flood current
+00067$3400.00$Low water slack; wi 20 min
+00067$3401.00$Low water slack; wi 20 min; Max ebb current
+00067$3402.00$Low water slack; wi 20 min; Max flood current
+00067$3410.00$Low water slack; wi 20 min; C&GS table
+00067$3411.00$Low water slack; wi 20 min; C&GS table; Max ebb current
+00067$3412.00$Low water slack; wi 20 min; C&GS table; Max flood current
+00067$3420.00$Low water slack; wi 20 min; measured
+00067$3421.00$Low water slack; wi 20 min; measured; Max ebb current
+00067$3422.00$Low water slack; wi 20 min; measured; Max flood current
+00067$3500.00$Low water slack; wi 10 min
+00067$3501.00$Low water slack; wi 10 min; Max ebb current
+00067$3502.00$Low water slack; wi 10 min; Max flood current
+00067$3510.00$Low water slack; wi 10 min; C&GS table
+00067$3511.00$Low water slack; wi 10 min; C&GS table; Max ebb current
+00067$3512.00$Low water slack; wi 10 min; C&GS table; Max flood current
+00067$3520.00$Low water slack; wi 10 min; measured
+00067$3521.00$Low water slack; wi 10 min; measured; Max ebb current
+00067$3522.00$Low water slack; wi 10 min; measured; Max flood current
+00067$3600.00$Low water slack; wi 5 min
+00067$3601.00$Low water slack; wi 5 min; Max ebb current
+00067$3602.00$Low water slack; wi 5 min; Max flood current
+00067$3610.00$Low water slack; wi 5 min; C&GS table
+00067$3611.00$Low water slack; wi 5 min; C&GS table; Max ebb current
+00067$3612.00$Low water slack; wi 5 min; C&GS table; Max flood current
+00067$3620.00$Low water slack; wi 5 min; measured
+00067$3621.00$Low water slack; wi 5 min; measured; Max ebb current
+00067$3622.00$Low water slack; wi 5 min; measured; Max flood current
+00067$4000.00$Flood current; wi 3 hrs
+00067$4001.00$Flood current; wi 3 hrs; Max ebb current
+00067$4002.00$Flood current; wi 3 hrs; Max flood current
+00067$4010.00$Flood current; wi 3 hrs; C&GS table
+00067$4011.00$Flood current; wi 3 hrs; C&GS table; Max ebb current
+00067$4012.00$Flood current; wi 3 hrs; C&GS table; Max flood current
+00067$4020.00$Flood current; wi 3 hrs; measured
+00067$4021.00$Flood current; wi 3 hrs; measured; Max ebb current
+00067$4022.00$Flood current; wi 3 hrs; measured; Max flood current
+00067$4100.00$Flood current; wi 2 hrs
+00067$4101.00$Flood current; wi 2 hrs; Max ebb current
+00067$4102.00$Flood current; wi 2 hrs; Max flood current
+00067$4110.00$Flood current; wi 2 hrs; C&GS table
+00067$4111.00$Flood current; wi 2 hrs; C&GS table; Max ebb current
+00067$4112.00$Flood current; wi 2 hrs; C&GS table; Max flood current
+00067$4120.00$Flood current; wi 2 hrs; measured
+00067$4121.00$Flood current; wi 2 hrs; measured; Max ebb current
+00067$4122.00$Flood current; wi 2 hrs; measured; Max flood current
+00067$4200.00$Flood current; wi 1 hr
+00067$4201.00$Flood current; wi 1 hr; Max ebb current
+00067$4202.00$Flood current; wi 1 hr; Max flood current
+00067$4210.00$Flood current; wi 1 hr; C&GS table
+00067$4211.00$Flood current; wi 1 hr; C&GS table; Max ebb current
+00067$4212.00$Flood current; wi 1 hr; C&GS table; Max flood current
+00067$4220.00$Flood current; wi 1 hr; measured
+00067$4221.00$Flood current; wi 1 hr; measured; Max ebb current
+00067$4222.00$Flood current; wi 1 hr; measured; Max flood current
+00067$4300.00$Flood current; wi 40 min
+00067$4301.00$Flood current; wi 40 min; Max ebb current
+00067$4302.00$Flood current; wi 40 min; Max flood current
+00067$4310.00$Flood current; wi 40 min; C&GS table
+00067$4311.00$Flood current; wi 40 min; C&GS table; Max ebb current
+00067$4312.00$Flood current; wi 40 min; C&GS table; Max flood current
+00067$4320.00$Flood current; wi 40 min; measured
+00067$4321.00$Flood current; wi 40 min; measured; Max ebb current
+00067$4322.00$Flood current; wi 40 min; measured; Max flood current
+00067$4400.00$Flood current; wi 20 min
+00067$4401.00$Flood current; wi 20 min; Max ebb current
+00067$4402.00$Flood current; wi 20 min; Max flood current
+00067$4410.00$Flood current; wi 20 min; C&GS table
+00067$4411.00$Flood current; wi 20 min; C&GS table; Max ebb current
+00067$4412.00$Flood current; wi 20 min; C&GS table; Max flood current
+00067$4420.00$Flood current; wi 20 min; measured
+00067$4421.00$Flood current; wi 20 min; measured; Max ebb current
+00067$4422.00$Flood current; wi 20 min; measured; Max flood current
+00067$4500.00$Flood current; wi 10 min
+00067$4501.00$Flood current; wi 10 min; Max ebb current
+00067$4502.00$Flood current; wi 10 min; Max flood current
+00067$4510.00$Flood current; wi 10 min; C&GS table
+00067$4511.00$Flood current; wi 10 min; C&GS table; Max ebb current
+00067$4512.00$Flood current; wi 10 min; C&GS table; Max flood current
+00067$4520.00$Flood current; wi 10 min; measured
+00067$4521.00$Flood current; wi 10 min; measured; Max ebb current
+00067$4522.00$Flood current; wi 10 min; measured; Max flood current
+00067$4600.00$Flood current; wi 5 min
+00067$4601.00$Flood current; wi 5 min; Max ebb current
+00067$4602.00$Flood current; wi 5 min; Max flood current
+00067$4610.00$Flood current; wi 5 min; C&GS table
+00067$4611.00$Flood current; wi 5 min; C&GS table; Max ebb current
+00067$4612.00$Flood current; wi 5 min; C&GS table; Max flood current
+00067$4620.00$Flood current; wi 5 min; measured
+00067$4621.00$Flood current; wi 5 min; measured; Max ebb current
+00067$4622.00$Flood current; wi 5 min; measured; Max flood current
+00067$5000.00$Mean tide level; wi 3 hrs
+00067$5001.00$Mean tide level; wi 3 hrs; Max ebb current
+00067$5002.00$Mean tide level; wi 3 hrs; Max flood current
+00067$5010.00$Mean tide level; wi 3 hrs; C&GS table
+00067$5011.00$Mean tide level; wi 3 hrs; C&GS table; Max ebb current
+00067$5012.00$Mean tide level; wi 3 hrs; C&GS table; Max flood current
+00067$5020.00$Mean tide level; wi 3 hrs; measured
+00067$5021.00$Mean tide level; wi 3 hrs; measured; Max ebb current
+00067$5022.00$Mean tide level; wi 3 hrs; measured; Max flood current
+00067$5100.00$Mean tide level; wi 2 hrs
+00067$5101.00$Mean tide level; wi 2 hrs; Max ebb current
+00067$5102.00$Mean tide level; wi 2 hrs; Max flood current
+00067$5110.00$Mean tide level; wi 2 hrs; C&GS table
+00067$5111.00$Mean tide level; wi 2 hrs; C&GS table; Max ebb current
+00067$5112.00$Mean tide level; wi 2 hrs; C&GS table; Max flood current
+00067$5120.00$Mean tide level; wi 2 hrs; measured
+00067$5121.00$Mean tide level; wi 2 hrs; measured; Max ebb current
+00067$5122.00$Mean tide level; wi 2 hrs; measured; Max flood current
+00067$5200.00$Mean tide level; wi 1 hr
+00067$5201.00$Mean tide level; wi 1 hr; Max ebb current
+00067$5202.00$Mean tide level; wi 1 hr; Max flood current
+00067$5210.00$Mean tide level; wi 1 hr; C&GS table
+00067$5211.00$Mean tide level; wi 1 hr; C&GS table; Max ebb current
+00067$5212.00$Mean tide level; wi 1 hr; C&GS table; Max flood current
+00067$5220.00$Mean tide level; wi 1 hr; measured
+00067$5221.00$Mean tide level; wi 1 hr; measured; Max ebb current
+00067$5222.00$Mean tide level; wi 1 hr; measured; Max flood current
+00067$5300.00$Mean tide level; wi 40 min
+00067$5301.00$Mean tide level; wi 40 min; Max ebb current
+00067$5302.00$Mean tide level; wi 40 min; Max flood current
+00067$5310.00$Mean tide level; wi 40 min; C&GS table
+00067$5311.00$Mean tide level; wi 40 min; C&GS table; Max ebb current
+00067$5312.00$Mean tide level; wi 40 min; C&GS table; Max flood current
+00067$5320.00$Mean tide level; wi 40 min; measured
+00067$5321.00$Mean tide level; wi 40 min; measured; Max ebb current
+00067$5322.00$Mean tide level; wi 40 min; measured; Max flood current
+00067$5400.00$Mean tide level; wi 20 min
+00067$5401.00$Mean tide level; wi 20 min; Max ebb current
+00067$5402.00$Mean tide level; wi 20 min; Max flood current
+00067$5410.00$Mean tide level; wi 20 min; C&GS table
+00067$5411.00$Mean tide level; wi 20 min; C&GS table; Max ebb current
+00067$5412.00$Mean tide level; wi 20 min; C&GS table; Max flood current
+00067$5420.00$Mean tide level; wi 20 min; measured
+00067$5421.00$Mean tide level; wi 20 min; measured; Max ebb current
+00067$5422.00$Mean tide level; wi 20 min; measured; Max flood current
+00067$5500.00$Mean tide level; wi 10 min
+00067$5501.00$Mean tide level; wi 10 min; Max ebb current
+00067$5502.00$Mean tide level; wi 10 min; Max flood current
+00067$5510.00$Mean tide level; wi 10 min; C&GS table
+00067$5511.00$Mean tide level; wi 10 min; C&GS table; Max ebb current
+00067$5512.00$Mean tide level; wi 10 min; C&GS table; Max flood current
+00067$5520.00$Mean tide level; wi 10 min; measured
+00067$5521.00$Mean tide level; wi 10 min; measured; Max ebb current
+00067$5522.00$Mean tide level; wi 10 min; measured; Max flood current
+00067$5600.00$Mean tide level; wi 5 min
+00067$5601.00$Mean tide level; wi 5 min; Max ebb current
+00067$5602.00$Mean tide level; wi 5 min; Max flood current
+00067$5610.00$Mean tide level; wi 5 min; C&GS table
+00067$5611.00$Mean tide level; wi 5 min; C&GS table; Max ebb current
+00067$5612.00$Mean tide level; wi 5 min; C&GS table; Max flood current
+00067$5620.00$Mean tide level; wi 5 min; measured
+00067$5621.00$Mean tide level; wi 5 min; measured; Max ebb current
+00067$5622.00$Mean tide level; wi 5 min; measured; Max flood current
+
+00115 Sample Treatment
+00115$1$Raw
+00115$2$Treated
+00115$3$Wastewater
+00115$4$Drinking Water
+
+01300 Oil-Grease (Severity)
+01300$0$None
+01300$1$Mild
+01300$2$Moderate
+01300$3$Serious
+01300$4$Extreme
+
+01305 Detergent Suds (Severity)
+01305$0$None
+01305$1$Mild
+01305$2$Moderate
+01305$3$Serious
+01305$4$Extreme
+
+01310 Gas Bubbles (Severity)
+01310$0$None
+01310$1$Mild
+01310$2$Moderate
+01310$3$Serious
+01310$4$Extreme
+
+01315 Sludge: Floating (Severity)
+01315$0$None
+01315$1$Mild
+01315$2$Moderate
+01315$3$Serious
+01315$4$Extreme
+
+01320 Garbage, Floating (Severity)
+01320$0$None
+01320$1$Mild
+01320$2$Moderate
+01320$3$Serious
+01320$4$Extreme
+
+01325 Algae, Floating Mats (Severity)
+01325$0$None
+01325$1$Mild
+01325$2$Moderate
+01325$3$Serious
+01325$4$Extreme
+
+01330 Odor, Atmospheric (Severity)
+01330$0$None
+01330$1$Mild
+01330$2$Moderate
+01330$3$Serious
+01330$4$Extreme
+
+01335 Sewage Solids, Fresh, Floating (Severity)
+01335$0$None
+01335$1$Mild
+01335$2$Moderate
+01335$3$Serious
+01335$4$Extreme
+
+01340 Fish, Dead (Severity)
+01340$0$None
+01340$1$Mild
+01340$2$Moderate
+01340$3$Serious
+01340$4$Extreme
+
+01345 Debris, Floating (Severity)
+01345$0$None
+01345$1$Mild
+01345$2$Moderate
+01345$3$Serious
+01345$4$Extreme
+
+01350 Turbidity (Severity)
+01350$0$None
+01350$1$Mild
+01350$2$Moderate
+01350$3$Serious
+01350$4$Extreme
+
+01351 Streamflow (Severity)
+01351$1$Dry
+01351$2$Low
+01351$3$Normal
+01351$4$Flood
+01351$5$Above normal
+
+01355 Ice Cover, Floating Or Solid (Severity)
+01355$0$None
+01355$1$Mild
+01355$2$Moderate
+01355$3$Serious
+01355$4$Extreme
+
+04117 Tether Line Used For Collecting Sample (Yes=1) Codes
+04117$0$No
+04117$1$Yes
+
+31678 Streptocci, Fecal, Tube Configuration
+31678$1$Five 10-ml tubes
+31678$2$Five 10-ml, five 1-ml and five 0.1-ml tubes
+31678$3$Five 10-ml, one 1-ml and one 0.1-ml tubes
+31678$4$One 50-ml and five 10-ml tubes
+31678$5$One 50-ml, five 10-ml and five 1-ml tubes
+31678$6$Five 50-ml, five 10-ml and five 1-ml tubes
+31678$7$Three 10-ml, three 1-ml and three 0.1-ml tubes
+31678$8$Five 100-ml, five 10-ml and five 1-ml tubes
+
+49986 Degree Of Decomposition, Soil, Code
+49986$1$Fibrix
+49986$2$Hemic
+49986$3$Sapric
+
+50276 Filter Type, Code
+50276$10$Gelman capsule, 0.45um
+50276$20$Membrane, 0.45um, 142mm
+50276$30$Membrane, o,45um, 47mm
+50276$40$Membrane, 0.22um, 47mm
+50276$50$Membrane, 0.1um, 47mm
+50276$60$Membrane, 0.1um, 142mm
+50276$70$Membrane, syringe-type, 0.45um
+50276$80$Membrane, syringe-type, 0.22um
+50276$90$Silver membrane, 0.45um, 47mm
+50276$100$Glass fiber, 0.7um, 142mm
+50276$110$Glass fiber, baked, 0.7um, 142mm
+50276$120$Glass fiber, 0.7um, 47mm
+50276$130$Glass fiber, baked, 0.7um, 47mm
+50276$200$Other
+
+50280 Water Samples, Code
+50280$1001$Fixed frequency, surface-water
+50280$1002$Storm hydrograph, surface-water
+50280$1003$Extreme high flow, surface-water
+50280$1004$Extreme low flow, surface-water
+50280$1005$Diurnal, surface-water
+50280$1006$Synoptic, surface-water
+50280$1098$Surface-water quality control
+50280$1099$Other, surface-water
+50280$1501$Synoptic, Hyporheic zone
+50280$1502$Low flow, Hyporheic zone
+50280$1503$High flow, Hyporheic zone
+50280$2001$Primary, groundwater
+50280$2002$Supplemental, groundwater
+50280$2003$Temporal characterization, groundwater
+50280$2004$Resample, groundwater
+50280$2098$Groundwater quality control
+50280$2099$Other, groundwater
+50280$3001$Occurrence Survey, bed sediment or tissue
+50280$3002$Spatial Distribution Survey, bed sediment or tissue
+50280$3003$Synoptic Study, bed sediment or tissue
+50280$3098$Bed-sediment or tissue quality control
+50280$3099$Other, bed sediment and tissue
+50280$4001$Reconstructive trends from sediment core
+50280$5051$Sample collected during site installation, any media
+50280$5052$Event-based (runoff or recharge conditions), any media
+50280$5053$Fixed frequency (non event-based), any media
+50280$5098$QA/QC, media other than SW, GW, or BS&T
+50280$5099$Other purpose, any media
+
+62955 Sample Matrix, Code
+62955$70$   Soil
+62955$80$   Borehole Core
+62955$90$   Borehole Cuttings
+
+71995 Water Use, Primary (Codes)
+71995$111$cash grains
+71995$131$Field crops - except cash grains
+71995$161$Vegetables and melons
+71995$171$Fruits and tree nuts
+71995$181$Horticultural specialties
+71995$191$General farm crops
+71995$211$Livestock
+71995$251$Poultry and eggs
+71995$271$Animal specialties
+71995$291$General farms - primarily livestock
+71995$711$Agricultural services - soil prep, crop plantings, etc.
+71995$741$Veterinary services
+71995$761$Animal services, farm labor and management
+71995$811$Forestry
+71995$912$Fish and wildlife farming
+71995$1011$Metal mining
+71995$1111$Anthracite mining
+71995$1211$Bituminous coal and lignite mining
+71995$1311$Oil and gas extraction
+71995$1411$Mining and quarrying of nonmetalic minerals, - nonfuel
+71995$1521$Building construction
+71995$1611$Construction - other than building
+71995$1711$Special trade (plumbing, heat, air, elec., masonry, etc.)
+71995$2011$Manufacturing - meat products
+71995$2016$Poultry and egg plants
+71995$2021$Dairy products
+71995$2032$Canned & preserved fruits and vegetables
+71995$2041$Grain mill products
+71995$2051$Bakery products
+71995$2061$Sugar and confectionery products
+71995$2074$Fats and oils
+71995$2084$Beverages - alcoholic & soft drinks, syrups & extracts
+71995$2091$Miscellaneous food preparations
+71995$2111$Tobacco manufacturers
+71995$2211$Textile mill products
+71995$2311$Apparel - products from fabrics
+71995$2411$Lumber & wood products except furniture
+71995$2511$Furniture and fixtures
+71995$2611$Paper and allied products
+71995$2711$Printing, publishing, & allied industries
+71995$2821$Chemicals and allied products
+71995$2911$Petroleum refining and related products
+71995$3011$Rubber and miscellaneous plastic products
+71995$3111$Leather and leather products
+71995$3211$Stone, clay, glass, and concrete products
+71995$3281$Cut stone and stone products
+71995$3291$Abrasive, asbestos, & miscellaneous nonmetalic products
+71995$3312$Blast furnaces, steel works, & rolling & finishing mills
+71995$3411$Metal products & trans. equipment (no machinery)
+71995$3511$Machinery, except electrical
+71995$3612$Electrical & electronic machinery, equipment & supplies
+71995$3711$Transportation equipment repairing and parts
+71995$3811$Measuring, analyzing, & controlling instruments
+71995$3911$Miscellaneous manufacturing industries
+71995$4011$Transportation - trains, taxicabs, aircraft
+71995$4212$Motor freight transportation and warehousing
+71995$4311$U.S. postal service
+71995$4411$Water transportation
+71995$4423$Water recreation on bays, lakes, rivers, & canals
+71995$4511$Transportation by air
+71995$4612$Pipelines - except natural gas
+71995$4811$Communications
+71995$4922$Gas production and distribution; elec. and gas service
+71995$4941$Water supply
+71995$4952$Sewerage systems
+71995$4961$Public steam supply
+71995$4971$Irrigation systems
+71995$5012$Wholesale trade - durable goods
+71995$5111$Wholesale trade - nondurable goods
+71995$5211$Building materials, hardware, garden supply
+71995$5311$General merchandise stores
+71995$5411$Food stores
+71995$5511$Auto. dealers and gasoline service stations
+71995$5611$Apparel and accessory stores
+71995$5712$Furniture, home furnishing, and equipment stores
+71995$5812$Eating and drinking places
+71995$5912$Miscellaneous retail - drug, liquor, book, camera, etc.
+71995$6011$Banking
+71995$6112$Credit agencies
+71995$6212$Security and commodity brokers, dealers, and services
+71995$6311$Insurance
+71995$6512$Real estate
+71995$6711$Holding and other investment offices
+71995$7011$Hotels, motels, tourist courts
+71995$7021$Rooming and boarding houses
+71995$7032$Camps, transient trailer parks, & camp sites
+71995$7041$Organization hotels and membership lodging houses
+71995$7211$Laundry, cleaning, and garment services
+71995$7221$Shops - photo, beauty, barber, shoe, funeral services
+71995$7311$Advertising services
+71995$7321$Consumer credit and collection
+71995$7331$Mailing, reproduction, commercial art & photography
+71995$7341$Service to dwellings and other buildings
+71995$7351$News syndicates
+71995$7361$Employment services
+71995$7372$Computer and data processing
+71995$7391$Miscellaneous business services
+71995$7512$Automotive and truck rental leasing without driver
+71995$7523$Automobile parking
+71995$7531$Automotive repair shops
+71995$7542$Car washes
+71995$7549$Automotive services - except repair
+71995$7622$Miscellaneous repair services
+71995$7813$Motion picture-t.v. services, theaters, except drive-ins
+71995$7911$Recreation services, except theaters and public golf
+71995$7992$Public golf courses
+71995$7993$Coin operated amusement devices
+71995$7996$Amusement parks, sports and recreation clubs, etc.
+71995$8011$Health services (offices)
+71995$8051$Nursing and personal care facilities
+71995$8062$Hospitals
+71995$8071$Medical and dental laboratories
+71995$8081$Outpatient care facilities
+71995$8091$Health & allies services, not elsewhere classified
+71995$8111$Legal services
+71995$8211$Educational services, libraries and information centers
+71995$8231$Social services & rehabilitation centers
+71995$8411$Museums, art galleries, zoological & botanical gardens
+71995$8611$Membership organizations
+71995$8811$Private houses, condos, municipalities, & trailer parks
+71995$8911$Miscellaneous services (eng.,ed., r&d, accounting, etc.)
+71995$9111$Gov., legislative, justice, public order & safety misc.
+71995$9411$Administration of human resources programs
+71995$9511$Air & water resource, & solid waste management
+71995$9512$Natural resource conservation by public administration
+71995$9531$Admin. of housing & economic programs & internat'l affairs
+71995$9999$Water compacts, agreements & legislative actions
+71995$14911$Commercial electric energy establishments - fossil
+71995$24911$Commercial electric energy establishments - geothermal
+71995$34911$Commercial electric energy establishments - hydroelectric
+71995$44911$Commercial electric energy establishments - nuclear
+
+71996 Water Use, Secondary (Codes)
+71996$111$Cash grains
+71996$131$Field crops - except cash grains
+71996$161$Vegetables and melons
+71996$171$Fruits and tree nuts
+71996$181$Horticultural specialties
+71996$191$General farm crops
+71996$211$Livestock
+71996$251$Poultry and eggs
+71996$271$Animal specialties
+71996$291$General farms - primarily livestock
+71996$711$Agricultural services - soil prep, crop plantings, etc.
+71996$741$Veterinary services
+71996$761$Animal services, farm labor and management
+71996$811$Forestry
+71996$912$Fish and wildlife farming
+71996$1011$Metal mining
+71996$1111$Anthracite mining
+71996$1211$Bituminous coal and lignite mining
+71996$1311$Oil and gas extraction
+71996$1411$Mining and quarrying of nonmetalic minerals, - nonfuel
+71996$1521$Building construction
+71996$1611$Construction - other than building
+71996$1711$Special trade (plumbing, heat, air, elec., masonry, etc.)
+71996$2011$Manufacturing - meat products
+71996$2016$Poultry and egg plants
+71996$2021$Dairy products
+71996$2032$Canned & preserved fruits and vegetables
+71996$2041$Grain mill products
+71996$2051$Bakery products
+71996$2061$Sugar and confectionery products
+71996$2074$Fats and oils
+71996$2084$Beverages - alcoholic & soft drinks, syrups & extracts
+71996$2091$Miscellaneous food preparations
+71996$2111$Tobacco manufacturers
+71996$2211$Textile mill products
+71996$2311$Apparel - products from fabrics
+71996$2411$Lumber & wood products except furniture
+71996$2511$Furniture and fixtures
+71996$2611$Paper and allied products
+71996$2711$Printing, publishing, & allied industries
+71996$2821$Chemicals and allied products
+71996$2911$Petroleum refining and related products
+71996$3011$Rubber and miscellaneous plastic products
+71996$3111$Leather and leather products
+71996$3211$Stone, clay, glass, and concrete products
+71996$3281$Cut stone and stone products
+71996$3291$Abrasive, asbestos, & miscellaneous nonmetalic products
+71996$3312$Blast furnaces, steel works, & rolling & finishing mills
+71996$3411$Metal products & trans. equipment (no machinery)
+71996$3511$Machinery, except electrical
+71996$3612$Electrical & electronic machinery, equipment & supplies
+71996$3711$Transportation equipment repairing and parts
+71996$3811$Measuring, analyzing, & controlling instruments
+71996$3911$Miscellaneous manufacturing industries
+71996$4011$Transportation - trains, taxicabs, aircraft
+71996$4212$Motor freight transportation and warehousing
+71996$4311$U.S. postal service
+71996$4411$Water transportation
+71996$4423$Water recreation on bays, lakes, rivers, & canals
+71996$4511$Transportation by air
+71996$4612$Pipelines - except natural gas
+71996$4811$Communications
+71996$4922$Gas production and distribution; elec. and gas service
+71996$4941$Water supply
+71996$4952$Sewerage systems
+71996$4961$Public steam supply
+71996$4971$Irrigation systems
+71996$5012$Wholesale trade - durable goods
+71996$5111$Wholesale trade - nondurable goods
+71996$5211$Building materials, hardware, garden supply
+71996$5311$General merchandise stores
+71996$5411$Food stores
+71996$5511$Auto. dealers and gasoline service stations
+71996$5611$Apparel and accessory stores
+71996$5712$Furniture, home furnishing, and equipment stores
+71996$5812$Eating and drinking places
+71996$5912$Miscellaneous retail - drug, liquor, book, camera, etc.
+71996$6011$Banking
+71996$6112$Credit agencies
+71996$6212$Security and commodity brokers, dealers, and services
+71996$6311$Insurance
+71996$6512$Real estate
+71996$6711$Holding and other investment offices
+71996$7011$Hotels, motels, tourist courts
+71996$7021$Rooming and boarding houses
+71996$7032$Camps, transient trailer parks, & camp sites
+71996$7041$Organization hotels and membership lodging houses
+71996$7211$Laundry, cleaning, and garment services
+71996$7221$Shops - photo, beauty, barber, shoe, funeral services
+71996$7311$Advertising services
+71996$7321$Consumer credit and collection
+71996$7331$Mailing, reproduction, commercial art & photography
+71996$7341$Service to dwellings and other buildings
+71996$7351$News syndicates
+71996$7361$Employment services
+71996$7372$Computer and data processing
+71996$7391$Miscellaneous business services
+71996$7512$Automotive and truck rental leasing without driver
+71996$7523$Automobile parking
+71996$7531$Automotive repair shops
+71996$7542$Car washes
+71996$7549$Automotive services - except repair
+71996$7622$Miscellaneous repair services
+71996$7813$Motion picture-t.v. services, theaters, except drive-ins
+71996$7911$Recreation services, except theaters and public golf
+71996$7992$Public golf courses
+71996$7993$Coin operated amusement devices
+71996$7996$Amusement parks, sports and recreation clubs, etc.
+71996$8011$Health services (offices)
+71996$8051$Nursing and personal care facilities
+71996$8062$Hospitals
+71996$8071$Medical and dental laboratories
+71996$8081$Outpatient care facilities
+71996$8091$Health & allies services, not elsewhere classified
+71996$8111$Legal services
+71996$8211$Educational services, libraries and information centers
+71996$8231$Social services & rehabilitation centers
+71996$8411$Museums, art galleries, zoological & botanical gardens
+71996$8611$Membership organizations
+71996$8811$Private houses, condos, municipalities, & trailer parks
+71996$8911$Miscellaneous services (eng.,ed., r&d, accounting, etc.)
+71996$9111$Gov., legislative, justice, public order & safety misc.
+71996$9411$Administration of human resources programs
+71996$9511$Air & water resource, & solid waste management
+71996$9512$Natural resource conservation by public administration
+71996$9531$Admin. of housing & economic programs & internat'l affairs
+71996$9999$Water compacts, agreements & legislative actions
+71996$14911$Commercial electric energy establishments - fossil
+71996$24911$Commercial electric energy establishments - geothermal
+71996$34911$Commercial electric energy establishments - hydroelectric
+71996$44911$Commercial electric energy establishments - nuclear
+
+71997 Water Use, Tertiary (Codes)
+71997$111$Cash grains
+71997$131$Field crops - except cash grains
+71997$161$Vegetables and melons
+71997$171$Fruits and tree nuts
+71997$181$Horticultural specialties
+71997$191$General farm crops
+71997$211$Livestock
+71997$251$Poultry and eggs
+71997$271$Animal specialties
+71997$291$General farms - primarily livestock
+71997$711$Agricultural services - soil prep, crop plantings, etc.
+71997$741$Veterinary services
+71997$761$Animal services, farm labor and management
+71997$811$Forestry
+71997$912$Fish and wildlife farming
+71997$1011$Metal mining
+71997$1111$Anthracite mining
+71997$1211$Bituminous coal and lignite mining
+71997$1311$Oil and gas extraction
+71997$1411$Mining and quarrying of nonmetalic minerals, - nonfuel
+71997$1521$Building construction
+71997$1611$Construction - other than building
+71997$1711$Special trade (plumbing, heat, air, elec., masonry, etc.)
+71997$2011$Manufacturing - meat products
+71997$2016$Poultry and egg plants
+71997$2021$Dairy products
+71997$2032$Canned & preserved fruits and vegetables
+71997$2041$Grain mill products
+71997$2051$Bakery products
+71997$2061$Sugar and confectionery products
+71997$2074$Fats and oils
+71997$2084$Beverages - alcoholic & soft drinks, syrups & extracts
+71997$2091$Miscellaneous food preparations
+71997$2111$Tobacco manufacturers
+71997$2211$Textile mill products
+71997$2311$Apparel - products from fabrics
+71997$2411$Lumber & wood products except furniture
+71997$2511$Furniture and fixtures
+71997$2611$Paper and allied products
+71997$2711$Printing, publishing, & allied industries
+71997$2821$Chemicals and allied products
+71997$2911$Petroleum refining and related products
+71997$3011$Rubber and miscellaneous plastic products
+71997$3111$Leather and leather products
+71997$3211$Stone, clay, glass, and concrete products
+71997$3281$Cut stone and stone products
+71997$3291$Abrasive, asbestos, & miscellaneous nonmetalic products
+71997$3312$Blast furnaces, steel works, & rolling & finishing mills
+71997$3411$Metal products & trans. equipment (no machinery)
+71997$3511$Machinery, except electrical
+71997$3612$Electrical & electronic machinery, equipment & supplies
+71997$3711$Transportation equipment repairing and parts
+71997$3811$Measuring, analyzing, & controlling instruments
+71997$3911$Miscellaneous manufacturing industries
+71997$4011$Transportation - trains, taxicabs, aircraft
+71997$4212$Motor freight transportation and warehousing
+71997$4311$U.S. postal service
+71997$4411$Water transportation
+71997$4423$Water recreation on bays, lakes, rivers, & canals
+71997$4511$Transportation by air
+71997$4612$Pipelines - except natural gas
+71997$4811$Communications
+71997$4922$Gas production and distribution; elec. and gas service
+71997$4941$Water supply
+71997$4952$Sewerage systems
+71997$4961$Public steam supply
+71997$4971$Irrigation systems
+71997$5012$Wholesale trade - durable goods
+71997$5111$Wholesale trade - nondurable goods
+71997$5211$Building materials, hardware, garden supply
+71997$5311$General merchandise stores
+71997$5411$Food stores
+71997$5511$Auto. dealers and gasoline service stations
+71997$5611$Apparel and accessory stores
+71997$5712$Furniture, home furnishing, and equipment stores
+71997$5812$Eating and drinking places
+71997$5912$Miscellaneous retail - drug, liquor, book, camera, etc.
+71997$6011$Banking
+71997$6112$Credit agencies
+71997$6212$Security and commodity brokers, dealers, and services
+71997$6311$Insurance
+71997$6512$Real estate
+71997$6711$Holding and other investment offices
+71997$7011$Hotels, motels, tourist courts
+71997$7021$Rooming and boarding houses
+71997$7032$Camps, transient trailer parks, & camp sites
+71997$7041$Organization hotels and membership lodging houses
+71997$7211$Laundry, cleaning, and garment services
+71997$7221$Shops - photo, beauty, barber, shoe, funeral services
+71997$7311$Advertising services
+71997$7321$Consumer credit and collection
+71997$7331$Mailing, reproduction, commercial art & photography
+71997$7341$Service to dwellings and other buildings
+71997$7351$News syndicates
+71997$7361$Employment services
+71997$7372$Computer and data processing
+71997$7391$Miscellaneous business services
+71997$7512$Automotive and truck rental leasing without driver
+71997$7523$Automobile parking
+71997$7531$Automotive repair shops
+71997$7542$Car washes
+71997$7549$Automotive services - except repair
+71997$7622$Miscellaneous repair services
+71997$7813$Motion picture-t.v. services, theaters, except drive-ins
+71997$7911$Recreation services, except theaters and public golf
+71997$7992$Public golf courses
+71997$7993$Coin operated amusement devices
+71997$7996$Amusement parks, sports and recreation clubs, etc.
+71997$8011$Health services (offices)
+71997$8051$Nursing and personal care facilities
+71997$8062$Hospitals
+71997$8071$Medical and dental laboratories
+71997$8081$Outpatient care facilities
+71997$8091$Health & allies services, not elsewhere classified
+71997$8111$Legal services
+71997$8211$Educational services, libraries and information centers
+71997$8231$Social services & rehabilitation centers
+71997$8411$Museums, art galleries, zoological & botanical gardens
+71997$8611$Membership organizations
+71997$8811$Private houses, condos, municipalities, & trailer parks
+71997$8911$Miscellaneous services (eng.,ed., r&d, accounting, etc.)
+71997$9111$Gov., legislative, justice, public order & safety misc.
+71997$9411$Administration of human resources programs
+71997$9511$Air & water resource, & solid waste management
+71997$9512$Natural resource conservation by public administration
+71997$9531$Admin. of housing & economic programs & internat'l affairs
+71997$9999$Water compacts, agreements & legislative actions
+71997$14911$Commercial electric energy establishments - fossil
+71997$24911$Commercial electric energy establishments - geothermal
+71997$34911$Commercial electric energy establishments - hydroelectric
+71997$44911$Commercial electric energy establishments - nuclear
+
+71998 Water Use, Quaternary (Codes)
+71998$111$Cash grains
+71998$131$Field crops - except cash grains
+71998$161$Vegetables and melons
+71998$171$Fruits and tree nuts
+71998$181$Horticultural specialties
+71998$191$General farm crops
+71998$211$Livestock
+71998$251$Poultry and eggs
+71998$271$Animal specialties
+71998$291$General farms - primarily livestock
+71998$711$Agricultural services - soil prep, crop plantings, etc.
+71998$741$Veterinary services
+71998$761$Animal services, farm labor and management
+71998$811$Forestry
+71998$912$Fish and wildlife farming
+71998$1011$Metal mining
+71998$1111$Anthracite mining
+71998$1211$Bituminous coal and lignite mining
+71998$1311$Oil and gas extraction
+71998$1411$Mining and quarrying of nonmetalic minerals, - nonfuel
+71998$1521$Building construction
+71998$1611$Construction - other than building
+71998$1711$Special trade (plumbing, heat, air, elec., masonry, etc.)
+71998$2011$Manufacturing - meat products
+71998$2016$Poultry and egg plants
+71998$2021$Dairy products
+71998$2032$Canned & preserved fruits and vegetables
+71998$2041$Grain mill products
+71998$2051$Bakery products
+71998$2061$Sugar and confectionery products
+71998$2074$Fats and oils
+71998$2084$Beverages - alcoholic & soft drinks, syrups & extracts
+71998$2091$Miscellaneous food preparations
+71998$2111$Tobacco manufacturers
+71998$2211$Textile mill products
+71998$2311$Apparel - products from fabrics
+71998$2411$Lumber & wood products except furniture
+71998$2511$Furniture and fixtures
+71998$2611$Paper and allied products
+71998$2711$Printing, publishing, & allied industries
+71998$2821$Chemicals and allied products
+71998$2911$Petroleum refining and related products
+71998$3011$Rubber and miscellaneous plastic products
+71998$3111$Leather and leather products
+71998$3211$Stone, clay, glass, and concrete products
+71998$3281$Cut stone and stone products
+71998$3291$Abrasive, asbestos, & miscellaneous nonmetalic products
+71998$3312$Blast furnaces, steel works, & rolling & finishing mills
+71998$3411$Metal products & trans. equipment (no machinery)
+71998$3511$Machinery, except electrical
+71998$3612$Electrical & electronic machinery, equipment & supplies
+71998$3711$Transportation equipment repairing and parts
+71998$3811$Measuring, analyzing, & controlling instruments
+71998$3911$Miscellaneous manufacturing industries
+71998$4011$Transportation - trains, taxicabs, aircraft
+71998$4212$Motor freight transportation and warehousing
+71998$4311$U.S. postal service
+71998$4411$Water transportation
+71998$4423$Water recreation on bays, lakes, rivers, & canals
+71998$4511$Transportation by air
+71998$4612$Pipelines - except natural gas
+71998$4811$Communications
+71998$4922$Gas production and distribution; elec. and gas service
+71998$4941$Water supply
+71998$4952$Sewerage systems
+71998$4961$Public steam supply
+71998$4971$Irrigation systems
+71998$5012$Wholesale trade - durable goods
+71998$5111$Wholesale trade - nondurable goods
+71998$5211$Building materials, hardware, garden supply
+71998$5311$General merchandise stores
+71998$5411$Food stores
+71998$5511$Auto. dealers and gasoline service stations
+71998$5611$Apparel and accessory stores
+71998$5712$Furniture, home furnishing, and equipment stores
+71998$5812$Eating and drinking places
+71998$5912$Miscellaneous retail - drug, liquor, book, camera, etc.
+71998$6011$Banking
+71998$6112$Credit agencies
+71998$6212$Security and commodity brokers, dealers, and services
+71998$6311$Insurance
+71998$6512$Real estate
+71998$6711$Holding and other investment offices
+71998$7011$Hotels, motels, tourist courts
+71998$7021$Rooming and boarding houses
+71998$7032$Camps, transient trailer parks, & camp sites
+71998$7041$Organization hotels and membership lodging houses
+71998$7211$Laundry, cleaning, and garment services
+71998$7221$Shops - photo, beauty, barber, shoe, funeral services
+71998$7311$Advertising services
+71998$7321$Consumer credit and collection
+71998$7331$Mailing, reproduction, commercial art & photography
+71998$7341$Service to dwellings and other buildings
+71998$7351$News syndicates
+71998$7361$Employment services
+71998$7372$Computer and data processing
+71998$7391$Miscellaneous business services
+71998$7512$Automotive and truck rental leasing without driver
+71998$7523$Automobile parking
+71998$7531$Automotive repair shops
+71998$7542$Car washes
+71998$7549$Automotive services - except repair
+71998$7622$Miscellaneous repair services
+71998$7813$Motion picture-t.v. services, theaters, except drive-ins
+71998$7911$Recreation services, except theaters and public golf
+71998$7992$Public golf courses
+71998$7993$Coin operated amusement devices
+71998$7996$Amusement parks, sports and recreation clubs, etc.
+71998$8011$Health services (offices)
+71998$8051$Nursing and personal care facilities
+71998$8062$Hospitals
+71998$8071$Medical and dental laboratories
+71998$8081$Outpatient care facilities
+71998$8091$Health & allies services, not elsewhere classified
+71998$8111$Legal services
+71998$8211$Educational services, libraries and information centers
+71998$8231$Social services & rehabilitation centers
+71998$8411$Museums, art galleries, zoological & botanical gardens
+71998$8611$Membership organizations
+71998$8811$Private houses, condos, municipalities, & trailer parks
+71998$8911$Miscellaneous services (eng.,ed., r&d, accounting, etc.)
+71998$9111$Gov., legislative, justice, public order & safety misc.
+71998$9411$Administration of human resources programs
+71998$9511$Air & water resource, & solid waste management
+71998$9512$Natural resource conservation by public administration
+71998$9531$Admin. of housing & economic programs & internat'l affairs
+71998$9999$Water compacts, agreements & legislative actions
+71998$14911$Commercial electric energy establishments - fossil
+71998$24911$Commercial electric energy establishments - geothermal
+71998$34911$Commercial electric energy establishments - hydroelectric
+71998$44911$Commercial electric energy establishments - nuclear
+
+71999 Sample Purpose (Codes)
+71999$10$Routine
+71999$15$NAWQA - National Water-Quality Assessment
+71999$20$NASQAN
+71999$30$Benchmark
+71999$35$RASA, Regional Aquifer Systems Analysis
+71999$40$SW Network
+71999$50$GW Network
+71999$60$Lowflow Network
+71999$70$Highflow Network
+71999$80$Acid rain
+71999$80.01$Bulk or undefined (bu)
+71999$80.02$Sample related problem (ns)
+71999$80.03$Dry wet-side sample (na)
+71999$80.04$Completely missing samples (un)
+71999$80.05$Long duration sample (ld)
+71999$80.06$Sampling protocol (time) (sp)
+71999$80.07$Sampler malfunction (s)
+71999$90$Snow survey
+71999$100$Mt. St. Helens
+71999$110$Seepage study
+71999$120$Irrigation effects
+71999$130$Recharge
+71999$140$Injection
+71999$150$Bank erodibility
+71999$160$National blank and spike program
+71999$170$Quality assurance
+71999$180$Cross-section variation
+71999$190$Groundwater/Surface-water Interaction Study
+
+72005 Sample Source (Codes)
+72005$0.01$Airline measurement
+72005$0.02$Analog or graphic recorder
+72005$0.03$Calibrated airline measurement
+72005$0.04$Estimated
+72005$0.05$Pressure-gage measurement
+72005$0.06$Calibrated pressure-gage measurement
+72005$0.07$Interpreted from geophysical logs
+72005$0.08$Manometer measurement
+72005$0.09$Nonrecording gage
+72005$0.10$Reported, method not known
+72005$0.11$Steel-tape measurement
+72005$0.12$Electric-tape measurement
+72005$0.13$Calibrated electric-tape measurement
+72005$0.14$Other
+72005$1$Well head
+72005$2$Drill stem test
+72005$3$Separator
+72005$4$Boiler
+72005$5$Flow line
+72005$6$Battery
+72005$7$Undesignated
+72005$8$Tank
+72005$9$Production test
+72005$10$Heater treater
+72005$11$Gun barrel
+72005$12$Swab
+72005$13$Pit
+72005$14$Manifold test
+72005$15$Gas line drip
+72005$16$Casing leak
+72005$17$Wire line test
+72005$18$Header
+72005$19$Filter
+72005$20$Test tool
+72005$21$Ltx unit
+72005$22$Knockout
+72005$23$Well bleeder
+72005$24$Fracture test
+72005$25$Test wagon
+72005$26$Pump
+72005$27$Tap near well
+72005$28$Tap away from well
+72005$29$Bucket
+72005$30$Pressure tank
+72005$31$Discharge pipe
+72005$32$Foerst sampler
+72005$33$Bailer
+72005$34$Drain line
+72005$35$Injection pump
+72005$36$Spot sample in fluid column
+72005$37$Tank battery including gun barrel
+72005$38$Windmill
+72005$39$Water siphon
+72005$40$Special
+72005$41$Municipal and domestic waste
+72005$42$Industrial waste
+72005$43$Storm water (prior to entering natural channels)
+72005$44$Public water supplies (treated water)
+72005$45$Mine water
+72005$46$Public water supplies (untreated water)
+72005$47$Water well
+72005$48$Multiple water wells
+72005$49$Oil well
+72005$50$Multi-oil well
+72005$51$Gas well
+72005$52$Multi-gas well
+72005$53$Oil and gas well
+72005$54$Multi-oil and gas well
+72005$55$Drilled and abandoned well
+72005$56$Plugged and abandoned well
+72005$57$Junked and abandoned well
+72005$58$Temporarily abandoned well
+72005$59$Abandoned oil well
+72005$60$Abandoned gas well
+72005$61$Salt-water supply well
+72005$62$Salt-water disposal well
+72005$63$Injection well
+72005$64$Service well
+72005$65$Wetland ecosystem
+72005$66$Dredge wake
+72005$67$Mainstream
+72005$68$Overbank
+72005$69$Composited public water supply(untreated water)
+72005$70$Composited public water supply(treated water)
+72005$72$Interstitial water
+72005$74$Lysimeter
+72005$76$Oil or gas test well converted to water well
+72005$77$Surficial bank
+72005$78$Interior bank
+72005$79$Before pressure tank
+72005$80$After pressure tank
+72005$86$Hyporheic zone
+72005$88$Seepage Meter
+72005$100$Domestic supply-untreated
+72005$110$Domestic supply-treated
+72005$1001$Wet deposition
+72005$1002$Dustfall
+72005$1003$Landfill
+72005$1004$Cast overburden
+72005$1005$Street sweeping
+72005$1006$Landfill seep
+
+72006 Sampling Condition (Codes)
+72006$0.01$The site was dry (no water level is recorded)
+72006$0.02$The site had been flowing recently
+72006$0.03$The site was flowing, head could not be measured
+72006$0.04$A nearby site that taps the aquifer was flowing
+72006$0.05$Nearby site tapping same aquifer had been flowing recently
+72006$0.06$Injector site
+72006$0.07$Injector site monitor
+72006$0.08$Measurement discontinued
+72006$0.09$Obstruction encountered in well above water surface
+72006$0.10$The site was being pumped
+72006$0.11$The site had been pumped recently
+72006$0.12$Nearby site tapping the same aquifer was being pumped
+72006$0.13$Nearby site tapping the same aquifer was pumped recently
+72006$0.14$Foreign substance present on the surface of the water
+72006$0.15$Well destroyed
+72006$0.16$Water level affected by stage in nearby site
+72006$0.17$Other conditions affecting the measured water level
+72006$1$Testing
+72006$2$Undesignated
+72006$3$Swabbing
+72006$4$Flowing
+72006$5$Reversing out
+72006$6$Flowing on gas lift
+72006$7$After acidizing
+72006$8$Pumping
+72006$9$Millipore filter
+72006$10$Open hole
+72006$11$Flowing on drill stem test
+72006$12$After drill stem test
+72006$15$Bailing
+72006$16$After perforation
+72006$17$Tubing flow
+72006$18$Producing
+72006$19$Circulating
+72006$20$Flowing on production test
+72006$21$Flowing on potential test
+72006$22$Lifting
+72006$23$Flowing to pit
+72006$24$Water flooding
+72006$25$Jetting
+72006$26$Production and development test
+72006$27$Production by unknown method
+72006$30$Seeping
+72006$31$Nearby well pumping
+72006$32$Nearby well taking water
+72006$33$Well taking water
+
+74200 Sample Preservation Method, (Codes)
+74200$1$FA, Polyethylene bottle, 250 mL, acid rinsed
+74200$3$FAB, Teflon bottle, 250 mL, acid rinsed
+74200$5$FAR, Polyethylene bottle, 1L, acid rinsed
+74200$7$FC, Brown polyethylene bottle, size dependent on lab sched
+74200$9$FU, poly bottle, field rinsed
+74200$11$RA, Polyethylene bottle, acid-rinsed, 250 mL
+74200$13$RAB, Teflon bottle, acid rinsed, 250 mL
+74200$15$RAE, Polyethylene bottle, acid-rinsed, 250 mL
+74200$17$RAH, Polyethylene bottle, acid-rinsed, 250 mL
+74200$19$RC, brown poly bottle, field rinsed, 250 mL
+74200$21$RU, Polyethylene bottle, size dependent on lab sched
+74200$23$RUR, Polyethylene bottle, polyseal cap, 250 or 500 mL, or1L
+74200$25$LC0023 or RCN, Polyethylene bottle, 250 mL
+74200$27$LC0076 or COD, Glass bottle, 125 mL, baked at 450 deg C
+74200$29$LC0089, Polyethylene bottle, 250 mL
+74200$31$LC0239, Poly Bottle, Acid Rinsed, 1 L
+74200$33$Contact NWQL
+74200$35$LC0300, glass bottle, field rinsed, 250 mL
+74200$39$LC0439, steel barrel
+74200$41$LC0440, Glass bottle, narrow-neck, polyethylene seal cap,1L
+74200$43$LC0452, Polyethylene bottle, polyethylene seal cap, 125 mL
+74200$45$LC0489, Glass or polyethylene bottle, 125 mL
+74200$47$LC0490, Contact NWQL
+74200$49$LC0491, Contact NWQL
+74200$51$LC0880 or FCN, Polyethylene bottle, 250 mL
+74200$53$LC0995, Contact NWQL
+74200$55$LC0996, Glass bottle, field rinsed
+74200$57$LC0997, Contact NWQL
+74200$59$CL, septum bottle, 40 mL
+74200$61$GCC, Amber glass bottle, baked at 450 degrees C, 1L
+74200$63$GCV, Amber glass septum vial, 40 mL
+74200$65$RCB, Polyethylene bottle, 250 mL (Same as fixed value 79)
+74200$67$LC0052 or PHE, Glass bottle, baked, 500 mL
+74200$69$LC0113 or DOC, Amber glass bottle, baked at 450 deg C,125mL
+74200$71$LC0114 or TOC, Amber glass bottle, baked at 450 deg C,125mL
+74200$73$LC0127, Amber oil & grease bottle, baked @450deg C, 125 mL
+74200$75$LC0305 or SOC, 0.45 um silver filter in a petri dish
+74200$77$FU, Polyethylene bottle, size dependent on laboratory sched
+74200$79$RCB, Polyethylene bottle, 250 mL (Same as fixed value 65)
+74200$81$RU, poly bottle, field rinsed, 500 mL
+74200$83$LC0050 or TBY, Polyethylene bottle, 125 mL
+74200$85$LC0169 or SUSO, Polyethylene bottle, 500 mL
+74200$87$CC, plastic freezer carton, 1 pt
+74200$89$CU, plastic freezer carton, 1 pt
+74200$91$BGC, wide mouth glass bottle, 1 L
+74200$93$CC, Plastic Freezer Carton, 1 Pt
+74200$95$PP, Contact NWQL
+74200$97$SIZE, untreated
+74200$99$BEN, poly bottle, wide mouth
+74200$101$CHE, glass jar, wide mouth
+74200$103$CHY, glass vial
+74200$105$DIA, contact Atlanta Central Laboratory
+74200$107$PER, contact Atlanta Central Laboratory
+74200$109$SHY, poly bottle
+74200$111$ST, poly bottle
+74200$113$ZOO, contact Atlanta Central Laboratory
+74200$115$LC0055, poly bottle
+74200$117$LC0438, Contact NWQL
+74200$119$LC0616, glass vial
+74200$121$LC1049, wide mouth glass bottle, 1 L
+74200$123$FAM, Glass bottle, acid rinsed, 250 mL
+74200$125$FCU, brown poly bottle, field rinsed, 250 mL
+74200$127$RAM, Glass bottle, acid rinsed, 250 mL
+74200$129$LCO460, poly bottle, field rinsed, 500 mL
+74200$131$LCO881, poly bottle, field rinsed, 125 mL
+74200$133$LC1043, Glass or high-density poly bottle & seal cap, 1L
+74200$135$LC1199, Contact NWQL
+74200$137$LC0019, Amber glass bottle, baked at 450 deg C, 125 mL
+74200$139$LC0306, glass bottle, 125 mL
+74200$141$LC1038, plastic freezer carton, 1 pt
+74200$143$LC0961, Contact NWQL
+74200$145$ALF, Aluminum foil
+74200$147$C18, C-18 SPE Cartridge
+74200$149$CC, Polyethylene bottle, wide-mouthed, 500 mL
+74200$151$CRB, Carbopak-B cartridge
+74200$153$CUR, Polyethylene bottle, wide-mouth, 500 mL
+74200$155$EAM, Amber glass bottle, 250 mL
+74200$157$EBC, Amber glass bottle, teflon cap liner, 1L
+74200$159$ECC, Amber glass bottle, teflon cap liner, 1L
+74200$161$EDV, Amber glass screw-cap vials, teflon-faced septa, 40mL
+74200$163$ELV, Glass screw-cap vials, teflon-faced septa, 60mL
+74200$165$EOV, Amber glass screw-cap val, teflon-faced septa, 40 mL
+74200$167$EPC, High-density poly-vinyl chloride bottle, 1L
+74200$169$ERA, Polyethylene bottle, 500 mL
+74200$171$ERC, Amber polyethylene bottle, 125 mL
+74200$173$ERU, polyethylene bottle, 250 mL
+74200$175$FCA, Brown polyethylene bottle, 125 mL
+74200$177$FCC, Brown polyethylene bottle, 125 mL
+74200$179$FUS, Filtered untreated stable isotopes
+74200$181$IQE, Invertebrate QMH Elitriate: NWQL Tech Memo 98-09
+74200$183$IQL, Invertebrate QMH Large Rare: NWQL Tech Memo 98-09
+74200$185$IQM, Invertebrate QMH Main Body, NWQL Tech Memo 98-09
+74200$187$IRE, Invertebrate RTH Elutriate; NWQL Tech Memo 98-09
+74200$189$IRL, Invertebrate RTH Large Rare: NWQL Tech Memo 98-09
+74200$191$IRM, Invertebrate RTH Main Body: NWQL Tech Memo 98-09
+74200$193$LC0460, Polyethylene bottle, polyethylene seal cap, 250mL
+74200$195$LC0624, Polyethylene bottle, polyethylene seal cap, 500 mL
+74200$197$LC1565, Glass /high-density poly bottle, poly seal cap, 1L
+74200$199$LC1567, Polyethylene bottle, polyethylene seal cap, 125 mL
+74200$201$LC1574, Glass/high-density poly bottle, poly seal cap,125mL
+74200$203$LC1717, Amber glass/high-dens poly bottle, poly seal cap,1L
+74200$205$LC1949, Contact Ty Coplen (703-648-5862)
+74200$207$LC1951, Glass/untrtd high-dens poly bottle,poly seal cap,1L
+74200$209$MBAS, Polyethylene bottle, 250 mL
+74200$211$PIC, Glass fiber filter
+74200$213$RAR, Polyethylene bottle, acid rinsed, 1L
+74200$215$RCA, Brown polyethylene bottle, 125 mL
+74200$217$RCC, Brown polyethylene bottle, 125 mL
+74200$219$RURCT, Copper tube, 1L: NWQL Tech Memo 97.04 & 97.04S
+74200$221$RURCV, Glass vial, 20 mL
+74200$223$RUS, Polyethylene bottle, 250mL, 500mL, or 1L
+74200$225$SC1379, Amber glass bottle, baked @ 450 deg C, 125 mL
+74200$227$SUR, Petri dish or vial
+74200$229$TBI, Ziplock-type bag, glass or poly wide-mouth jar
+74200$231$TPCN, Glass fiber filter, 25 mm
+74200$233$UAS, Supor/glass fiber filter &amber glass septum vial,40mL
+74200$235$WCA, Polyethylene bottle, 125 mL
+74200$237$LC1648, Polyethylene bottle, 250 mL
+74200$239$LC1718, Amber glass/high-dens poly bottle, poly seal cap,1L
+
+82309 Contamination Source, Possible (Codes)
+82309$1$Oil spill
+82309$3$Gas spill
+82309$5$Organic
+82309$7$Pesticide
+82309$9$Herbicide
+82309$11$Insecticide
+82309$13$Feedlot runoff
+82309$15$Salt water
+82309$17$Injection well
+82309$19$Sewage treatment plant
+82309$21$Land spreading
+82309$23$Landfill
+82309$25$Sludge dump
+82309$27$Waste lagoon
+82309$29$Urban runoff
+82309$31$Mine drainage
+82309$33$Construction drainage
+82309$35$Pulp mill outfall
+82309$37$Textile mill outfall
+82309$39$Irrigation runoff
+82309$41$Fertilizer
+82309$43$Dairy operation
+
+82398 Sampling Method (Codes)
+82398$10$Equal width increment (ewi)
+82398$20$Equal discharge increment (edi)
+82398$25$Timed sampling interval
+82398$30$Single vertical
+82398$40$Multiple verticals
+82398$50$Point sample
+82398$55$Composite - Multiple point samples
+82398$60$Weighted bottle
+82398$70$Grab sample  (dip)
+82398$80$Discharge integrated, equal transit rate (etr)
+82398$90$Discharge integrated, centroid
+82398$100$Van Dorn sampler
+82398$110$Sewage sampler
+82398$120$Velocity integrated
+82398$130$Seepage Meter
+82398$200$Zooplankton-net
+82398$210$Benthic invertebrate-mechanical grab
+82398$220$Benthic invertebrate-mechanical dredge
+82398$230$Benthic invertebrate-artificial substrate
+82398$240$Benthic invertebrate-natural substrate
+82398$250$Benthic invertebrate-net
+82398$260$Phytoplankton-net
+82398$270$Phytoplankton-water bottle
+82398$280$Periphyton-natural substrate
+81298$281$Periphyton-Natural Substrate, Depostional Targeted Habitat
+81298$282$Periphyton-Natural Substrate, Richest Targeted Habitat
+82398$290$Periphyton-artificial substrate
+82398$300$Tissue taken with biopsy plug
+82398$900$SuspSed; Pumping - stream sample using a pumping mechanism
+82398$910$SuspSed;Single-stage,nozzle at fixed stage,passively fillng
+82398$920$SuspSed; Box-single ver, depth-int, attached to structure
+82398$930$SuspSed; Partial Depth,depth integrated,part of single vert.
+82398$940$SuspSed; Partial Width - dep/width int, part of x-section
+82398$1000$Bedload, single equal width increment (SEWI)
+82398$1010$Bedload, multiple equal width increment (MEWI)
+82398$1020$Bedload, unequal width increment (UWI)
+82398$4010$Thief sample
+82398$4020$Open-top bailer
+82398$4025$Double-valve bailer
+82398$4030$Suction pump
+82398$4031$Suction lift centrifugal pump
+82398$4032$Suction lift jet pump
+82398$4033$Suction lift peristaltic pump
+82398$4040$Submersible pump
+82398$4041$Submersible bladder pump
+82398$4042$Submersible gas reciprocating pump
+82398$4043$Submersible gas lift pump
+82398$4044$Submersible jet pump
+82398$4045$Submersible multiple impeller (turbine) pump
+82398$4046$Submersible helical rotor pump
+82398$4047$Submersible gear pump
+82398$4048$Submersible gas-displacement pump
+82398$4050$Squeeze pump
+82398$4060$Gas reciprocating pump
+82398$4070$Gas lift
+82398$4080$Peristaltic pump
+82398$4090$Jet pump
+82398$4100$Flowing well
+82398$4110$Resin trap collector
+82398$5010$Sediment core
+82398$8010$Other
+82398$8020$Syringe sample
+82398$8030$Grab sample at water-supply tap
+
+82923 Atmospheric Deposition Type Wet, (Codes)
+82923$1$Snow
+82923$2$Hail
+82923$3$Mixture (rain, snow, and or hail)
+82923$4$Rain
+82923$5$Throughfall, rain dripping from a vegetative canopy
+82923$6$Stemflow, rain flowing along tree branches and trunk
+82923$9.99$Unknown
+
+82305 Atmospheric Deposition Type Bulk, (Codes)
+83205$1$Snow
+83205$2$Hail
+83205$3$Mixture (rain, snow, and or hail)
+83205$4$Rain
+83205$9.99$Unknown
+
+84060 Topography, Physiographic Setting (Codes)
+84060$10$Alluvial fan
+84060$20$Playa
+84060$30$Stream channel
+84060$40$Local depression
+84060$50$Dunes
+84060$60$Flat surface
+84060$70$Flood plain
+84060$80$Hilltop
+84060$90$Sinkhole
+84060$100$Lake, swamp, or marsh
+84060$110$Mangrove swamp
+84060$120$Offshore (estuary)
+84060$130$Pediment
+84060$140$Hillside (slope)
+84060$150$Terrace, alluvial or marine
+84060$160$Undulating
+84060$170$Valley flat
+84060$180$Upland draw
+
+84143 Well Purging Condition (Codes)
+84143$100$Well purged to stable pH
+84143$110$Well purged to stable temperature
+84143$120$Well purged to stable specific conductance
+84143$130$Well purged to stable pH and temperature
+84143$140$Well purged to stable pH and specific conductance
+84143$150$Well purged to stable temperature and specific conductance
+84143$160$Well purged to stable pH, temp. and specific conductance
+84143$170$Well purged, at least three well volumes
+84143$500$Well not purged, water in casing less than 6 hours
+84143$510$Well not purged, water in casing 6-12 hours
+84143$520$Well not purged, water in casing 12-24 hours
+84143$530$Well not purged, water in casing more than 24 hours
+
+84144 Well Selection Criteria (Codes)
+84144$100$Site selected because it is near/within local problem area
+84144$200$Site selected without regard to local problem area
+
+84145 Project Component (Codes)
+84145$100$Regional sampling
+84145$200$Targeted sampling (agricultural area)
+84145$300$Targeted sampling (urban or suburban area)
+84145$400$Targeted sampling (naturally occurring substances)
+84145$500$Targeted sampling (local-scale network)
+84145$600$Targeted sampling (other)
+84145$700$Geochemical investigation
+
+84146 Land Use, Predominant, Within 200 Feet Of Well, (Codes)
+84146$110$Residential
+84146$120$Commercial and services
+84146$130$Industrial
+84146$170$Other urban or built-up land
+84146$211$Nonirrigated cropland
+84146$212$Irrigated cropland
+84146$213$Pasture
+84146$220$Orchards, groves, vineyards, nurseries
+84146$230$Confined feeding operations
+84146$240$Other agricultural land
+84146$300$Rangeland
+84146$400$Forestland
+84146$500$Water
+84146$600$Wetland
+84146$700$Barren land
+
+84147 Land Use, Predominant, Within 0.25 Mile Of Well (Codes)
+84147$110$Residential
+84147$120$Commercial and services
+84147$130$Industrial
+84147$170$Other urban or built-up land
+84147$211$Nonirrigated cropland
+84147$212$Irrigated cropland
+84147$213$Pasture
+84147$220$Orchards, groves, vineyards, nurseries
+84147$230$Confined feeding operations
+84147$240$Other agricultural land
+84147$300$Rangeland
+84147$400$Forestland
+84147$500$Water
+84147$600$Wetland
+84147$700$Barren land
+
+84148 Land Use, Predominant Fraction, Within 0.25 Mile Of Well (Codes)
+84148$25$Less than 25 percent
+84148$50$From 26 percent to 50 percent
+84148$75$From 51 percent to 75 percent
+84148$100$From 76 percent to 100 percent
+
+84149 Land-Use Changes Within Last 10 Years, Within 0.25 Mile Of Well (Codes)
+84149$100$Yes
+84149$200$Probably
+84149$300$Probably not
+84149$400$No
+
+84164 Sampler Type, (Codes)
+84164$100$Van Dorn sampler
+84164$110$Sewage sample
+84164$120$Velocity integrated sample
+84164$125$Kemmerer bottle
+84164$130$Drum Seepage Meter
+84164$200$Zooplankton net
+84164$210$Benthic invertebrate-mechanical, grab
+84164$220$Benthic invertebrate-mechancial, dredge
+84164$230$Benthic invertebrate-artificial substrate
+84164$240$Benthic invertebrate-natural substrate
+84164$250$Benthic invertebrate-net
+84164$260$Phytoplankton net
+84164$270$Phytoplankton-water bottle
+84164$280$Periphyton-natural substrate
+84164$290$Periphyton-artificial substrate
+84164$1000$Bedload-Helley-Smith, 3 x 3, area ratio 3.22
+84164$1010$Bedload-Helley-Smith, 6 x 6, area ratio 3.22
+84164$1020$Bedload-Helley-Smith, 3 x 3, area ratio 1.40
+84164$1030$Bedload-Helley-Smith, 6 x 6, area ratio 1.40
+84164$1040$Bedload-Helley-Smith, 6 x 12, area ratio 1.40
+84164$1050$Bedload-Toutle River type 2, 6 x 12, area ratio 1.40
+84164$1060$Bedload-bl-84, 3 x 3, area ration, 1.40
+84164$1070$Bedload-Toutle River type 1, 6 x 6, area ratio 3.22
+84164$1080$Bedload-Hubble #5, 6 x 12, area ratio, 1.40
+84164$1090$FIASP, 3 x 3, area ratio 1.40
+84164$1100$3x3 inch H-S, 1/4-in thick nozzle, 50-100 lbs, cable susp
+84164$1110$3x3 inch H-S, 1/4-in thick nozzle, 100-200 lbs, cable susp
+84164$1120$3x3 inch H-S, 1/4-inch thick nozzle, wading
+84164$1130$3x3 inch H-S, sheet metal nozzle, wading
+84164$1140$3x3 inch FIASP, 1/4-in thick nozzle, 50-100lbs, cable susp
+84164$1150$3x3 inch FIASP, 1/4-inch thick nozzle, wading
+84164$1160$3x3 inch FIASP, sheet metal nozzle, wading
+84164$1170$6x6 in H-S, 1/4-in thick nozzle, 150-200 lbs, cable susp
+84164$3001$Sampler, US DH-48
+84164$3002$Sampler, US DH-59
+84164$3003$Sampler, US DH-75P
+84164$3004$Sampler, US DH-75Q
+84164$3005$Sampler, US DH-76
+84164$3006$Sampler, US D-43
+84164$3007$Sampler, US D-49
+84164$3008$Sampler, US D-49AL
+84164$3009$Sampler, US D-74
+84164$3010$Sampler, US D-74AL
+84164$3011$Sampler, US D-77
+84164$3012$Sampler, US P-46
+84164$3013$Sampler, US P-50
+84164$3014$Sampler, US P-61-A1
+84164$3015$Sampler, US P-63
+84164$3016$Sampler, US P-72
+84164$3017$Sampler, US U-59
+84164$3018$Sampler, US U-73
+84164$3019$Sampler, US PS-69
+84164$3020$Sampler, US PS-69TM
+84164$3021$Sampler, US CS-77
+84164$3022$Sampler, US PS-82
+84164$3023$Sampler, US BMH-53
+84164$3024$Sampler, US BMH-53TM
+84164$3025$Sampler, US BM-54
+84164$3026$Sampler, US BM-54TM
+84164$3027$Sampler, US BMH-60
+84164$3028$Sampler, US BMH-60TM
+84164$3029$Sampler, US RBM-80
+84164$3030$US DH-48 TM
+84164$3031$US DH-48 TM with Teflon gasket and nozzle
+84164$3032$US DH-59 TM
+84164$3033$US DH-59 TM with Teflon gasket and nozzle
+84164$3034$US DH-76 TM
+84164$3035$US DH-76 TM with Teflon gasket and nozzle
+84164$3036$US D-74 TM
+84164$3037$US D-74 AL-TM
+84164$3038$US D-74 AL-TM with Teflon gasket and nozzle
+84164$3039$US D-77 TM
+84164$3040$US D-77 TM modified Teflon bag sampler
+84164$3041$US P-61 AL-TM
+84164$3042$US P-61
+84164$3043$US P-61 TM
+84164$3044$US DH-81
+84164$3045$US DH-81 with Teflon cap and nozzle
+84164$3046$Sampler, D-77 TM, with Reynolds Oven Collapsible Bag
+84164$3047$Sampler, frame-type, plastic bottle with Reynolds Oven Bag
+84164$3048$Sampler, frame-type, Teflon bottle
+84164$3049$Sampler, frame-type, plastic bottle
+84164$3050$Sampler, frame-type, plastic bottle w/Teflon collaps. bag
+84164$3051$US DH-95 Teflon bottle
+84164$3052$US DH-95 plastic bottle
+84164$3053$US D-95 Teflon bottle
+84164$3054$US D-95 plastic bottle
+84164$3055$US D-96 bag sampler
+84164$3057$US D-99 Bag Sampler
+84164$3058$US DH-2 Bag Sampler
+84164$3060$Weighted-bottle sampler
+84164$3061$US WBH-96 weighted-bottle sampler
+84164$3070$Grab sample
+84164$3071$Open-Mouth Bottle
+84164$3080$VOC hand sampler
+84164$4010$Thief sampler
+84164$4020$Open-top bailer
+84164$4025$Double-valve bailer
+84164$4030$Suction pump
+84164$4035$Submesible centrifugal pump
+84164$4040$Submersible positive-pressure pump
+84164$4041$Submersible helical rotor pump
+84164$4045$Submersible gear pump
+84164$4050$Bladder pump
+84164$4055$Inertial Pump
+84164$4060$Gas reciprocating pump
+84164$4070$Gas lift
+84164$4075$Submersible piston pump
+84164$4080$Peristaltic pump
+84164$4090$Jet pump
+84164$4095$Line-shaft turbine pump
+84164$4100$Flowing well
+84164$4110$Resin trap collector
+84164$4115$Sampler, point, automatic
+84164$5010$Box core, long
+84164$5020$Box core, short
+84164$5030$Gravity core
+84164$5040$Piston core
+84164$5050$Push core
+84164$8000$None
+84164$8010$Other
+
+84171 Sample Splitter Type, Field Code
+84171$10$Churn splitter, plastic, 8 liter, cooler-type spigot
+84171$20$Churn splitter, plastic, 14 liter, cooler-type spigot
+84171$30$Churn splitter, plastic, 8 liter, cubitainer-type spigot
+84171$40$Churn splitter, plastic, 14 liter, cubitainer-type spigot
+84171$50$Churn splitter, fluoropolymer, 8 liter (future development)
+84171$60$Churn splitter, fluoropolymer, 14 liter, US SS-1
+84171$70$Cone splitter, plastic
+84171$80$Cone splitter, fluoropolymer
+84171$90$Sieve, wet
+84171$100$Sieve, dry
+84171$110$Riffle splitter (Jones)
+84171$200$Other
+
+84172 Air Sampler Filter Type, Code
+84172$10$GFF, Glass fiber filter
+84172$20$QFF, Quartz fiber filter
+84172$30$TF, Teflon filter
+84172$40$Other
+
+84173 Air Sample Trap Sorbent Type, Code
+84173$10$PUF, Polyurethane foam
+84173$20$PUF/XAD, polyurethane foam plug/XAD resin/PUF plug sandwich
+84173$30$XAD, XAD resin
+84173$40$Tenax, Tenax GC resin
+84173$50$Oasis, Oasis HLB resin
+84173$60$Other
+
+91112 Latitude/Longitude Horizontal Datum
+91112$27$North American Datum of 1927 - NAD27
+91112$83$North American Datum of 1983 - NAD83
+91112$100$Old Alaska (Mainland) and Aleutian Islands Datum  - OLDAK
+91112$110$Old Hawaii - OLDHI
+91112$120$Old Puerto Rico and Virgin Islands Datum - OLDPR
+91112$130$Old American Samoa Datum - OLDSAMOA
+91112$140$Old Guam Datum - OLDGUAM
+
+91113 Latitude/Longitude Measurement Method
+91113$10$Calculated from land net
+91113$20$Differentially corrected Global Positioning System (GPS)
+91113$30$Global positioning system, uncorrected (Standard Positioning Service (SPS) and Precise Positioning Service (PPS))
+91113$40$Long-range navigation system
+91113$50$Interpolated from map
+91113$60$Interpolated from Digital Map
+91113$70$Reported
+91113$80$Transit, theodolite, or other surveying method
+91113$99$Unknown
+
+91114 Latitude/Longitude Coordinate Accuracy
+91114$1$Accurate to +/- 1 second
+91114$3$Accurate to +/- 3 seconds (Standard Positioning Service (SPS GPS))
+91114$5$Accurate to +/- 5 seconds
+91114$10$Accurate to +/- 10 seconds
+91114$60$Accurate to +/- 1 minute
+91114$99$Unknown
+
+99100 Blank, Type Of Solution, Fixed Value Code
+99100$10$Inorganic-free blank water
+99100$20$Standard reference water sample
+99100$30$Matched matrix
+99100$40$Organic-free water
+99100$50$VOC free water
+99100$60$Sterile saline buffered water
+99100$70$Sterile buffered water PO4/MgCl2
+99100$80$Universal Blank Water (discontinued June 1, 2006)
+99100$100$Inorganic-free water + organic-free water
+99100$110$Inorganic-free+nitrogen-purged organic-free water(voc-free)
+99100$120$Organic-free+nitrogen-purged organic-free water(voc-free)
+99100$130$Inorganic-free+org-free+nit-purged org-free water(voc-free)
+99100$200$Other
+
+99101 Blank, Source Of Solution, Fixed Value Code
+99101$10$National water quality lab (USGS)
+99101$20$U.S. Environmental Protection Agency
+99101$30$Standatd Reference Water Sample (USGS)
+99101$35$Mix of standard reference water samples
+99101$40$NIST (formerly NBS)
+99101$50$Canadian Inland Waters
+99101$60$District lab
+99101$61$Subdistrict #1 lab
+99101$62$Subdistrict #2 lab
+99101$63$Subdistrict #3 lab
+99101$64$Subdistrict #4 lab
+99101$70$Natural sample
+99101$71$Field office #1 lab
+99101$72$Field office #2 lab
+99101$73$Field office #3 lab
+99101$74$Field office #4 lab
+99101$80$Ocala lab (USGS)
+99101$99.99$Unknown
+99101$100$Chemical supplier
+99101$110$Burdick and Jackson
+99101$120$J.T. Baker
+99101$130$EM Science
+99101$140$EMD Chemicals, Inc/Omnisolve
+99101$150$Ricca Chemical Company
+99101$200$Other
+
+99102 Blank, Type Of Sample, Fixed Value Code
+99102$1$Source solution
+99102$10$Shelf (hold)
+99102$20$Refrigerator
+99102$30$Trip
+99102$40$Sampler
+99102$50$Splitter
+99102$60$Filter
+99102$70$Preservation
+99102$80$Equipment
+99102$90$Ambient
+99102$100$Field
+99102$150$lab blank
+99102$200$Other
+
+99103 Reference Material, Source, Fixed Value Code
+99103$10$National water quality lab (USGS)
+99103$20$U.S. Environmental Protection Agency
+99103$30$Standard Reference Water Sample (USGS)
+99103$35$Mix of standard reference water samples
+99103$40$NIST (formerly NBS)
+99103$50$Canadian Inland Waters
+99103$60$District lab
+99103$70$Natural sample
+99103$80$Ocala lab (USGS)
+99103$99.99$Unknown
+99103$100$Chemical supplier
+99103$200$Other
+
+99105 Replicate, Type, Fixed Value Code
+99105$10$Concurrent
+99105$20$Sequential
+99105$30$Split
+99105$40$Split-concurrent
+99105$50$Split-sequential
+99105$200$Other
+
+99106 Spike, Type, Fixed Value Code
+99106$10$Field
+99106$20$Laboratory
+99106$30$Surrogate
+99106$40$Internal standards
+99106$200$Other
+
+99107 Spike, Source, Fixed Value Code
+99107$10$National water quality lab (USGS)
+99107$20$U.S. Environmental Protection Agency
+99107$30$Standard Reference Water Sample (USGS)
+99107$35$Mix of standard reference water samples
+99107$40$NIST (formerly NBS)
+99107$50$Canadian Inland Waters
+99107$60$District lab
+99107$70$Natural sample
+99107$80$Ocala Lab (USGS)
+99107$99.99$Unknown
+99107$100$Chemical supplier
+99107$110$SUPELCO
+99107$120$Protocol Analytical Supplies, Inc.
+99107$200$Other
+
+99111 Quality Assurance Data Type Associated With Sample, Code
+99111$1$No associated QA data
+99111$10$Blank
+99111$20$Blind sample
+99111$30$Replicate sample
+99111$40$Spike sample
+99111$100$More than one type of qa sample
+99111$110$Cross-section information stored
+99111$120$Well purge information stored
+99111$200$Other
+
+99112 Sulfide, Water, Filtered, Field, milligrams Per Liter
+99112$1$Routine QC (non-topical)
+99112$10$Topical QC for high bias (contamination)
+99112$20$Topical QC for low bias (recovery)
+99112$100$Topical QC for variability due to field equipment
+99112$110$Topical QC for variability due to field collection proc.
+99112$120$Topical QC for variability due to field personnel
+99112$130$Topical QC for variability due to field processing proc.
+99112$140$Topical QC for variability due to ship. & handling proc.
+99112$200$Topical QC for variability due to laboratory
+99112$900$Other topical qc purpose
+
+99329 Coliphage, somatic, E. coli C-host, 2-stepenrichment presence/absence per 1 liter
+99329$1$Present
+99329$2$Absent
+
+99335 ColipgeF-spec, famp, 2-step,pres(1) abs(2)/ 1 L
+99335$1$Present
+99335$2$Absent
+
+99595 Total coliform, ColilrtPA, wtrprs/abs /1L
+99595$1$Presence
+99595$2$Absence
+
+99596 E. coliColilrt PA, water prs/abs /1 L
+99596$1$Presence
+99596$2$Absence
+
+99766 Entero- virus, RT pcrpres(1) abs(2) / 50 L
+99766$1$Present
+99766$2$Absent
+
+99767 Reo- virus, RT pcrpres(1) abs(2) / 50 L
+99767$1$Present
+99767$2$Absent
+
+99768 Rota virus, RT pcrpres(1) abs(2) / 50 L
+99768$1$Present
+99768$2$Absent
+
+99769 Hepatitis-A virus, RT pcrpres(1) abs(2) / 50 L
+99769$1$Present
+99769$2$Absent
+
+99770 Norwalk virus, RT pcrpres(1) abs(2) / 50 L
+99770$1$Present
+99770$2$Absent
+
+99771 Calici- virus, RT pcrpres(1) abs(2) / 50 L
+99771$1$Present
+99771$2$Absent

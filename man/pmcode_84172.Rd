@@ -4,22 +4,21 @@
 \name{pmcode_84172}
 \alias{pmcode_84172}
 \title{84172 Air Sampler Filter Type, Code}
-\format{A data frame with 4 rows and 3 variables:
+\format{
+A data frame with 4 rows and 3 variables:
 \describe{
 \item{Parameter Code}{USGS Parameter Code}
 \item{Fixed Value}{Fixed Value}
 \item{Fixed Text}{Fixed Text}
-}}
+}
+}
 \usage{
 pmcode_84172
 }
 \description{
 A table containing the USGS Air Sampler Filter Type, Code parameter codes.
 }
-\examples{
-pmcode_84172
-}
 \references{
-This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{http://waterdata.usgs.gov/usa/nwis/qwdata?codes_table26_help}.
+This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{https://help.waterdata.usgs.gov/codes-and-parameters/}.
 }
-
+\keyword{datasets}

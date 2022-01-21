@@ -1,0 +1,3163 @@
+<!DOCTYPE html>
+
+<head>
+<title>USGS Water Quality Samples for USA: Sample Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta http-equiv="P3P" content='policyref="http://waterdata.usgs.gov/w3c/p3p.xml"'>
+<link rel="P3Pv1" href="http://waterdata.usgs.gov/w3c/p3p.xml" type="text/xml" />
+<link rel="alternate" type="application/rss+xml" title="USGS Water Data for the Nation and USGS Water Services News" href="http://help.waterdata.usgs.gov/news/rss/" />
+<link rel="stylesheet" type="text/css" href="/nwisweb/stylesheets/USGS_common.css" />
+<link rel="stylesheet" type="text/css" href="/nwisweb/stylesheets/USGS_custom.css" />
+<!--<link rel="stylesheet" type="text/css" href="/nwisweb/stylesheets/nwisweb.css" />-->
+
+<!-- JF - media queries - responsive design - different device widths  -->
+<link rel="stylesheet" media="screen and (min-width: 180px) and (max-width: 450px)" href="/nwisweb/stylesheets/nwiswebfluidsmallest.css" />
+<link rel="stylesheet" media="screen and (min-width: 450px) and (max-width: 900px)" href="/nwisweb/stylesheets/nwiswebfluid.css" />
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="/nwisweb/stylesheets/nwisweb.css" />
+
+<!--
+<link rel="stylesheet" media="screen and (min-width: 450px) and (max-width: 770px)" href="/nwisweb/stylesheets/nwiswebfluid.css" />
+<link rel="stylesheet" media="screen and (min-width: 770px)" href="/nwisweb/stylesheets/nwisweb.css" />
+-->
+<script type="text/javascript" src="/nwisweb/javascripts/respond.min.js"></script>
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="/nwisweb/stylesheets/nwisweb.css"/>
+<![endif]-->
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    <!--
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-25350863-1']);
+      _gaq.push(['_gat._anonymizeIp']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    // -->
+    //]]>
+</script>
+
+<!--<noscript>Warning: Javascript must be enabled to use all the features on this page!</noscript>-->
+
+<script type="application/javascript" src="http://www.usgs.gov/scripts/analytics/usgs-analytics.js"></script>
+
+
+
+<script type="text/javascript" src="/nwisweb/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="/nwisweb/javascripts/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/nwisweb/stylesheets/jquery-ui-1.8.custom.css" media="screen">
+
+<script type="text/javascript" src="/nwisweb/javascripts/jquery.qtip.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/nwisweb/stylesheets/jquery.qtip.css">
+
+<script type="text/javascript" src="/nwisweb/javascripts/modernizr.min.js"></script>
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/cupertino/jquery-ui.css">
+<link rel="stylesheet" href="/nwisweb/stylesheets/theme.jui.css">
+<script type="text/javascript" src="/nwisweb/javascripts/jquery.tablesorter.min.js"></script>
+<!--<script type="text/javascript" src="/nwisweb/javascripts/jquery.tablesorter.js"></script>-->
+<script type="text/javascript" src="/nwisweb/javascripts/jquery.tablesorter.widgets.min.js"></script>
+
+<script type="text/javascript" src="/nwisweb/javascripts/jquery.nwisweb.min.js"></script>
+
+
+
+<script type="text/javascript" src="/nwisweb/javascripts/xp_progress.js"></script>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    <!--
+
+    //jQuery(document).ready(function() {
+    jQuery(function() {
+
+      // State Specific Text
+      //-------------------------------------------------
+      //jQuery("#statewide_tx").hide();
+
+      // Toggle the statewide text with class
+      jQuery(".statewide_tx_header_div").click(function() {
+             jQuery(this).next("#statewide_tx").slideToggle(500);
+
+             var divText = jQuery(".statewide_tx_header_div").html();
+
+             if (divText.indexOf('Click for') != -1) {
+               //jQuery(".statewide_tx_header_div span").replaceWith( "<span id='statewide_header_tx'>Click to hide state-specific text</span>" );
+
+               jQuery("#statewide_header_tx").replaceWith( "<span id='statewide_header_tx'>Click to hide state-specific text</span>" );
+
+               jQuery("#collapsingIcon").removeClass('ui-icon-circle-plus');
+               jQuery("#collapsingIcon").addClass('ui-icon-circle-minus');
+
+             } else {
+               //jQuery(".statewide_tx_header_div span").replaceWith( "<span id='statewide_header_tx'>Click for state-specific text</span>" );
+
+               jQuery("#statewide_header_tx").replaceWith( "<span id='statewide_header_tx'>Click for state-specific text</span>" );
+
+               jQuery("#collapsingIcon").removeClass('ui-icon-circle-minus');
+               jQuery("#collapsingIcon").addClass('ui-icon-circle-plus');
+             }
+
+      });
+
+      // News Text
+      //-------------------------------------------------
+      //jQuery("#news_tx").hide();
+
+      // Toggle the news text with class
+      jQuery("#news_header").click(function() {
+             jQuery(this).next("#news_tx").slideToggle(500);
+
+             var divText = jQuery("#news_header").html();
+
+             if (divText.indexOf('Click for') != -1) {
+
+               jQuery("#news_header_tx").replaceWith( "<span id='news_header_tx'>Click to hide</span>" );
+
+               jQuery("#collapsingNewsIcon").removeClass('ui-icon-circle-plus');
+               jQuery("#collapsingNewsIcon").addClass('ui-icon-circle-minus');
+
+               jQuery("#news_header").removeClass('news_tx_header_div');
+               jQuery("#news_header").addClass('news_tx_header_div_expanded');
+
+             } else {
+
+               jQuery("#news_header_tx").replaceWith( "<span id='news_header_tx'>Click for</span>" );
+
+               jQuery("#collapsingNewsIcon").removeClass('ui-icon-circle-minus');
+               jQuery("#collapsingNewsIcon").addClass('ui-icon-circle-plus');
+
+               jQuery("#news_header").removeClass('news_tx_header_div_expanded');
+               jQuery("#news_header").addClass('news_tx_header_div');
+             }
+
+      });
+
+      // Station Text
+      //-------------------------------------------------
+      //jQuery("#station_tx").hide();
+
+      // Toggle the station text with class
+      jQuery("#station_header").click(function() {
+             jQuery(this).next("#station_tx").slideToggle(500);
+
+             var divText = jQuery("#station_header").html();
+
+             if (divText.indexOf('Click for') != -1) {
+
+               jQuery("#station_header_tx").replaceWith( "<span id='station_header_tx'>Click to hide</span>" );
+
+               jQuery("#collapsingStationIcon").removeClass('ui-icon-circle-plus');
+               jQuery("#collapsingStationIcon").addClass('ui-icon-circle-minus');
+
+             } else {
+
+               jQuery("#station_header_tx").replaceWith( "<span id='station_header_tx'>Click for</span>" );
+
+               jQuery("#collapsingStationIcon").removeClass('ui-icon-circle-minus');
+               jQuery("#collapsingStationIcon").addClass('ui-icon-circle-plus');
+
+             }
+
+      });
+
+      // Round corners on html5 button using only css (IE version 8 and lower need extra help)
+      //-------------------------------------------------
+      if (!Modernizr.borderradius) {
+            jQuery.getScript("/nwisweb/javascripts/jquery.corner.js", function() {
+              jQuery(".btn").corner();
+              jQuery(".mapperbtn").corner();
+            });
+      }
+
+      // If User selects the output sites to map option, force xml
+      //-------------------------------------------------
+      jQuery("input[type=radio][value=nwis_mapper]").change(function(){
+          //alert("Output sites on a map radio was selected");
+          jQuery("#sitefile_output_format").val("xml");
+      });
+
+      // If User selects a file as search criteria, disable the output sites to map option.
+      //-------------------------------------------------
+      if ( jQuery("#site_no_file_attachment").length || jQuery("#parameter_cd_file_attachment").length ) {
+         //jQuery("#nwis_mapper").attr('disabled', true);
+         jQuery("input[type=radio][value=nwis_mapper]").attr("disabled",true);
+
+         jQuery('#label_nwis_mapper').css({ opacity: 0.4 });
+         jQuery('div[id^="label_"]').css({ display: "inline" });
+
+         jQuery("#fileOfSitesMsg").append("* Selecting this search criteria disables the Show sites on a map option which is currently incompatible with file attachments.");
+         jQuery("#fileOfPmCodesMsg").append("* Selecting this search criteria disables the Show sites on a map option which is currently incompatible with file attachments.");
+      } else {
+         //jQuery("#nwis_mapper").attr('disabled', false);
+         jQuery("input[type=radio][value=nwis_mapper]").attr("disabled",false);
+         jQuery('div[id^="label_"]').css({ display: "inline" });
+      }
+
+      // Plone Help
+      //-------------------------------------------------
+
+      var ploneHelpURL = "http://help.waterdata.usgs.gov";
+      //alert("ploneHelp from conf:" + ploneHelpURL);
+
+      // Testing qTip, a jQuery plug-in for ToolTips
+      // Match all <A/> links with a title tag and use it as the rollover content (default).
+      // -------------------------------------------------
+      jQuery('a[title]').qtip();
+
+      // Finds all <a href's with ids. If an id exists,
+      // run a get request into Plone, find the div with the same id,
+      // and update the title attribute so hover will populate with Plone info
+      // -------------------------------------------------
+
+      jQuery('a').each(function(){
+           var thisID       = jQuery(this).attr('id');
+           var thisHREF     = jQuery(this).attr('href');
+
+           var getTextFromPlone;
+           var partialPloneURL;
+           var pageInPloneUsingProxy;
+
+           // Search href so help data is retrieved from appropriate plone page
+           if (thisHREF && thisID) {
+               //alert("thisID:" + thisID + " thisHREF:" + thisHREF);
+
+               // Looking for Plone or help.waterdata.usgs.gov in URL - basically only help links
+               getTextFromPlone = thisHREF.indexOf("/Plone/");
+               if (getTextFromPlone > -1) {
+                  // Get URL string after /Plone/
+                  partialPloneURL = thisHREF.split('/Plone/')[1];
+                  pageInPloneUsingProxy = 'http://waterdata.usgs.gov/exthelp/' + partialPloneURL;
+               }
+
+               //getTextFromPlone = thisHREF.indexOf("/help.waterdata.usgs.gov/");
+               //if (getTextFromPlone > -1) {
+                   // Get URL string after /help.waterdata.usgs.gov/
+               //    partialPloneURL = thisHREF.split('/help.waterdata.usgs.gov/')[1];
+               //    pageInPloneUsingProxy = 'http://waterdata.usgs.gov/exthelp/' + partialPloneURL;
+               //}
+
+               // Pull Plone URL from Conf file
+               // ---------------------------------------------
+               getTextFromPlone = thisHREF.indexOf(ploneHelpURL);
+               if (getTextFromPlone > -1) {
+                   // Get URL string after /help.waterdata.usgs.gov/
+                   partialPloneURL = thisHREF.split(ploneHelpURL)[1];
+                   pageInPloneUsingProxy = 'http://waterdata.usgs.gov/exthelp/' + partialPloneURL;
+               }
+
+           }
+
+           if (thisID) {
+               //alert("Testing finding <a href's with IDs = " + thisID + " URL = " + thisHREF + " pageInPloneUsingProxy = " + pageInPloneUsingProxy);
+
+              var origTitle = jQuery('#'+thisID).attr("title");
+
+              jQuery('#'+thisID).mouseover(function (e) {
+
+                 //var getURL = "http://webvadevvs03.er.usgs.gov/exthelp/codes-and-parameters/codes";
+                 var getURL = pageInPloneUsingProxy;
+
+                 var origTitlePlusData = '';
+
+                 jQuery.ajax({
+
+                   url: getURL,
+                   dataType: "html",
+                   success: function (data) {
+                      var data          = jQuery(data).find('.'+thisID);
+                      origTitlePlusData = origTitle + ' <BR><BR> ' + data.html();
+
+                      if (data.html() != null) {
+                         jQuery('#'+thisID).attr('title', origTitlePlusData);
+                      }
+                   }
+                 });
+              });
+
+ 	      // Makes the ToolTip delay so that you can click on a URL in the help text
+ 	      jQuery(this).qtip({
+ 		 hide: {
+ 		    delay:500, // Give a small delay to allow the user to mouse over it
+ 		    fixed:true
+ 		 },
+ 		 style: {
+ 		    name: 'dark',
+ 		    style: {
+ 		       border: 1,
+ 		       cursor: 'pointer',
+ 		       padding: '5px 8px',
+ 		       name: 'blue'
+ 		    },
+ 		 border: {},
+ 		 tip: true     // Apply a tip at the default tooltip corner
+ 		 }
+ 	      });
+
+
+           } // End of -> if(thisID)
+      });   // End of -> each function
+
+
+
+
+      // Processing Bar
+      //-------------------------------------------------
+      // If the loading bar exists, remove it
+
+      var barChk = jQuery(".loading").text();
+      //alert('loading=' + barChk);
+
+      if (barChk) {
+         jQuery(window).load(function() {
+             processingBar.hideBar();
+             jQuery("#loading").fadeOut("slow",function() { jQuery("#loading").remove(); });
+         });
+      }
+
+
+      // DatePicker
+      //-------------------------------------------------
+
+      // Calendar Date Picker
+      //-------------------------------------------------
+      var http_text  = window.location.href.substring(0,location.href.indexOf("?") + 1);
+      //alert(http_text);
+      var uv_search  = http_text.search(/uv/i);
+      var dv_search  = http_text.search(/dv/i);
+
+      //alert("Only executing datepicker jquery code where necessary...");
+      //alert("uv_search " + uv_search);
+      //alert("dv_search " + dv_search);
+
+      // Div ID begin_date is present
+      //
+      //if(jQuery( "#begin_date" ).length > 0) {
+
+         if(uv_search > -1)
+           {
+            jQuery( "#begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(2007,10-1,01), maxDate: '+1d', yearRange: "2007:+0" });
+            jQuery( "#end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(2007,10-1,01), maxDate: '+1d', yearRange: "2007:+0"});
+
+            jQuery( "#rt_begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(2007,10-1,01), maxDate: '+1d', yearRange: "2007:+0" });
+            jQuery( "#rt_end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(2007,10-1,01), maxDate: '+1d', yearRange: "2007:+0" });
+           }
+         else if(dv_search > -1)
+           {
+            jQuery( "#begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+            jQuery( "#end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+
+            jQuery( "#rt_begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+            jQuery( "#rt_end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+           }
+         else
+           {
+            jQuery( "#begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+            jQuery( "#end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+
+            jQuery( "#rt_begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+            jQuery( "#rt_end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+           }
+
+         if(jQuery( "#por_begin_date" ).length > 0)
+           {
+            jQuery( "#por_begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1900,1-1,01), maxDate: '+1d', yearRange: "1900:+0" });
+            jQuery( "#por_end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1900,1-1,01), maxDate: '+1d', yearRange: "1900:+0" });
+           }
+        //}
+
+      //jQuery( "#start_dt_id" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+      //jQuery( "#end_dt_id" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+
+
+
+
+     // TableSorter - New Version with Fixed Headers
+     //-------------------------------------------------
+          //jQuery("table").tablesorter({
+     jQuery(".dataList").tablesorter({
+            //selectorHeaders: '> thead th, > thead td',
+            //widthFixed : true,
+	    headerTemplate : '{content} {icon}', // Add icon for jui theme; new in v2.7!
+	    widgets: ["columns", "filter", "stickyHeaders", "uitheme", "zebra"] ,
+	    //sortList: [ [0,0], [1,0], [2,0] ],   // Sorts on first 3 cols
+	    widgetOptions: {
+	      // css class name applied to the sticky header row (tr)
+	      stickyHeaders : 'tablesorter-stickyHeader',
+	      zebra   : ["ui-widget-content even", "ui-state-default odd"],
+	      uitheme : 'jui'
+	    }
+     });
+
+     // Exception for Peak data table with superscripts
+     //-------------------------------------------------
+     jQuery(".dataListWithSuperscript").tablesorter({
+            //selectorHeaders: '> thead th, > thead td',
+            //widthFixed : true,
+	    headerTemplate : '{content} {icon}', // Add icon for jui theme; new in v2.7!
+	    widgets: ["columns", "filter", "stickyHeaders", "uitheme", "zebra"] ,
+	    //sortList: [ [0,0], [1,0], [2,0] ],   // Sorts on first 3 cols
+	    widgetOptions: {
+	      // css class name applied to the sticky header row (tr)
+	      stickyHeaders : 'tablesorter-stickyHeader',
+	      zebra   : ["ui-widget-content even", "ui-state-default odd"],
+	      uitheme : 'jui'
+	    },
+            textExtraction: {
+              // 3rd and 4th colunms for Peak table sorting only on span tag, ignoring sup (superscript) tag
+              2: function(node, dataList, cellIndex){ return jQuery(node).find("span").text(); },
+              3: function(node, dataList, cellIndex){ return jQuery(node).find("span").text(); }
+            }
+
+     });
+
+     // Click a row and it will highlight for greater visibility
+     //-------------------------------------------------
+     jQuery('.dataList td').click(
+           	function (event) { jQuery(this).parent('tr').toggleClass('rowclick');
+     });
+
+     // Click a row and it will highlight for greater visibility
+     //-------------------------------------------------
+     jQuery('.dataListWithSuperscript td').click(
+           	function (event) { jQuery(this).parent('tr').toggleClass('rowclick');
+     });
+
+
+     // Water-Use
+     //-------------------------------------------------
+     // Not needed
+
+
+   });  //end of document.ready
+
+   // -->
+   //]]>
+</script>
+
+<!--<noscript>Warning: Javascript must be enabled to use all the features on this page!</noscript>-->
+
+
+</head>
+
+<body>
+
+<div id="nwisweb_header">
+
+<!-- SERVER LEVEL BANNER -->
+
+<script type="text/javascript">
+//<![CDATA[
+<!--
+
+function server_level_navigation_manager()
+ {
+ var local_cgi_url_base = "/nwis";
+ var national_host_url  = "";
+ var nwis_mapper_url    = "http://maps.waterdata.usgs.gov/";
+ //alert(national_host_url);
+ var office_index  = document.select_office.office.selectedIndex;
+ var office  = document.select_office.office.options[ office_index ].value;
+ var my_office = "usa";
+ if(office == my_office) {
+   var url = local_cgi_url_base + '/'; }
+ else {
+   var url = national_host_url + '/' + office + "/nwis/"; }
+ var program_index = document.select_office.program.selectedIndex;
+ var program = document.select_office.program.options[ program_index ].value;
+ if (program == 'mapper') {
+   if (office != 'usa') {
+     //var url = nwis_mapper_url + '?state=' + office ;
+     var url = nwis_mapper_url + 'mapper/index.html?state=' + office; }
+   else {
+     var url = nwis_mapper_url ; }
+     //window.open(url);
+     window.location = (url); }
+ else {
+   var url = url + program;
+   window.location = (url);}
+ return (false);
+ }
+//-->
+//]]>
+</script>
+
+<!--<noscript>Warning: Javascript must be enabled to use all the features on this page!</noscript>-->
+
+<form name="select_office" action="/nwis" id="select_office">
+
+<!-- BEGIN USGS Header Template -->
+  <div id="usgscolorband">
+    <div id="usgsbanner">
+      <div id="usgsidentifier"><a href="http://www.usgs.gov/"><img src="/nwisweb/icons/USGS_header_graphic_usgsIdentifier_white.jpg"
+         alt="USGS - science for a changing world" title="U.S. Geological Survey Home Page" width="178" height="72" /></a>
+      </div>
+      <div id="usgsccsabox">
+        <div id="usgsccsa">
+          <br /><a href="http://www.usgs.gov/">USGS Home</a>
+          <br /><a href="http://www.usgs.gov/ask/">Contact USGS</a>
+          <br /><a href="http://www.usgs.gov/search/">Search USGS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="usgstitle">
+    <p><a href="/nwis">National Water Information System: Web Interface</a></p>
+  </div>
+<!-- END USGS Header Template -->
+
+<!-- BEGIN Nav Bar -->
+<div id="navbar">
+   <div id="subtitle">
+      <b><a href="http://water.usgs.gov"><u>USGS Water Resources</u></a></b>&nbsp; &nbsp;
+      <!--<div><a href="#top_of_page"></a></div>-->
+   </div>
+   <div id="navdropdowns">
+      <span id="programlist">
+         <label accesskey="c" for="program"><strong>Data Category:</strong></label><br />
+<select name="program" id="program" tabindex="1">
+<option value="nwis">Home</option>
+<option value="rt">Current Conditions</option>
+<option value="si">Site Information</option>
+<option value="mapper">Mapper</option>
+<option value="sw">Surface Water</option>
+<option value="gw">Groundwater</option>
+<option value="qw" selected="selected">Water Quality</option>
+<option value="wu">Water Use</option>
+</select>
+      </span>
+      <span id="statelist">
+         <label accesskey="A" for="office"><strong>Geographic Area:</strong></label><br />
+<select onchange="return server_level_navigation_manager();" name='office' id="office" tabindex="1">
+ <option value="usa">United States
+</option><option value="al">Alabama</option>
+<option value="ak">Alaska</option>
+<option value="aq">American Samoa</option>
+<option value="az">Arizona</option>
+<option value="ar">Arkansas</option>
+<option value="ca">California</option>
+<option value="co">Colorado</option>
+<option value="ct">Connecticut</option>
+<option value="de">Delaware</option>
+<option value="dc">Dist. of Columbia</option>
+<option value="fl">Florida</option>
+<option value="ga">Georgia</option>
+<option value="gu">Guam</option>
+<option value="hi">Hawaii</option>
+<option value="id">Idaho</option>
+<option value="il">Illinois</option>
+<option value="in">Indiana</option>
+<option value="ia">Iowa</option>
+<option value="ks">Kansas</option>
+<option value="ky">Kentucky</option>
+<option value="la">Louisiana</option>
+<option value="me">Maine</option>
+<option value="md">Maryland</option>
+<option value="ma">Massachusetts</option>
+<option value="mi">Michigan</option>
+<option value="mn">Minnesota</option>
+<option value="ms">Mississippi</option>
+<option value="mo">Missouri</option>
+<option value="mt">Montana</option>
+<option value="ne">Nebraska</option>
+<option value="nv">Nevada</option>
+<option value="nh">New Hampshire</option>
+<option value="nj">New Jersey</option>
+<option value="nm">New Mexico</option>
+<option value="ny">New York</option>
+<option value="nc">North Carolina</option>
+<option value="nd">North Dakota</option>
+<option value="mp">Northern Mariana Islands</option>
+<option value="oh">Ohio</option>
+<option value="ok">Oklahoma</option>
+<option value="or">Oregon</option>
+<option value="pa">Pennsylvania</option>
+<option value="pr">Puerto Rico</option>
+<option value="ri">Rhode Island</option>
+<option value="sc">South Carolina</option>
+<option value="sd">South Dakota</option>
+<option value="tn">Tennessee</option>
+<option value="tx">Texas</option>
+<option value="ut">Utah</option>
+<option value="vt">Vermont</option>
+<option value="vi">Virgin Islands</option>
+<option value="va">Virginia</option>
+<option value="wa">Washington</option>
+<option value="wv">West Virginia</option>
+<option value="wi">Wisconsin</option>
+<option value="wy">Wyoming</option>
+</select>
+      </span>
+      <span id="maingobutton">
+         <input accesskey="g" type="submit" value="GO" onclick="return server_level_navigation_manager();">
+      </span>
+   </div>
+</div>
+<div class='clear'></div>
+<!-- END Nav Bar -->
+</form>
+<!--<a name="top_of_page"></a>-->
+
+
+<!-- noscript tag replacement-displays message if JavaScript is not enabled -->
+
+<div id="noScript">Warning: Javascript must be enabled to use all the features on this page!
+<script type="text/javascript">
+    //<![CDATA[
+    <!--
+document.getElementById('noScript').style.display = 'none';
+    // -->
+    //]]>
+</script>
+</div>
+
+
+
+<!-- NWISWeb Page Loading Script -->
+
+<p id="loading" class="loading"><br>Page Loading - Please Wait...
+<script type="text/javascript">
+    //<![CDATA[
+    <!--
+var processingBar = createBar (300,15,'white',1,'black','blue',85,7,10,"");
+    // -->
+    //]]>
+</script>
+</p>
+
+
+
+<!-- SYSTEM MESSAGE -->
+
+
+<!-- Mobile Detection -->
+
+
+<!-- NWISWeb System Message -->
+
+<div class="collapse_div">
+<div id="news_header" class="news_tx_header_div_expanded">
+  <span id="collapsingNewsIcon" class="ui-icon ui-icon-circle-minus"></span>
+  <span id="news_header_tx">Click to hide</span>News Bulletins
+</div>
+<div id="news_tx">
+<ul>
+    <li>
+       August 8, 2013
+    </li>
+    <li>Try our new <a href="http://m.waterdata.usgs.gov">Mobile-friendly water data site </a> from your
+mobile device! </li>
+    <li>New improved user interface.</li>
+    <li>
+       <span style="text-decoration:underline;"><a href="http://help.waterdata.usgs.gov/news">Full News</a></span>
+       <a href="http://help.waterdata.usgs.gov/news/rss/"><img src="/nwisweb/icons/rss_icon.gif" border="0" alt="RSS icon"/></a>
+    </li>
+</ul>
+
+</div>
+</div>
+
+
+
+<div class='clear'></div>
+
+<!-- PAGE_TITLE -->
+<p class='h1'>Water Quality Samples for the Nation</p>
+
+<!-- STATEWIDE TEXT -->
+
+
+</div> <!-- nwisweb_header --><table border="0" width="40%">
+<tr>
+          <td>
+		<a href="/nwis/help" onmouseover="hover('help_button')" onmouseout="normal('help_button')">
+		<img width="125" name="help_button" height="20" src="/nwisweb/icons/buttons/help_button.gif" alt="Help home page" border="0" /></a>
+          </td>
+          <td>
+		<a href="help?navigation_help" onmouseover="hover('navigation')" onmouseout="normal('navigation')">
+		<img width="125" name="navigation" height="20" src="/nwisweb/icons/buttons/navigation.gif" alt="Navigation help" border="0" /></a>
+          </td>
+          <td>
+		<a href="help?search_criteria_help" onmouseover="hover('search_criteria')" onmouseout="normal('search_criteria')">
+		<img width="125" name="search_criteria" height="20" src="/nwisweb/icons/buttons/search_criteria.gif" alt="Search criteria help" border="0" /></a>
+          </td>
+         </tr>
+	 <tr>
+          <td>
+		<a href="help?output_formats_help" onmouseover="hover('output_formats')" onmouseout="normal('output_formats')">
+		<img width="125" name="output_formats" height="20" src="/nwisweb/icons/buttons/output_formats.gif" alt="Output formats help" border="0" /></a>
+          </td>
+          <td>
+		<a href="help?codes_help" onmouseover="hover('codes')" onmouseout="normal('codes')">
+		<img width="125" name="codes" height="20" src="/nwisweb/icons/buttons/codes.gif" alt="Codes help" border="0" /></a>
+          </td>
+          <td>
+		<a href="help?parameters_help" onmouseover="hover('parameters')" onmouseout="normal('parameters')">
+		<img width="125" name="parameters" height="20" src="/nwisweb/icons/buttons/parameters.gif" alt="Parameter help" border="0" /></a>
+          </td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+<!--
+
+  if (document.images)
+   {
+     help_buttonon= new Image(125,20);
+     help_buttonon.src="/nwisweb/icons/buttons/help_buttonh.gif";
+     navigationon= new Image(125,20);
+     navigationon.src="/nwisweb/icons/buttons/navigationh.gif";
+     search_criteriaon= new Image(125,20);
+     search_criteriaon.src="/nwisweb/icons/buttons/search_criteriah.gif";
+     parameterson= new Image(125,20);
+     parameterson.src="/nwisweb/icons/buttons/parametersh.gif";
+     codeson= new Image(125,20);
+     codeson.src="/nwisweb/icons/buttons/codesh.gif";
+     output_formatson= new Image(125,20);
+     output_formatson.src="/nwisweb/icons/buttons/output_formatsh.gif";
+
+     help_buttonoff= new Image(125,20);
+     help_buttonoff.src="/nwisweb/icons/buttons/help_button.gif";
+     navigationoff= new Image(125,20);
+     navigationoff.src="/nwisweb/icons/buttons/navigation.gif";
+     search_criteriaoff= new Image(125,20);
+     search_criteriaoff.src="/nwisweb/icons/buttons/search_criteria.gif";
+     parametersoff= new Image(125,20);
+     parametersoff.src="/nwisweb/icons/buttons/parameters.gif";
+     codesoff= new Image(125,20);
+     codesoff.src="/nwisweb/icons/buttons/codes.gif";
+     output_formatsoff= new Image(125,20);
+     output_formatsoff.src="/nwisweb/icons/buttons/output_formats.gif";
+   }
+
+function hover(imgName)
+ {
+   if (document.images)
+    {
+      imgOn=eval(imgName + "on.src");
+      document[imgName].src= imgOn;
+    }
+ }
+
+function normal(imgName)
+ {
+   if (document.images)
+    {
+      imgOff=eval(imgName + "off.src");
+      document[imgName].src= imgOff;
+    }
+ }
+// -->
+//]]>
+</script>
+<br />
+<br />
+<h3><a name="Table26" id="Table26">Table 26</a>. Parameter codes
+with fixed values</h3>
+<ul>
+AGENCY</li>
+<li><a href="?proto_org">00028</a> ANALYZING AGENCY</li>
+<li><a class="anchor" href="#00041">00041</a> WEATHER</li>
+<li><a class="anchor" href="#00067">00067</a> TIDE STAGE, CODE</li>
+<li><a class="anchor" href="#00115">00115</a> SAMPLE TREATMENT</li>
+<li><a class="anchor" href="#01300">01300</a> OIL-GREASE
+(SEVERITY)</li>
+<li><a class="anchor" href="#01305">01305</a> DETERGENT SUDS
+(SEVERITY)</li>
+<li><a class="anchor" href="#01310">01310</a> GAS BUBBLES
+(SEVERITY)</li>
+<li><a class="anchor" href="#01315">01315</a> SLUDGS: FLOATING
+(SEVERITY)</li>
+<li><a class="anchor" href="#01320">01320</a> GARBAGE, FLOATING
+(SEVERITY)</li>
+<li><a class="anchor" href="#01325">01325</a> ALGAE, FLOATING MATS
+(SEVERITY)</li>
+<li><a class="anchor" href="#01330">01330</a> ODOR, ATMOSPHERIC
+(SEVERITY)</li>
+<li><a class="anchor" href="#01335">01335</a> SEWAGE SOLIDS, FRESH,
+FLOATING (SEVERITY)</li>
+<li><a class="anchor" href="#01340">01340</a> FISH, DEAD
+(SEVERITY)</li>
+<li><a class="anchor" href="#01345">01345</a> DEBRIS, FLOATING
+(SEVERITY)</li>
+<li><a href="#01350">01350</a> TURBIDITY (SEVERITY)</li>
+<li><a class="anchor" href="#01351">01351</a> STREAMFLOW
+(SEVERITY)</li>
+<li><a class="anchor" href="#01355">01355</a> ICE COVER, FLOATING
+OR SOLID (SEVERITY)</li>
+<li><a class="anchor" href="#04117">04117</a> TETHER LINE USED FOR
+COLLECTING SAMPLE (YES=1) CODE</li>
+<li><a class="anchor" href="#31678">31678</a> STREPTOCCI, FECAL,
+TUBE CONFIGURATION</li>
+<li><a class="anchor" href="#49986">49986</a> DEGREE OF
+DECOMPOSITION, SOIL, CODE</li>
+<li><a class="anchor" href="#50276">50276</a> FILTER TYPE,
+CODE</li>
+<li><a class="anchor" href="#50280">50280</a> WATER SAMPLES</li>
+<li><a class="anchor" href="#62955">62955</a> SAMPLE
+MATRIX,CODE</li>
+<li><a class="anchor" href="#71995">71995</a> WATER USE, PRIMARY
+(CODES)</li>
+<li><a class="anchor" href="#71996">71996</a> WATER USE, SECONDARY
+(CODES)</li>
+<li><a class="anchor" href="#71997">71997</a> WATER USE, TERTIARY
+(CODES)</li>
+<li><a class="anchor" href="#71998">71998</a> WATER USE, QUATERNARY
+(CODES)</li>
+<li><a class="anchor" href="#71999">71999</a> SAMPLE PURPOSE
+(CODES)</li>
+<li><a class="anchor" href="#72005">72005</a> SAMPLE SOURCE
+(CODES)</li>
+<li><a class="anchor" href="#72006">72006</a> SAMPLING CONDITION
+(CODES)</li>
+<li><a class="anchor" href="#72006">72006</a> SAMPLING CONDITION
+(CODES)</li>
+<li><a class="anchor" href="#74200">74200</a> SAMPLE PRESERVATION
+METHOD, (CODES)</li>
+<li><a class="anchor" href="#82309">82309</a> CONTAMINATION SOURCE,
+POSSIBLE (CODES)</li>
+<li><a class="anchor" href="#82398">82398</a> SAMPLING METHOD
+(CODES)</li>
+<li><a class="anchor" href="#82923">82923</a> ATMOSPHERIC
+DEPOSITION TYPE WET, (CODES)</li>
+<li><a class="anchor" href="#83205">83205</a> ATMOSPHERIC
+DEPOSITION TYPE BULK, (CODES)</li>
+<li><a class="anchor" href="#84060">84060</a> TOPOGRAPHY,
+PHYSIOGRAPHIC SETTING (CODES)</li>
+<li><a class="anchor" href="#84143">84143</a> WELL PURGING
+CONDITION (CODES)</li>
+<li><a class="anchor" href="#84144">84144</a> WELL SELECTION
+CRITERIA (CODES)</li>
+<li><a class="anchor" href="#84145">84145</a> PROJECT COMPONENT
+(CODES)</li>
+<li><a class="anchor" href="#84146">84146</a> LAND USE,
+PREDOMINANT, WITHIN 200 FEET OF WELL, (CODES)</li>
+<li><a class="anchor" href="#84147">84147</a> LAND USE,
+PREDOMINANT, WITHIN 0.25 MILE OF WELL (CODES)</li>
+<li><a class="anchor" href="#84148">84148</a> LAND USE, PREDOMINANT
+FRACTION, WITHIN 0.25 MILE OF WELL (CODES)</li>
+<li><a class="anchor" href="#84149">84149</a> LAND-USE CHANGES
+WITHIN LAST 10 YEARS, WITH IN 0.25 MILE OF WELL (CODES)</li>
+<li><a class="anchor" href="#84164">84164</a> SAMPLER TYPE,
+(CODES)</li>
+<li><a class="anchor" href="#84171">84171</a> SAMPLE SPLITTER TYPE, FIELD CODE
+</li>
+<li><a class="anchor" href="#84172">84172</a> AIR SAMPLER FILTER TYPE, CODE </li>
+<li><a class="anchor" href="#84173">84173</a> AIR SAMPLE TRAP SORBENT TYPE, CODE </li>
+<li><a class="anchor" href="#99100">99100</a> BLANK, TYPE OF
+SOLUTION, FIXED VALUE CODE</li>
+<li><a class="anchor" href="#91112">91112</a> LATITUDE/LONGITUDE HORIZONTAL DATUM</li>
+<li><a class="anchor" href="#91113">91113</a> LATITUDE/LONGITUDE MEASUREMENT METHOD</li>
+<li><a class="anchor" href="#91114">91114</a> LATITUDE/LONGITUDE COORDINATE ACCURACY</li>
+<li><a class="anchor" href="#99101">99101</a> BLANK, SOURCE OF
+SOLUTION, FIXED VALUE CODE</li>
+<li><a class="anchor" href="#99102">99102</a> BLANK, TYPE OF
+SAMPLE, FIXED VALUE CODE</li>
+<li><a class="anchor" href="#99103">99103</a> REFERENCE MATERIAL,
+SOURCE, FIXED VALUE CODE</li>
+<li><a class="anchor" href="#99105">99105</a> REPLICATE, TYPE,
+FIXED VALUE CODE</li>
+<li><a class="anchor" href="#99106">99106</a> SPIKE, TYPE, FIXED
+VALUE CODE</li>
+<li><a class="anchor" href="#99107">99107</a> SPIKE, SOURCE, FIXED
+VALUE CODE</li>
+<li><a class="anchor" href="#99111">99111</a> QUALITY ASSURANCE
+DATA TYPE ASSOCIATED WITH SAMPLE, CODE</li>
+<li><a class="anchor" href="#99112">99112</a> SULFIDE, WATER,
+FILTERED, FIELD, MILLIGRAMS PER LITER</li>
+<li><a class="anchor" href="#99329">99329</a> Coliphage, somatic,
+E. coli C-host, 2-step enrichment presence/absence per 1 liter</li>
+<li><a class="anchor" href="#99335">99335</a> ColipgeF-spec, famp,
+2-step,pres(1) abs(2) / 1 L</li>
+<li><a class="anchor" href="#99595">99595</a> Total coliform,
+ColilrtPA, wtrprs/abs /1 L</li>
+<li><a class="anchor" href="#99596">99596</a> E. coliColilrt PA,
+water prs/abs /1 L</li>
+<li><a class="anchor" href="#99766">99766</a> Entero- virus, RT
+pcrpres(1) abs(2) / 50 L</li>
+<li><a class="anchor" href="#99767">99767</a> Reo- virus, RT
+pcrpres(1) abs(2) / 50 L</li>
+<li><a class="anchor" href="#99768">99768</a> Rota virus, RT
+pcrpres(1) abs(2) / 50 L</li>
+<li><a class="anchor" href="#99769">99769</a> Hepatitis-A virus, RT
+pcrpres(1) abs(2) / 50 L</li>
+<li><a class="anchor" href="#99770">99770</a> Norwalk virus, RT
+pcrpres(1) abs(2) / 50 L</li>
+<li><a class="anchor" href="#99771">99771</a> Calici- virus, RT
+pcrpres(1) abs(2) / 50 L</li>
+</ul>
+<hr />
+<table class="00041">
+<tr><td>00041</td><td>0</td><td>Cloudless</td></tr>
+<tr><td>00041</td><td>1</td><td>Partly cloudy</td></tr>
+<tr><td>00041</td><td>2</td><td>Cloudy</td></tr>
+<tr><td>00041</td><td>3</td><td>Overcast</td></tr>
+<tr><td>00041</td><td>10</td><td>Precipitation within sight</td></tr>
+<tr><td>00041</td><td>13</td><td>Ugly, threatening sky</td></tr>
+<tr><td>00041</td><td>40</td><td>Fog</td></tr>
+<tr><td>00041</td><td>50</td><td>Drizzle</td></tr>
+<tr><td>00041</td><td>51</td><td>Slight drizzle, intermittent</td></tr>
+<tr><td>00041</td><td>52</td><td>Slight drizzle, continuous</td></tr>
+<tr><td>00041</td><td>53</td><td>Moderate drizzle, intermittent</td></tr>
+<tr><td>00041</td><td>54</td><td>Moderate drizzle, continuous</td></tr>
+<tr><td>00041</td><td>55</td><td>Thick drizzle, intermittent</td></tr>
+<tr><td>00041</td><td>56</td><td>Thick drizzle, continuous</td></tr>
+<tr><td>00041</td><td>57</td><td>Drizzle and fog</td></tr>
+<tr><td>00041</td><td>58</td><td>Slight or moderate drizzle and rain</td></tr>
+<tr><td>00041</td><td>59</td><td>Thick drizzle and rain</td></tr>
+<tr><td>00041</td><td>60</td><td>Rain</td></tr>
+<tr><td>00041</td><td>61</td><td>Slight rain, intermittent</td></tr>
+<tr><td>00041</td><td>62</td><td>Slight rain, continuous</td></tr>
+<tr><td>00041</td><td>63</td><td>Moderate rain, intermittent</td></tr>
+<tr><td>00041</td><td>64</td><td>Moderate rain, continuous</td></tr>
+<tr><td>00041</td><td>65</td><td>Heavy rain, intermittent</td></tr>
+<tr><td>00041</td><td>66</td><td>Heavy rain, continuous</td></tr>
+<tr><td>00041</td><td>67</td><td>Rain and fog</td></tr>
+<tr><td>00041</td><td>68</td><td>Slight or moderate mixed rain and snow</td></tr>
+<tr><td>00041</td><td>69</td><td>Heavy mixed rain and snow</td></tr>
+<tr><td>00041</td><td>70</td><td>Snow or sleet</td></tr>
+<tr><td>00041</td><td>71</td><td>Slight snow in flakes, intermittent</td></tr>
+<tr><td>00041</td><td>72</td><td>Slight snow in flakes, continuous</td></tr>
+<tr><td>00041</td><td>73</td><td>Moderate snow in flakes, intermittent</td></tr>
+<tr><td>00041</td><td>74</td><td>Moderate snow in flakes, continuous</td></tr>
+<tr><td>00041</td><td>75</td><td>Heavy snow in flakes, intermittent</td></tr>
+<tr><td>00041</td><td>76</td><td>Heavy snow in flakes, continuous</td></tr>
+<tr><td>00041</td><td>77</td><td>Snow and fog</td></tr>
+<tr><td>00041</td><td>78</td><td>Granular snow (frozen drizzle)</td></tr>
+<tr><td>00041</td><td>79</td><td>Ice crystals</td></tr>
+<tr><td>00041</td><td>80</td><td>Shower(s)</td></tr>
+<tr><td>00041</td><td>81</td><td>Slight or moderate rain shower(s)</td></tr>
+<tr><td>00041</td><td>82</td><td>Heavy rain shower(s)</td></tr>
+<tr><td>00041</td><td>83</td><td>Slight or moderate snow shower(s)</td></tr>
+<tr><td>00041</td><td>84</td><td>Heavy snow shower(s)</td></tr>
+<tr><td>00041</td><td>85</td><td>Slight or moderate rain and snow shower(s)</td></tr>
+<tr><td>00041</td><td>86</td><td>Heavy rain and snow shower(s)</td></tr>
+<tr><td>00041</td><td>87</td><td>Granular snow shower(s)</td></tr>
+<tr><td>00041</td><td>88</td><td>Slight or moderate hail or rain and hail shower(s)</td></tr>
+<tr><td>00041</td><td>89</td><td>Heavy hail or rain and hail shower(s)</td></tr>
+<tr><td>00041</td><td>90</td><td>Thunderstorm</td></tr>
+<tr><td>00041</td><td>93</td><td>Slight thunderstorm with rain or snow</td></tr>
+<tr><td>00041</td><td>94</td><td>Slight thunderstorm with hail</td></tr>
+<tr><td>00041</td><td>95</td><td>Moderate thunderstorm with rain or snow</td></tr>
+<tr><td>00041</td><td>96</td><td>Moderate thunderstorm with hail</td></tr>
+<tr><td>00041</td><td>97</td><td>Heavy thunderstorm with rain or snow</td></tr>
+<tr><td>00041</td><td>99</td><td>Heavy thunderstorm with hail</td></tr>
+</table>
+
+<h4><a name="00067" id="tide">00067</a> TIDE STAGE, CODE</h4>
+00067	1000.00		High water slack; wi 3 hrs
+00067	1001.00		High water slack; wi 3 hrs; Max ebb current
+00067	1002.00		High water slack; wi 3 hrs; Max flood current
+00067	1010.00		High water slack; wi 3 hrs; C&GS table
+00067	1011.00		High water slack; wi 3 hrs; C&GS table; Max ebb current
+00067	1012.00		High water slack; wi 3 hrs; C&GS table; Max flood current
+00067	1020.00		High water slack; wi 3 hrs; measured
+00067	1021.00		High water slack; wi 3 hrs; measured; Max ebb current
+00067	1022.00		High water slack; wi 3 hrs; measured; Max flood current
+00067	1100.00		High water slack; wi 2 hrs
+00067	1101.00		High water slack; wi 2 hrs; Max ebb current
+00067	1102.00		High water slack; wi 2 hrs; Max flood current
+00067	1110.00		High water slack; wi 2 hrs; C&GS table
+00067	1111.00		High water slack; wi 2 hrs; C&GS table; Max ebb current
+00067	1112.00		High water slack; wi 2 hrs; C&GS table; Max flood current
+00067	1120.00		High water slack; wi 2 hrs; measured
+00067	1121.00		High water slack; wi 2 hrs; measured; Max ebb current
+00067	1122.00		High water slack; wi 2 hrs; measured; Max flood current
+00067	1200.00		High water slack; wi 1 hr
+00067	1201.00		High water slack; wi 1 hr; Max ebb current
+00067	1202.00		High water slack; wi 1 hr; Max flood current
+00067	1210.00		High water slack; wi 1 hr; C&GS table
+00067	1211.00		High water slack; wi 1 hr; C&GS table; Max ebb current
+00067	1212.00		High water slack; wi 1 hr; C&GS table; Max flood current
+00067	1220.00		High water slack; wi 1 hr; measured
+00067	1221.00		High water slack; wi 1 hr; measured; Max ebb current
+00067	1222.00		High water slack; wi 1 hr; measured; Max flood current
+00067	1300.00		High water slack; wi 40 min
+00067	1301.00		High water slack; wi 40 min; Max ebb current
+00067	1302.00		High water slack; wi 40 min; Max flood current
+00067	1310.00		High water slack; wi 40 min; C&GS table
+00067	1311.00		High water slack; wi 40 min; C&GS table; Max ebb current
+00067	1312.00		High water slack; wi 40 min; C&GS table; Max flood current
+00067	1320.00		High water slack; wi 40 min; measured
+00067	1321.00		High water slack; wi 40 min; measured; Max ebb current
+00067	1322.00		High water slack; wi 40 min; measured; Max flood current
+00067	1400.00		High water slack; wi 20 min
+00067	1401.00		High water slack; wi 20 min; Max ebb current
+00067	1402.00		High water slack; wi 20 min; Max flood current
+00067	1410.00		High water slack; wi 20 min; C&GS table
+00067	1411.00		High water slack; wi 20 min; C&GS table; Max ebb current
+00067	1412.00		High water slack; wi 20 min; C&GS table; Max flood current
+00067	1420.00		High water slack; wi 20 min; measured
+00067	1421.00		High water slack; wi 20 min; measured; Max ebb current
+00067	1422.00		High water slack; wi 20 min; measured; Max flood current
+00067	1500.00		High water slack; wi 10 min
+00067	1501.00		High water slack; wi 10 min; Max ebb current
+00067	1502.00		High water slack; wi 10 min; Max flood current
+00067	1510.00		High water slack; wi 10 min; C&GS table
+00067	1511.00		High water slack; wi 10 min; C&GS table; Max ebb current
+00067	1512.00		High water slack; wi 10 min; C&GS table; Max flood current
+00067	1520.00		High water slack; wi 10 min; measured
+00067	1521.00		High water slack; wi 10 min; measured; Max ebb current
+00067	1522.00		High water slack; wi 10 min; measured; Max flood current
+00067	1600.00		High water slack; wi 5 min
+00067	1601.00		High water slack; wi 5 min; Max ebb current
+00067	1602.00		High water slack; wi 5 min; Max flood current
+00067	1610.00		High water slack; wi 5 min; C&GS table
+00067	1611.00		High water slack; wi 5 min; C&GS table; Max ebb current
+00067	1612.00		High water slack; wi 5 min; C&GS table; Max flood current
+00067	1620.00		High water slack; wi 5 min; measured
+00067	1621.00		High water slack; wi 5 min; measured; Max ebb current
+00067	1622.00		High water slack; wi 5 min; measured; Max flood current
+00067	2000.00		Ebb current; wi 3 hrs
+00067	2001.00		Ebb current; wi 3 hrs; Max ebb current
+00067	2002.00		Ebb current; wi 3 hrs; Max flood current
+00067	2010.00		Ebb current; wi 3 hrs; C&GS table
+00067	2011.00		Ebb current; wi 3 hrs; C&GS table; Max ebb current
+00067	2012.00		Ebb current; wi 3 hrs; C&GS table; Max flood current
+00067	2020.00		Ebb current; wi 3 hrs; measured
+00067	2021.00		Ebb current; wi 3 hrs; measured; Max ebb current
+00067	2022.00		Ebb current; wi 3 hrs; measured; Max flood current
+00067	2100.00		Ebb current; wi 2 hrs
+00067	2101.00		Ebb current; wi 2 hrs; Max ebb current
+00067	2102.00		Ebb current; wi 2 hrs; Max flood current
+00067	2110.00		Ebb current; wi 2 hrs; C&GS table
+00067	2111.00		Ebb current; wi 2 hrs; C&GS table; Max ebb current
+00067	2112.00		Ebb current; wi 2 hrs; C&GS table; Max flood current
+00067	2120.00		Ebb current; wi 2 hrs; measured
+00067	2121.00		Ebb current; wi 2 hrs; measured; Max ebb current
+00067	2122.00		Ebb current; wi 2 hrs; measured; Max flood current
+00067	2200.00		Ebb current; wi 1 hr
+00067	2201.00		Ebb current; wi 1 hr; Max ebb current
+00067	2202.00		Ebb current; wi 1 hr; Max flood current
+00067	2210.00		Ebb current; wi 1 hr; C&GS table
+00067	2211.00		Ebb current; wi 1 hr; C&GS table; Max ebb current
+00067	2212.00		Ebb current; wi 1 hr; C&GS table; Max flood current
+00067	2220.00		Ebb current; wi 1 hr; measured
+00067	2221.00		Ebb current; wi 1 hr; measured; Max ebb current
+00067	2222.00		Ebb current; wi 1 hr; measured; Max flood current
+00067	2300.00		Ebb current; wi 40 min
+00067	2301.00		Ebb current; wi 40 min; Max ebb current
+00067	2302.00		Ebb current; wi 40 min; Max flood current
+00067	2310.00		Ebb current; wi 40 min; C&GS table
+00067	2311.00		Ebb current; wi 40 min; C&GS table; Max ebb current
+00067	2312.00		Ebb current; wi 40 min; C&GS table; Max flood current
+00067	2320.00		Ebb current; wi 40 min; measured
+00067	2321.00		Ebb current; wi 40 min; measured; Max ebb current
+00067	2322.00		Ebb current; wi 40 min; measured; Max flood current
+00067	2400.00		Ebb current; wi 20 min
+00067	2401.00		Ebb current; wi 20 min; Max ebb current
+00067	2402.00		Ebb current; wi 20 min; Max flood current
+00067	2410.00		Ebb current; wi 20 min; C&GS table
+00067	2411.00		Ebb current; wi 20 min; C&GS table; Max ebb current
+00067	2412.00		Ebb current; wi 20 min; C&GS table; Max flood current
+00067	2420.00		Ebb current; wi 20 min; measured
+00067	2421.00		Ebb current; wi 20 min; measured; Max ebb current
+00067	2422.00		Ebb current; wi 20 min; measured; Max flood current
+00067	2500.00		Ebb current; wi 10 min
+00067	2501.00		Ebb current; wi 10 min; Max ebb current
+00067	2502.00		Ebb current; wi 10 min; Max flood current
+00067	2510.00		Ebb current; wi 10 min; C&GS table
+00067	2511.00		Ebb current; wi 10 min; C&GS table; Max ebb current
+00067	2512.00		Ebb current; wi 10 min; C&GS table; Max flood current
+00067	2520.00		Ebb current; wi 10 min; measured
+00067	2521.00		Ebb current; wi 10 min; measured; Max ebb current
+00067	2522.00		Ebb current; wi 10 min; measured; Max flood current
+00067	2600.00		Ebb current; wi 5 min
+00067	2601.00		Ebb current; wi 5 min; Max ebb current
+00067	2602.00		Ebb current; wi 5 min; Max flood current
+00067	2610.00		Ebb current; wi 5 min; C&GS table
+00067	2611.00		Ebb current; wi 5 min; C&GS table; Max ebb current
+00067	2612.00		Ebb current; wi 5 min; C&GS table; Max flood current
+00067	2620.00		Ebb current; wi 5 min; measured
+00067	2621.00		Ebb current; wi 5 min; measured; Max ebb current
+00067	2622.00		Ebb current; wi 5 min; measured; Max flood current
+00067	3000.00		Low water slack; wi 3 hrs
+00067	3001.00		Low water slack; wi 3 hrs; Max ebb current
+00067	3002.00		Low water slack; wi 3 hrs; Max flood current
+00067	3010.00		Low water slack; wi 3 hrs; C&GS table
+00067	3011.00		Low water slack; wi 3 hrs; C&GS table; Max ebb current
+00067	3012.00		Low water slack; wi 3 hrs; C&GS table; Max flood current
+00067	3020.00		Low water slack; wi 3 hrs; measured
+00067	3021.00		Low water slack; wi 3 hrs; measured; Max ebb current
+00067	3022.00		Low water slack; wi 3 hrs; measured; Max flood current
+00067	3100.00		Low water slack; wi 2 hrs
+00067	3101.00		Low water slack; wi 2 hrs; Max ebb current
+00067	3102.00		Low water slack; wi 2 hrs; Max flood current
+00067	3110.00		Low water slack; wi 2 hrs; C&GS table
+00067	3111.00		Low water slack; wi 2 hrs; C&GS table; Max ebb current
+00067	3112.00		Low water slack; wi 2 hrs; C&GS table; Max flood current
+00067	3120.00		Low water slack; wi 2 hrs; measured
+00067	3121.00		Low water slack; wi 2 hrs; measured; Max ebb current
+00067	3122.00		Low water slack; wi 2 hrs; measured; Max flood current
+00067	3200.00		Low water slack; wi 1 hr
+00067	3201.00		Low water slack; wi 1 hr; Max ebb current
+00067	3202.00		Low water slack; wi 1 hr; Max flood current
+00067	3210.00		Low water slack; wi 1 hr; C&GS table
+00067	3211.00		Low water slack; wi 1 hr; C&GS table; Max ebb current
+00067	3212.00		Low water slack; wi 1 hr; C&GS table; Max flood current
+00067	3220.00		Low water slack; wi 1 hr; measured
+00067	3221.00		Low water slack; wi 1 hr; measured; Max ebb current
+00067	3222.00		Low water slack; wi 1 hr; measured; Max flood current
+00067	3300.00		Low water slack; wi 40 min
+00067	3301.00		Low water slack; wi 40 min; Max ebb current
+00067	3302.00		Low water slack; wi 40 min; Max flood current
+00067	3310.00		Low water slack; wi 40 min; C&GS table
+00067	3311.00		Low water slack; wi 40 min; C&GS table; Max ebb current
+00067	3312.00		Low water slack; wi 40 min; C&GS table; Max flood current
+00067	3320.00		Low water slack; wi 40 min; measured
+00067	3321.00		Low water slack; wi 40 min; measured; Max ebb current
+00067	3322.00		Low water slack; wi 40 min; measured; Max flood current
+00067	3400.00		Low water slack; wi 20 min
+00067	3401.00		Low water slack; wi 20 min; Max ebb current
+00067	3402.00		Low water slack; wi 20 min; Max flood current
+00067	3410.00		Low water slack; wi 20 min; C&GS table
+00067	3411.00		Low water slack; wi 20 min; C&GS table; Max ebb current
+00067	3412.00		Low water slack; wi 20 min; C&GS table; Max flood current
+00067	3420.00		Low water slack; wi 20 min; measured
+00067	3421.00		Low water slack; wi 20 min; measured; Max ebb current
+00067	3422.00		Low water slack; wi 20 min; measured; Max flood current
+00067	3500.00		Low water slack; wi 10 min
+00067	3501.00		Low water slack; wi 10 min; Max ebb current
+00067	3502.00		Low water slack; wi 10 min; Max flood current
+00067	3510.00		Low water slack; wi 10 min; C&GS table
+00067	3511.00		Low water slack; wi 10 min; C&GS table; Max ebb current
+00067	3512.00		Low water slack; wi 10 min; C&GS table; Max flood current
+00067	3520.00		Low water slack; wi 10 min; measured
+00067	3521.00		Low water slack; wi 10 min; measured; Max ebb current
+00067	3522.00		Low water slack; wi 10 min; measured; Max flood current
+00067	3600.00		Low water slack; wi 5 min
+00067	3601.00		Low water slack; wi 5 min; Max ebb current
+00067	3602.00		Low water slack; wi 5 min; Max flood current
+00067	3610.00		Low water slack; wi 5 min; C&GS table
+00067	3611.00		Low water slack; wi 5 min; C&GS table; Max ebb current
+00067	3612.00		Low water slack; wi 5 min; C&GS table; Max flood current
+00067	3620.00		Low water slack; wi 5 min; measured
+00067	3621.00		Low water slack; wi 5 min; measured; Max ebb current
+00067	3622.00		Low water slack; wi 5 min; measured; Max flood current
+00067	4000.00		Flood current; wi 3 hrs
+00067	4001.00		Flood current; wi 3 hrs; Max ebb current
+00067	4002.00		Flood current; wi 3 hrs; Max flood current
+00067	4010.00		Flood current; wi 3 hrs; C&GS table
+00067	4011.00		Flood current; wi 3 hrs; C&GS table; Max ebb current
+00067	4012.00		Flood current; wi 3 hrs; C&GS table; Max flood current
+00067	4020.00		Flood current; wi 3 hrs; measured
+00067	4021.00		Flood current; wi 3 hrs; measured; Max ebb current
+00067	4022.00		Flood current; wi 3 hrs; measured; Max flood current
+00067	4100.00		Flood current; wi 2 hrs
+00067	4101.00		Flood current; wi 2 hrs; Max ebb current
+00067	4102.00		Flood current; wi 2 hrs; Max flood current
+00067	4110.00		Flood current; wi 2 hrs; C&GS table
+00067	4111.00		Flood current; wi 2 hrs; C&GS table; Max ebb current
+00067	4112.00		Flood current; wi 2 hrs; C&GS table; Max flood current
+00067	4120.00		Flood current; wi 2 hrs; measured
+00067	4121.00		Flood current; wi 2 hrs; measured; Max ebb current
+00067	4122.00		Flood current; wi 2 hrs; measured; Max flood current
+00067	4200.00		Flood current; wi 1 hr
+00067	4201.00		Flood current; wi 1 hr; Max ebb current
+00067	4202.00		Flood current; wi 1 hr; Max flood current
+00067	4210.00		Flood current; wi 1 hr; C&GS table
+00067	4211.00		Flood current; wi 1 hr; C&GS table; Max ebb current
+00067	4212.00		Flood current; wi 1 hr; C&GS table; Max flood current
+00067	4220.00		Flood current; wi 1 hr; measured
+00067	4221.00		Flood current; wi 1 hr; measured; Max ebb current
+00067	4222.00		Flood current; wi 1 hr; measured; Max flood current
+00067	4300.00		Flood current; wi 40 min
+00067	4301.00		Flood current; wi 40 min; Max ebb current
+00067	4302.00		Flood current; wi 40 min; Max flood current
+00067	4310.00		Flood current; wi 40 min; C&GS table
+00067	4311.00		Flood current; wi 40 min; C&GS table; Max ebb current
+00067	4312.00		Flood current; wi 40 min; C&GS table; Max flood current
+00067	4320.00		Flood current; wi 40 min; measured
+00067	4321.00		Flood current; wi 40 min; measured; Max ebb current
+00067	4322.00		Flood current; wi 40 min; measured; Max flood current
+00067	4400.00		Flood current; wi 20 min
+00067	4401.00		Flood current; wi 20 min; Max ebb current
+00067	4402.00		Flood current; wi 20 min; Max flood current
+00067	4410.00		Flood current; wi 20 min; C&GS table
+00067	4411.00		Flood current; wi 20 min; C&GS table; Max ebb current
+00067	4412.00		Flood current; wi 20 min; C&GS table; Max flood current
+00067	4420.00		Flood current; wi 20 min; measured
+00067	4421.00		Flood current; wi 20 min; measured; Max ebb current
+00067	4422.00		Flood current; wi 20 min; measured; Max flood current
+00067	4500.00		Flood current; wi 10 min
+00067	4501.00		Flood current; wi 10 min; Max ebb current
+00067	4502.00		Flood current; wi 10 min; Max flood current
+00067	4510.00		Flood current; wi 10 min; C&GS table
+00067	4511.00		Flood current; wi 10 min; C&GS table; Max ebb current
+00067	4512.00		Flood current; wi 10 min; C&GS table; Max flood current
+00067	4520.00		Flood current; wi 10 min; measured
+00067	4521.00		Flood current; wi 10 min; measured; Max ebb current
+00067	4522.00		Flood current; wi 10 min; measured; Max flood current
+00067	4600.00		Flood current; wi 5 min
+00067	4601.00		Flood current; wi 5 min; Max ebb current
+00067	4602.00		Flood current; wi 5 min; Max flood current
+00067	4610.00		Flood current; wi 5 min; C&GS table
+00067	4611.00		Flood current; wi 5 min; C&GS table; Max ebb current
+00067	4612.00		Flood current; wi 5 min; C&GS table; Max flood current
+00067	4620.00		Flood current; wi 5 min; measured
+00067	4621.00		Flood current; wi 5 min; measured; Max ebb current
+00067	4622.00		Flood current; wi 5 min; measured; Max flood current
+00067	5000.00		Mean tide level; wi 3 hrs
+00067	5001.00		Mean tide level; wi 3 hrs; Max ebb current
+00067	5002.00		Mean tide level; wi 3 hrs; Max flood current
+00067	5010.00		Mean tide level; wi 3 hrs; C&GS table
+00067	5011.00		Mean tide level; wi 3 hrs; C&GS table; Max ebb current
+00067	5012.00		Mean tide level; wi 3 hrs; C&GS table; Max flood current
+00067	5020.00		Mean tide level; wi 3 hrs; measured
+00067	5021.00		Mean tide level; wi 3 hrs; measured; Max ebb current
+00067	5022.00		Mean tide level; wi 3 hrs; measured; Max flood current
+00067	5100.00		Mean tide level; wi 2 hrs
+00067	5101.00		Mean tide level; wi 2 hrs; Max ebb current
+00067	5102.00		Mean tide level; wi 2 hrs; Max flood current
+00067	5110.00		Mean tide level; wi 2 hrs; C&GS table
+00067	5111.00		Mean tide level; wi 2 hrs; C&GS table; Max ebb current
+00067	5112.00		Mean tide level; wi 2 hrs; C&GS table; Max flood current
+00067	5120.00		Mean tide level; wi 2 hrs; measured
+00067	5121.00		Mean tide level; wi 2 hrs; measured; Max ebb current
+00067	5122.00		Mean tide level; wi 2 hrs; measured; Max flood current
+00067	5200.00		Mean tide level; wi 1 hr
+00067	5201.00		Mean tide level; wi 1 hr; Max ebb current
+00067	5202.00		Mean tide level; wi 1 hr; Max flood current
+00067	5210.00		Mean tide level; wi 1 hr; C&GS table
+00067	5211.00		Mean tide level; wi 1 hr; C&GS table; Max ebb current
+00067	5212.00		Mean tide level; wi 1 hr; C&GS table; Max flood current
+00067	5220.00		Mean tide level; wi 1 hr; measured
+00067	5221.00		Mean tide level; wi 1 hr; measured; Max ebb current
+00067	5222.00		Mean tide level; wi 1 hr; measured; Max flood current
+00067	5300.00		Mean tide level; wi 40 min
+00067	5301.00		Mean tide level; wi 40 min; Max ebb current
+00067	5302.00		Mean tide level; wi 40 min; Max flood current
+00067	5310.00		Mean tide level; wi 40 min; C&GS table
+00067	5311.00		Mean tide level; wi 40 min; C&GS table; Max ebb current
+00067	5312.00		Mean tide level; wi 40 min; C&GS table; Max flood current
+00067	5320.00		Mean tide level; wi 40 min; measured
+00067	5321.00		Mean tide level; wi 40 min; measured; Max ebb current
+00067	5322.00		Mean tide level; wi 40 min; measured; Max flood current
+00067	5400.00		Mean tide level; wi 20 min
+00067	5401.00		Mean tide level; wi 20 min; Max ebb current
+00067	5402.00		Mean tide level; wi 20 min; Max flood current
+00067	5410.00		Mean tide level; wi 20 min; C&GS table
+00067	5411.00		Mean tide level; wi 20 min; C&GS table; Max ebb current
+00067	5412.00		Mean tide level; wi 20 min; C&GS table; Max flood current
+00067	5420.00		Mean tide level; wi 20 min; measured
+00067	5421.00		Mean tide level; wi 20 min; measured; Max ebb current
+00067	5422.00		Mean tide level; wi 20 min; measured; Max flood current
+00067	5500.00		Mean tide level; wi 10 min
+00067	5501.00		Mean tide level; wi 10 min; Max ebb current
+00067	5502.00		Mean tide level; wi 10 min; Max flood current
+00067	5510.00		Mean tide level; wi 10 min; C&GS table
+00067	5511.00		Mean tide level; wi 10 min; C&GS table; Max ebb current
+00067	5512.00		Mean tide level; wi 10 min; C&GS table; Max flood current
+00067	5520.00		Mean tide level; wi 10 min; measured
+00067	5521.00		Mean tide level; wi 10 min; measured; Max ebb current
+00067	5522.00		Mean tide level; wi 10 min; measured; Max flood current
+00067	5600.00		Mean tide level; wi 5 min
+00067	5601.00		Mean tide level; wi 5 min; Max ebb current
+00067	5602.00		Mean tide level; wi 5 min; Max flood current
+00067	5610.00		Mean tide level; wi 5 min; C&GS table
+00067	5611.00		Mean tide level; wi 5 min; C&GS table; Max ebb current
+00067	5612.00		Mean tide level; wi 5 min; C&GS table; Max flood current
+00067	5620.00		Mean tide level; wi 5 min; measured
+00067	5621.00		Mean tide level; wi 5 min; measured; Max ebb current
+00067	5622.00		Mean tide level; wi 5 min; measured; Max flood current
+
+</pre>
+<h4><a name="00115" id="sample_treamtment">00115</a> SAMPLE TREATMENT</h4>
+
+
+00115       1           Raw
+00115       2           Treated
+00115       3           Wastewater
+00115       4           Drinking Water
+
+</pre>
+<h4><a name="01300" id="oil_grease">01300</a> OIL-GREASE (SEVERITY)</h4>
+
+
+01300       0           None
+01300       1           Mild
+01300       2           Moderate
+01300       3           Serious
+01300       4           Extreme
+
+</pre>
+<h4><a name="01305" id="detergent">01305</a> DETERGENT SUDS
+(SEVERITY)</h4>
+
+
+01305       0           None
+01305       1           Mild
+01305       2           Moderate
+01305       3           Serious
+01305       4           Extreme
+
+</pre>
+<h4><a name="01310" id="gas_bubbles">01310</a> GAS BUBBLES
+(SEVERITY)</h4>
+
+
+01310       0           None
+01310       1           Mild
+01310       2           Moderate
+01310       3           Serious
+01310       4           Extreme
+
+</pre>
+<h4><a name="01315" id="floating">01315</a> SLUDGS: FLOATING
+(SEVERITY)</h4>
+
+
+01315       0           None
+01315       1           Mild
+01315       2           Moderate
+01315       3           Serious
+01315       4           Extreme
+
+</pre>
+<h4><a name="01320" id="garbage_floating">01320</a> GARBAGE, FLOATING
+(SEVERITY)</h4>
+
+
+01320       0           None
+01320       1           Mild
+01320       2           Moderate
+01320       3           Serious
+01320       4           Extreme
+
+</pre>
+<h4><a name="01325" id="algae_floating">01325</a> ALGAE, FLOATING MATS
+(SEVERITY)</h4>
+
+
+01325       0           None
+01325       1           Mild
+01325       2           Moderate
+01325       3           Serious
+01325       4           Extreme
+
+</pre>
+<h4><a name="01330" id="atmospheric">01330</a> ODOR, ATMOSPHERIC
+(SEVERITY)</h4>
+
+
+01330       0           None
+01330       1           Mild
+01330       2           Moderate
+01330       3           Serious
+01330       4           Extreme
+
+</pre>
+<h4><a name="01335" id="sewage">01335</a> SEWAGE SOLIDS, FRESH,
+FLOATING (SEVERITY)</h4>
+
+
+01335       0           None
+01335       1           Mild
+01335       2           Moderate
+01335       3           Serious
+01335       4           Extreme
+
+</pre>
+<h4><a name="01340" id="fish_dead">01340</a> FISH, DEAD (SEVERITY)</h4>
+
+
+01340       0           None
+01340       1           Mild
+01340       2           Moderate
+01340       3           Serious
+01340       4           Extreme
+
+</pre>
+<h4><a name="01345" id="debris_floating">01345</a> DEBRIS, FLOATING
+(SEVERITY)</h4>
+
+
+01345       0           None
+01345       1           Mild
+01345       2           Moderate
+01345       3           Serious
+01345       4           Extreme
+
+
+</pre>
+<h4><a name="01350" id="turbidity">01350</a> TURBIDITY (SEVERITY)</h4>
+
+
+01350       0           None
+01350       1           Mild
+01350       2           Moderate
+01350       3           Serious
+01350       4           Extreme
+
+
+</pre>
+<h4><a name="01351" id="streamflow">01351</a> STREAMFLOW (SEVERITY)</h4>
+
+
+01351       1           Dry
+01351       2           Low
+01351       3           Normal
+01351       4           Flood
+01351       5           Above normal
+
+
+</pre>
+<h4><a name="01355" id="ice_cover">01355</a> ICE COVER, FLOATING OR
+SOLID (SEVERITY)</h4>
+
+
+01355       0           None
+01355       1           Mild
+01355       2           Moderate
+01355       3           Serious
+01355       4           Extreme
+
+
+</pre>
+<h4><a name="04117" id="tether_line">04117</a> TETHER LINE USED FOR
+COLLECTING SAMPLE (YES=1) CODES</h4>
+
+
+04117       0           No
+04117       1           Yes
+
+
+</pre>
+<h4><a name="31678" id="streptocci">31678</a> STREPTOCCI, FECAL, TUBE
+CONFIGURATION</h4>
+
+
+31678       1           Five 10-ml tubes
+31678       2           Five 10-ml, five 1-ml and five 0.1-ml tubes
+31678       3           Five 10-ml, one 1-ml and one 0.1-ml tubes
+31678       4           One 50-ml and five 10-ml tubes
+31678       5           One 50-ml, five 10-ml and five 1-ml tubes
+31678       6           Five 50-ml, five 10-ml and five 1-ml tubes
+31678       7           Three 10-ml, three 1-ml and three 0.1-ml tubes
+31678       8           Five 100-ml, five 10-ml and five 1-ml tubes
+
+
+</pre>
+<h4><a name="49986" id="degree_of_decomposition">49986</a> DEGREE OF DECOMPOSITION,
+SOIL, CODE</h4>
+
+
+49986       1           Fibrix
+49986       2           Hemic
+49986       3           Sapric
+
+
+</pre>
+<h4><a name="50276" id="filter_type">50276</a> FILTER TYPE, CODE</h4>
+
+
+50276      10           Gelman capsule, 0.45um
+50276      20           Membrane, 0.45um, 142mm
+50276      30           Membrane, o,45um, 47mm
+50276      40           Membrane, 0.22um, 47mm
+50276      50           Membrane, 0.1um, 47mm
+50276      60           Membrane, 0.1um, 142mm
+50276      70           Membrane, syringe-type, 0.45um
+50276      80           Membrane, syringe-type, 0.22um
+50276      90           Silver membrane, 0.45um, 47mm
+50276     100           Glass fiber, 0.7um, 142mm
+50276     110           Glass fiber, baked, 0.7um, 142mm
+50276     120           Glass fiber, 0.7um, 47mm
+50276     130           Glass fiber, baked, 0.7um, 47mm
+50276     200           Other
+
+
+</pre>
+<h4><a name="50280" id="water_sample">50280</a> WATER SAMPLES</h4>
+
+
+50280    1001           Fixed frequency, surface-water
+50280    1002           Storm hydrograph, surface-water
+50280    1003           Extreme high flow, surface-water
+50280    1004           Extreme low flow, surface-water
+50280    1005           Diurnal, surface-water
+50280    1006           Synoptic, surface-water
+50280    1098           Surface-water quality control
+50280    1099           Other, surface-water
+50280    1501           Synoptic, Hyporheic zone
+50280    1502           Low flow, Hyporheic zone
+50280    1503           High flow, Hyporheic zone
+50280    2001           Primary, groundwater
+50280    2002           Supplemental, groundwater
+50280    2003           Temporal characterization, groundwater
+50280    2004           Resample, groundwater
+50280    2098           Groundwater quality control
+50280    2099           Other, groundwater
+50280    3001           Occurrence Survey, bed sediment or tissue
+50280    3002           Spatial Distribution Survey, bed sediment or tissue
+50280    3003           Synoptic Study, bed sediment or tissue
+50280    3098           Bed-sediment or tissue quality control
+50280    3099           Other, bed sediment and tissue
+50280    4001           Reconstructive trends from sediment core
+50280    5051           Sample collected during site installation, any media
+50280    5052           Event-based (runoff or recharge conditions), any media
+50280    5053           Fixed frequency (non event-based), any media
+50280    5098           QA/QC, media other than SW, GW, or BS&T
+50280    5099           Other purpose, any media
+
+
+</pre>
+<h4><a name="62955" id="sample_matrix">62955</a> SAMPLE MATRIX, CODE</h4>
+
+
+62955     70            Soil
+62955     80            Borehole Core
+62955     90            Borehole Cuttings
+
+
+</pre>
+<h4><a name="71995" id="water_use_primary">71995</a> WATER USE, PRIMARY
+(CODES)</h4>
+
+
+71995     111           cash grains
+71995     131           Field crops - except cash grains
+71995     161           Vegetables and melons
+71995     171           Fruits and tree nuts
+71995     181           Horticultural specialties
+71995     191           General farm crops
+71995     211           Livestock
+71995     251           Poultry and eggs
+71995     271           Animal specialties
+71995     291           General farms - primarily livestock
+71995     711           Agricultural services - soil prep, crop plantings, etc.
+71995     741           Veterinary services
+71995     761           Animal services, farm labor and management
+71995     811           Forestry
+71995     912           Fish and wildlife farming
+71995    1011           Metal mining
+71995    1111           Anthracite mining
+71995    1211           Bituminous coal and lignite mining
+71995    1311           Oil and gas extraction
+71995    1411           Mining and quarrying of nonmetalic minerals, - nonfuel
+71995    1521           Building construction
+71995    1611           Construction - other than building
+71995    1711           Special trade (plumbing, heat, air, elec., masonry, etc.)
+71995    2011           Manufacturing - meat products
+71995    2016           Poultry and egg plants
+71995    2021           Dairy products
+71995    2032           Canned &amp; preserved fruits and vegetables
+71995    2041           Grain mill products
+71995    2051           Bakery products
+71995    2061           Sugar and confectionery products
+71995    2074           Fats and oils
+71995    2084           Beverages - alcoholic &amp; soft drinks, syrups &amp; extracts
+71995    2091           Miscellaneous food preparations
+71995    2111           Tobacco manufacturers
+71995    2211           Textile mill products
+71995    2311           Apparel - products from fabrics
+71995    2411           Lumber &amp; wood products except furniture
+71995    2511           Furniture and fixtures
+71995    2611           Paper and allied products
+71995    2711           Printing, publishing, &amp; allied industries
+71995    2821           Chemicals and allied products
+71995    2911           Petroleum refining and related products
+71995    3011           Rubber and miscellaneous plastic products
+71995    3111           Leather and leather products
+71995    3211           Stone, clay, glass, and concrete products
+71995    3281           Cut stone and stone products
+71995    3291           Abrasive, asbestos, &amp; miscellaneous nonmetalic products
+71995    3312           Blast furnaces, steel works, &amp; rolling &amp; finishing mills
+71995    3411           Metal products &amp; trans. equipment (no machinery)
+71995    3511           Machinery, except electrical
+71995    3612           Electrical &amp; electronic machinery, equipment &amp; supplies
+71995    3711           Transportation equipment repairing and parts
+71995    3811           Measuring, analyzing, &amp; controlling instruments
+71995    3911           Miscellaneous manufacturing industries
+71995    4011           Transportation - trains, taxicabs, aircraft
+71995    4212           Motor freight transportation and warehousing
+71995    4311           U.S. postal service
+71995    4411           Water transportation
+71995    4423           Water recreation on bays, lakes, rivers, &amp; canals
+71995    4511           Transportation by air
+71995    4612           Pipelines - except natural gas
+71995    4811           Communications
+71995    4922           Gas production and distribution; elec. and gas service
+71995    4941           Water supply
+71995    4952           Sewerage systems
+71995    4961           Public steam supply
+71995    4971           Irrigation systems
+71995    5012           Wholesale trade - durable goods
+71995    5111           Wholesale trade - nondurable goods
+71995    5211           Building materials, hardware, garden supply
+71995    5311           General merchandise stores
+71995    5411           Food stores
+71995    5511           Auto. dealers and gasoline service stations
+71995    5611           Apparel and accessory stores
+71995    5712           Furniture, home furnishing, and equipment stores
+71995    5812           Eating and drinking places
+71995    5912           Miscellaneous retail - drug, liquor, book, camera, etc.
+71995    6011           Banking
+71995    6112           Credit agencies
+71995    6212           Security and commodity brokers, dealers, and services
+71995    6311           Insurance
+71995    6512           Real estate
+71995    6711           Holding and other investment offices
+71995    7011           Hotels, motels, tourist courts
+71995    7021           Rooming and boarding houses
+71995    7032           Camps, transient trailer parks, &amp; camp sites
+71995    7041           Organization hotels and membership lodging houses
+71995    7211           Laundry, cleaning, and garment services
+71995    7221           Shops - photo, beauty, barber, shoe, funeral services
+71995    7311           Advertising services
+71995    7321           Consumer credit and collection
+71995    7331           Mailing, reproduction, commercial art &amp; photography
+71995    7341           Service to dwellings and other buildings
+71995    7351           News syndicates
+71995    7361           Employment services
+71995    7372           Computer and data processing
+71995    7391           Miscellaneous business services
+71995    7512           Automotive and truck rental leasing without driver
+71995    7523           Automobile parking
+71995    7531           Automotive repair shops
+71995    7542           Car washes
+71995    7549           Automotive services - except repair
+71995    7622           Miscellaneous repair services
+71995    7813           Motion picture-t.v. services, theaters, except drive-ins
+71995    7911           Recreation services, except theaters and public golf
+71995    7992           Public golf courses
+71995    7993           Coin operated amusement devices
+71995    7996           Amusement parks, sports and recreation clubs, etc.
+71995    8011           Health services (offices)
+71995    8051           Nursing and personal care facilities
+71995    8062           Hospitals
+71995    8071           Medical and dental laboratories
+71995    8081           Outpatient care facilities
+71995    8091           Health &amp; allies services, not elsewhere classified
+71995    8111           Legal services
+71995    8211           Educational services, libraries and information centers
+71995    8231           Social services &amp; rehabilitation centers
+71995    8411           Museums, art galleries, zoological &amp; botanical gardens
+71995    8611           Membership organizations
+71995    8811           Private houses, condos, municipalities, &amp; trailer parks
+71995    8911           Miscellaneous services (eng.,ed., r&amp;d, accounting, etc.)
+71995    9111           Gov., legislative, justice, public order &amp; safety misc.
+71995    9411           Administration of human resources programs
+71995    9511           Air &amp; water resource, &amp; solid waste management
+71995    9512           Natural resource conservation by public administration
+71995    9531           Admin. of housing &amp; economic programs &amp; internat'l affairs
+71995    9999           Water compacts, agreements &amp; legislative actions
+71995   14911           Commercial electric energy establishments - fossil
+71995   24911           Commercial electric energy establishments - geothermal
+71995   34911           Commercial electric energy establishments - hydroelectric
+71995   44911           Commercial electric energy establishments - nuclear
+
+
+</pre>
+<h4><a name="71996" id="water_use_secondary">71996</a> WATER USE, SECONDARY
+(CODES)</h4>
+
+
+71996     111           Cash grains
+71996     131           Field crops - except cash grains
+71996     161           Vegetables and melons
+71996     171           Fruits and tree nuts
+71996     181           Horticultural specialties
+71996     191           General farm crops
+71996     211           Livestock
+71996     251           Poultry and eggs
+71996     271           Animal specialties
+71996     291           General farms - primarily livestock
+71996     711           Agricultural services - soil prep, crop plantings, etc.
+71996     741           Veterinary services
+71996     761           Animal services, farm labor and management
+71996     811           Forestry
+71996     912           Fish and wildlife farming
+71996    1011           Metal mining
+71996    1111           Anthracite mining
+71996    1211           Bituminous coal and lignite mining
+71996    1311           Oil and gas extraction
+71996    1411           Mining and quarrying of nonmetalic minerals, - nonfuel
+71996    1521           Building construction
+71996    1611           Construction - other than building
+71996    1711           Special trade (plumbing, heat, air, elec., masonry, etc.)
+71996    2011           Manufacturing - meat products
+71996    2016           Poultry and egg plants
+71996    2021           Dairy products
+71996    2032           Canned &amp; preserved fruits and vegetables
+71996    2041           Grain mill products
+71996    2051           Bakery products
+71996    2061           Sugar and confectionery products
+71996    2074           Fats and oils
+71996    2084           Beverages - alcoholic &amp; soft drinks, syrups &amp; extracts
+71996    2091           Miscellaneous food preparations
+71996    2111           Tobacco manufacturers
+71996    2211           Textile mill products
+71996    2311           Apparel - products from fabrics
+71996    2411           Lumber &amp; wood products except furniture
+71996    2511           Furniture and fixtures
+71996    2611           Paper and allied products
+71996    2711           Printing, publishing, &amp; allied industries
+71996    2821           Chemicals and allied products
+71996    2911           Petroleum refining and related products
+71996    3011           Rubber and miscellaneous plastic products
+71996    3111           Leather and leather products
+71996    3211           Stone, clay, glass, and concrete products
+71996    3281           Cut stone and stone products
+71996    3291           Abrasive, asbestos, &amp; miscellaneous nonmetalic products
+71996    3312           Blast furnaces, steel works, &amp; rolling &amp; finishing mills
+71996    3411           Metal products &amp; trans. equipment (no machinery)
+71996    3511           Machinery, except electrical
+71996    3612           Electrical &amp; electronic machinery, equipment &amp; supplies
+71996    3711           Transportation equipment repairing and parts
+71996    3811           Measuring, analyzing, &amp; controlling instruments
+71996    3911           Miscellaneous manufacturing industries
+71996    4011           Transportation - trains, taxicabs, aircraft
+71996    4212           Motor freight transportation and warehousing
+71996    4311           U.S. postal service
+71996    4411           Water transportation
+71996    4423           Water recreation on bays, lakes, rivers, &amp; canals
+71996    4511           Transportation by air
+71996    4612           Pipelines - except natural gas
+71996    4811           Communications
+71996    4922           Gas production and distribution; elec. and gas service
+71996    4941           Water supply
+71996    4952           Sewerage systems
+71996    4961           Public steam supply
+71996    4971           Irrigation systems
+71996    5012           Wholesale trade - durable goods
+71996    5111           Wholesale trade - nondurable goods
+71996    5211           Building materials, hardware, garden supply
+71996    5311           General merchandise stores
+71996    5411           Food stores
+71996    5511           Auto. dealers and gasoline service stations
+71996    5611           Apparel and accessory stores
+71996    5712           Furniture, home furnishing, and equipment stores
+71996    5812           Eating and drinking places
+71996    5912           Miscellaneous retail - drug, liquor, book, camera, etc.
+71996    6011           Banking
+71996    6112           Credit agencies
+71996    6212           Security and commodity brokers, dealers, and services
+71996    6311           Insurance
+71996    6512           Real estate
+71996    6711           Holding and other investment offices
+71996    7011           Hotels, motels, tourist courts
+71996    7021           Rooming and boarding houses
+71996    7032           Camps, transient trailer parks, &amp; camp sites
+71996    7041           Organization hotels and membership lodging houses
+71996    7211           Laundry, cleaning, and garment services
+71996    7221           Shops - photo, beauty, barber, shoe, funeral services
+71996    7311           Advertising services
+71996    7321           Consumer credit and collection
+71996    7331           Mailing, reproduction, commercial art &amp; photography
+71996    7341           Service to dwellings and other buildings
+71996    7351           News syndicates
+71996    7361           Employment services
+71996    7372           Computer and data processing
+71996    7391           Miscellaneous business services
+71996    7512           Automotive and truck rental leasing without driver
+71996    7523           Automobile parking
+71996    7531           Automotive repair shops
+71996    7542           Car washes
+71996    7549           Automotive services - except repair
+71996    7622           Miscellaneous repair services
+71996    7813           Motion picture-t.v. services, theaters, except drive-ins
+71996    7911           Recreation services, except theaters and public golf
+71996    7992           Public golf courses
+71996    7993           Coin operated amusement devices
+71996    7996           Amusement parks, sports and recreation clubs, etc.
+71996    8011           Health services (offices)
+71996    8051           Nursing and personal care facilities
+71996    8062           Hospitals
+71996    8071           Medical and dental laboratories
+71996    8081           Outpatient care facilities
+71996    8091           Health &amp; allies services, not elsewhere classified
+71996    8111           Legal services
+71996    8211           Educational services, libraries and information centers
+71996    8231           Social services &amp; rehabilitation centers
+71996    8411           Museums, art galleries, zoological &amp; botanical gardens
+71996    8611           Membership organizations
+71996    8811           Private houses, condos, municipalities, &amp; trailer parks
+71996    8911           Miscellaneous services (eng.,ed., r&amp;d, accounting, etc.)
+71996    9111           Gov., legislative, justice, public order &amp; safety misc.
+71996    9411           Administration of human resources programs
+71996    9511           Air &amp; water resource, &amp; solid waste management
+71996    9512           Natural resource conservation by public administration
+71996    9531           Admin. of housing &amp; economic programs &amp; internat'l affairs
+71996    9999           Water compacts, agreements &amp; legislative actions
+71996   14911           Commercial electric energy establishments - fossil
+71996   24911           Commercial electric energy establishments - geothermal
+71996   34911           Commercial electric energy establishments - hydroelectric
+71996   44911           Commercial electric energy establishments - nuclear
+
+
+</pre>
+<h4><a name="71997" id="water_use_tertiary">71997</a> WATER USE, TERTIARY
+(CODES)</h4>
+
+
+71997     111           Cash grains
+71997     131           Field crops - except cash grains
+71997     161           Vegetables and melons
+71997     171           Fruits and tree nuts
+71997     181           Horticultural specialties
+71997     191           General farm crops
+71997     211           Livestock
+71997     251           Poultry and eggs
+71997     271           Animal specialties
+71997     291           General farms - primarily livestock
+71997     711           Agricultural services - soil prep, crop plantings, etc.
+71997     741           Veterinary services
+71997     761           Animal services, farm labor and management
+71997     811           Forestry
+71997     912           Fish and wildlife farming
+71997    1011           Metal mining
+71997    1111           Anthracite mining
+71997    1211           Bituminous coal and lignite mining
+71997    1311           Oil and gas extraction
+71997    1411           Mining and quarrying of nonmetalic minerals, - nonfuel
+71997    1521           Building construction
+71997    1611           Construction - other than building
+71997    1711           Special trade (plumbing, heat, air, elec., masonry, etc.)
+71997    2011           Manufacturing - meat products
+71997    2016           Poultry and egg plants
+71997    2021           Dairy products
+71997    2032           Canned &amp; preserved fruits and vegetables
+71997    2041           Grain mill products
+71997    2051           Bakery products
+71997    2061           Sugar and confectionery products
+71997    2074           Fats and oils
+71997    2084           Beverages - alcoholic &amp; soft drinks, syrups &amp; extracts
+71997    2091           Miscellaneous food preparations
+71997    2111           Tobacco manufacturers
+71997    2211           Textile mill products
+71997    2311           Apparel - products from fabrics
+71997    2411           Lumber &amp; wood products except furniture
+71997    2511           Furniture and fixtures
+71997    2611           Paper and allied products
+71997    2711           Printing, publishing, &amp; allied industries
+71997    2821           Chemicals and allied products
+71997    2911           Petroleum refining and related products
+71997    3011           Rubber and miscellaneous plastic products
+71997    3111           Leather and leather products
+71997    3211           Stone, clay, glass, and concrete products
+71997    3281           Cut stone and stone products
+71997    3291           Abrasive, asbestos, &amp; miscellaneous nonmetalic products
+71997    3312           Blast furnaces, steel works, &amp; rolling &amp; finishing mills
+71997    3411           Metal products &amp; trans. equipment (no machinery)
+71997    3511           Machinery, except electrical
+71997    3612           Electrical &amp; electronic machinery, equipment &amp; supplies
+71997    3711           Transportation equipment repairing and parts
+71997    3811           Measuring, analyzing, &amp; controlling instruments
+71997    3911           Miscellaneous manufacturing industries
+71997    4011           Transportation - trains, taxicabs, aircraft
+71997    4212           Motor freight transportation and warehousing
+71997    4311           U.S. postal service
+71997    4411           Water transportation
+71997    4423           Water recreation on bays, lakes, rivers, &amp; canals
+71997    4511           Transportation by air
+71997    4612           Pipelines - except natural gas
+71997    4811           Communications
+71997    4922           Gas production and distribution; elec. and gas service
+71997    4941           Water supply
+71997    4952           Sewerage systems
+71997    4961           Public steam supply
+71997    4971           Irrigation systems
+71997    5012           Wholesale trade - durable goods
+71997    5111           Wholesale trade - nondurable goods
+71997    5211           Building materials, hardware, garden supply
+71997    5311           General merchandise stores
+71997    5411           Food stores
+71997    5511           Auto. dealers and gasoline service stations
+71997    5611           Apparel and accessory stores
+71997    5712           Furniture, home furnishing, and equipment stores
+71997    5812           Eating and drinking places
+71997    5912           Miscellaneous retail - drug, liquor, book, camera, etc.
+71997    6011           Banking
+71997    6112           Credit agencies
+71997    6212           Security and commodity brokers, dealers, and services
+71997    6311           Insurance
+71997    6512           Real estate
+71997    6711           Holding and other investment offices
+71997    7011           Hotels, motels, tourist courts
+71997    7021           Rooming and boarding houses
+71997    7032           Camps, transient trailer parks, &amp; camp sites
+71997    7041           Organization hotels and membership lodging houses
+71997    7211           Laundry, cleaning, and garment services
+71997    7221           Shops - photo, beauty, barber, shoe, funeral services
+71997    7311           Advertising services
+71997    7321           Consumer credit and collection
+71997    7331           Mailing, reproduction, commercial art &amp; photography
+71997    7341           Service to dwellings and other buildings
+71997    7351           News syndicates
+71997    7361           Employment services
+71997    7372           Computer and data processing
+71997    7391           Miscellaneous business services
+71997    7512           Automotive and truck rental leasing without driver
+71997    7523           Automobile parking
+71997    7531           Automotive repair shops
+71997    7542           Car washes
+71997    7549           Automotive services - except repair
+71997    7622           Miscellaneous repair services
+71997    7813           Motion picture-t.v. services, theaters, except drive-ins
+71997    7911           Recreation services, except theaters and public golf
+71997    7992           Public golf courses
+71997    7993           Coin operated amusement devices
+71997    7996           Amusement parks, sports and recreation clubs, etc.
+71997    8011           Health services (offices)
+71997    8051           Nursing and personal care facilities
+71997    8062           Hospitals
+71997    8071           Medical and dental laboratories
+71997    8081           Outpatient care facilities
+71997    8091           Health &amp; allies services, not elsewhere classified
+71997    8111           Legal services
+71997    8211           Educational services, libraries and information centers
+71997    8231           Social services &amp; rehabilitation centers
+71997    8411           Museums, art galleries, zoological &amp; botanical gardens
+71997    8611           Membership organizations
+71997    8811           Private houses, condos, municipalities, &amp; trailer parks
+71997    8911           Miscellaneous services (eng.,ed., r&amp;d, accounting, etc.)
+71997    9111           Gov., legislative, justice, public order &amp; safety misc.
+71997    9411           Administration of human resources programs
+71997    9511           Air &amp; water resource, &amp; solid waste management
+71997    9512           Natural resource conservation by public administration
+71997    9531           Admin. of housing &amp; economic programs &amp; internat'l affairs
+71997    9999           Water compacts, agreements &amp; legislative actions
+71997   14911           Commercial electric energy establishments - fossil
+71997   24911           Commercial electric energy establishments - geothermal
+71997   34911           Commercial electric energy establishments - hydroelectric
+71997   44911           Commercial electric energy establishments - nuclear
+
+
+</pre>
+<h4><a name="71998" id="water_use_quaternary">71998</a> WATER USE, QUATERNARY
+(CODES)</h4>
+
+
+71998     111           Cash grains
+71998     131           Field crops - except cash grains
+71998     161           Vegetables and melons
+71998     171           Fruits and tree nuts
+71998     181           Horticultural specialties
+71998     191           General farm crops
+71998     211           Livestock
+71998     251           Poultry and eggs
+71998     271           Animal specialties
+71998     291           General farms - primarily livestock
+71998     711           Agricultural services - soil prep, crop plantings, etc.
+71998     741           Veterinary services
+71998     761           Animal services, farm labor and management
+71998     811           Forestry
+71998     912           Fish and wildlife farming
+71998    1011           Metal mining
+71998    1111           Anthracite mining
+71998    1211           Bituminous coal and lignite mining
+71998    1311           Oil and gas extraction
+71998    1411           Mining and quarrying of nonmetalic minerals, - nonfuel
+71998    1521           Building construction
+71998    1611           Construction - other than building
+71998    1711           Special trade (plumbing, heat, air, elec., masonry, etc.)
+71998    2011           Manufacturing - meat products
+71998    2016           Poultry and egg plants
+71998    2021           Dairy products
+71998    2032           Canned &amp; preserved fruits and vegetables
+71998    2041           Grain mill products
+71998    2051           Bakery products
+71998    2061           Sugar and confectionery products
+71998    2074           Fats and oils
+71998    2084           Beverages - alcoholic &amp; soft drinks, syrups &amp; extracts
+71998    2091           Miscellaneous food preparations
+71998    2111           Tobacco manufacturers
+71998    2211           Textile mill products
+71998    2311           Apparel - products from fabrics
+71998    2411           Lumber &amp; wood products except furniture
+71998    2511           Furniture and fixtures
+71998    2611           Paper and allied products
+71998    2711           Printing, publishing, &amp; allied industries
+71998    2821           Chemicals and allied products
+71998    2911           Petroleum refining and related products
+71998    3011           Rubber and miscellaneous plastic products
+71998    3111           Leather and leather products
+71998    3211           Stone, clay, glass, and concrete products
+71998    3281           Cut stone and stone products
+71998    3291           Abrasive, asbestos, &amp; miscellaneous nonmetalic products
+71998    3312           Blast furnaces, steel works, &amp; rolling &amp; finishing mills
+71998    3411           Metal products &amp; trans. equipment (no machinery)
+71998    3511           Machinery, except electrical
+71998    3612           Electrical &amp; electronic machinery, equipment &amp; supplies
+71998    3711           Transportation equipment repairing and parts
+71998    3811           Measuring, analyzing, &amp; controlling instruments
+71998    3911           Miscellaneous manufacturing industries
+71998    4011           Transportation - trains, taxicabs, aircraft
+71998    4212           Motor freight transportation and warehousing
+71998    4311           U.S. postal service
+71998    4411           Water transportation
+71998    4423           Water recreation on bays, lakes, rivers, &amp; canals
+71998    4511           Transportation by air
+71998    4612           Pipelines - except natural gas
+71998    4811           Communications
+71998    4922           Gas production and distribution; elec. and gas service
+71998    4941           Water supply
+71998    4952           Sewerage systems
+71998    4961           Public steam supply
+71998    4971           Irrigation systems
+71998    5012           Wholesale trade - durable goods
+71998    5111           Wholesale trade - nondurable goods
+71998    5211           Building materials, hardware, garden supply
+71998    5311           General merchandise stores
+71998    5411           Food stores
+71998    5511           Auto. dealers and gasoline service stations
+71998    5611           Apparel and accessory stores
+71998    5712           Furniture, home furnishing, and equipment stores
+71998    5812           Eating and drinking places
+71998    5912           Miscellaneous retail - drug, liquor, book, camera, etc.
+71998    6011           Banking
+71998    6112           Credit agencies
+71998    6212           Security and commodity brokers, dealers, and services
+71998    6311           Insurance
+71998    6512           Real estate
+71998    6711           Holding and other investment offices
+71998    7011           Hotels, motels, tourist courts
+71998    7021           Rooming and boarding houses
+71998    7032           Camps, transient trailer parks, &amp; camp sites
+71998    7041           Organization hotels and membership lodging houses
+71998    7211           Laundry, cleaning, and garment services
+71998    7221           Shops - photo, beauty, barber, shoe, funeral services
+71998    7311           Advertising services
+71998    7321           Consumer credit and collection
+71998    7331           Mailing, reproduction, commercial art &amp; photography
+71998    7341           Service to dwellings and other buildings
+71998    7351           News syndicates
+71998    7361           Employment services
+71998    7372           Computer and data processing
+71998    7391           Miscellaneous business services
+71998    7512           Automotive and truck rental leasing without driver
+71998    7523           Automobile parking
+71998    7531           Automotive repair shops
+71998    7542           Car washes
+71998    7549           Automotive services - except repair
+71998    7622           Miscellaneous repair services
+71998    7813           Motion picture-t.v. services, theaters, except drive-ins
+71998    7911           Recreation services, except theaters and public golf
+71998    7992           Public golf courses
+71998    7993           Coin operated amusement devices
+71998    7996           Amusement parks, sports and recreation clubs, etc.
+71998    8011           Health services (offices)
+71998    8051           Nursing and personal care facilities
+71998    8062           Hospitals
+71998    8071           Medical and dental laboratories
+71998    8081           Outpatient care facilities
+71998    8091           Health &amp; allies services, not elsewhere classified
+71998    8111           Legal services
+71998    8211           Educational services, libraries and information centers
+71998    8231           Social services &amp; rehabilitation centers
+71998    8411           Museums, art galleries, zoological &amp; botanical gardens
+71998    8611           Membership organizations
+71998    8811           Private houses, condos, municipalities, &amp; trailer parks
+71998    8911           Miscellaneous services (eng.,ed., r&amp;d, accounting, etc.)
+71998    9111           Gov., legislative, justice, public order &amp; safety misc.
+71998    9411           Administration of human resources programs
+71998    9511           Air &amp; water resource, &amp; solid waste management
+71998    9512           Natural resource conservation by public administration
+71998    9531           Admin. of housing &amp; economic programs &amp; internat'l affairs
+71998    9999           Water compacts, agreements &amp; legislative actions
+71998   14911           Commercial electric energy establishments - fossil
+71998   24911           Commercial electric energy establishments - geothermal
+71998   34911           Commercial electric energy establishments - hydroelectric
+71998   44911           Commercial electric energy establishments - nuclear
+
+
+</pre>
+<h4><a name="71999" id="sample_purpose">71999</a> SAMPLE PURPOSE
+(CODES)</h4>
+
+
+71999      10           Routine
+71999      15           NAWQA - National Water-Quality Assessment
+71999      20           NASQAN
+71999      30           Benchmark
+71999      35           RASA, Regional Aquifer Systems Analysis
+71999      40           SW Network
+71999      50           GW Network
+71999      60           Lowflow Network
+71999      70           Highflow Network
+71999      80           Acid rain
+71999      80.01        Bulk or undefined (bu)
+71999      80.02        Sample related problem (ns)
+71999      80.03        Dry wet-side sample (na)
+71999      80.04        Completely missing samples (un)
+71999      80.05        Long duration sample (ld)
+71999      80.06        Sampling protocol (time) (sp)
+71999      80.07        Sampler malfunction (s)
+71999      90           Snow survey
+71999     100           Mt. St. Helens
+71999     110           Seepage study
+71999     120           Irrigation effects
+71999     130           Recharge
+71999     140           Injection
+71999     150           Bank erodibility
+71999     160           National blank and spike program
+71999     170           Quality assurance
+71999     180           Cross-section variation
+71999     190           Groundwater/Surface-water Interaction Study
+
+
+</pre>
+<h4><a name="72005" id="sample_source">72005</a> SAMPLE SOURCE (CODES)</h4>
+
+
+72005       0.01        Airline measurement
+72005       0.02        Analog or graphic recorder
+72005       0.03        Calibrated airline measurement
+72005       0.04        Estimated
+72005       0.05        Pressure-gage measurement
+72005       0.06        Calibrated pressure-gage measurement
+72005       0.07        Interpreted from geophysical logs
+72005       0.08        Manometer measurement
+72005       0.09        Nonrecording gage
+72005       0.10        Reported, method not known
+72005       0.11        Steel-tape measurement
+72005       0.12        Electric-tape measurement
+72005       0.13        Calibrated electric-tape measurement
+72005       0.14        Other
+72005       1           Well head
+72005       2           Drill stem test
+72005       3           Separator
+72005       4           Boiler
+72005       5           Flow line
+72005       6           Battery
+72005       7           Undesignated
+72005       8           Tank
+72005       9           Production test
+72005      10           Heater treater
+72005      11           Gun barrel
+72005      12           Swab
+72005      13           Pit
+72005      14           Manifold test
+72005      15           Gas line drip
+72005      16           Casing leak
+72005      17           Wire line test
+72005      18           Header
+72005      19           Filter
+72005      20           Test tool
+72005      21           Ltx unit
+72005      22           Knockout
+72005      23           Well bleeder
+72005      24           Fracture test
+72005      25           Test wagon
+72005      26           Pump
+72005      27           Tap near well
+72005      28           Tap away from well
+72005      29           Bucket
+72005      30           Pressure tank
+72005      31           Discharge pipe
+72005      32           Foerst sampler
+72005      33           Bailer
+72005      34           Drain line
+72005      35           Injection pump
+72005      36           Spot sample in fluid column
+72005      37           Tank battery including gun barrel
+72005      38           Windmill
+72005      39           Water siphon
+72005      40           Special
+72005      41           Municipal and domestic waste
+72005      42           Industrial waste
+72005      43           Storm water (prior to entering natural channels)
+72005      44           Public water supplies (treated water)
+72005      45           Mine water
+72005      46           Public water supplies (untreated water)
+72005      47           Water well
+72005      48           Multiple water wells
+72005      49           Oil well
+72005      50           Multi-oil well
+72005      51           Gas well
+72005      52           Multi-gas well
+72005      53           Oil and gas well
+72005      54           Multi-oil and gas well
+72005      55           Drilled and abandoned well
+72005      56           Plugged and abandoned well
+72005      57           Junked and abandoned well
+72005      58           Temporarily abandoned well
+72005      59           Abandoned oil well
+72005      60           Abandoned gas well
+72005      61           Salt-water supply well
+72005      62           Salt-water disposal well
+72005      63           Injection well
+72005      64           Service well
+72005      65           Wetland ecosystem
+72005      66           Dredge wake
+72005      67           Mainstream
+72005      68           Overbank
+72005      69           Composited public water supply(untreated water)
+72005      70           Composited public water supply(treated water)
+72005      72           Interstitial water
+72005      74           Lysimeter
+72005      76           Oil or gas test well converted to water well
+72005      77           Surficial bank
+72005      78           Interior bank
+72005      79           Before pressure tank
+72005      80           After pressure tank
+72005      86           Hyporheic zone
+72005      88           Seepage Meter
+72005     100           Domestic supply-untreated
+72005     110           Domestic supply-treated
+72005    1001           Wet deposition
+72005    1002           Dustfall
+72005    1003           Landfill
+72005    1004           Cast overburden
+72005    1005           Street sweeping
+72005    1006           Landfill seep
+
+
+</pre>
+<h4><a name="72006" id="sampling_condition">72006</a> SAMPLING CONDITION
+(CODES)</h4>
+
+
+72006       0.01        The site was dry (no water level is recorded)
+72006       0.02        The site had been flowing recently
+72006       0.03        The site was flowing, head could not be measured
+72006       0.04        A nearby site that taps the aquifer was flowing
+72006       0.05        Nearby site tapping same aquifer had been flowing recently
+72006       0.06        Injector site
+72006       0.07        Injector site monitor
+72006       0.08        Measurement discontinued
+72006       0.09        Obstruction encountered in well above water surface
+72006       0.10        The site was being pumped
+72006       0.11        The site had been pumped recently
+72006       0.12        Nearby site tapping the same aquifer was being pumped
+72006       0.13        Nearby site tapping the same aquifer was pumped recently
+72006       0.14        Foreign substance present on the surface of the water
+72006       0.15        Well destroyed
+72006       0.16        Water level affected by stage in nearby site
+72006       0.17        Other conditions affecting the measured water level
+72006       1           Testing
+72006       2           Undesignated
+72006       3           Swabbing
+72006       4           Flowing
+72006       5           Reversing out
+72006       6           Flowing on gas lift
+72006       7           After acidizing
+72006       8           Pumping
+72006       9           Millipore filter
+72006      10           Open hole
+72006      11           Flowing on drill stem test
+72006      12           After drill stem test
+72006      15           Bailing
+72006      16           After perforation
+72006      17           Tubing flow
+72006      18           Producing
+72006      19           Circulating
+72006      20           Flowing on production test
+72006      21           Flowing on potential test
+72006      22           Lifting
+72006      23           Flowing to pit
+72006      24           Water flooding
+72006      25           Jetting
+72006      26           Production and development test
+72006      27           Production by unknown method
+72006      30           Seeping
+72006      31           Nearby well pumping
+72006      32           Nearby well taking water
+72006      33           Well taking water
+
+
+</pre>
+<h4><a name="74200" id="sample_presenrvation">74200</a> SAMPLE PRESERVATION
+METHOD, (CODES)</h4>
+
+
+74200       1           FA, Polyethylene bottle, 250 mL, acid rinsed
+74200       3           FAB, Teflon bottle, 250 mL, acid rinsed
+74200       5           FAR, Polyethylene bottle, 1L, acid rinsed
+74200       7           FC, Brown polyethylene bottle, size dependent on lab sched
+74200       9           FU, poly bottle, field rinsed
+74200      11           RA, Polyethylene bottle, acid-rinsed, 250 mL
+74200      13           RAB, Teflon bottle, acid rinsed, 250 mL
+74200      15           RAE, Polyethylene bottle, acid-rinsed, 250 mL
+74200      17           RAH, Polyethylene bottle, acid-rinsed, 250 mL
+74200      19           RC, brown poly bottle, field rinsed, 250 mL
+74200      21           RU, Polyethylene bottle, size dependent on lab sched
+74200      23           RUR, Polyethylene bottle, polyseal cap, 250 or 500 mL, or1L
+74200      25           LC0023 or RCN, Polyethylene bottle, 250 mL
+74200      27           LC0076 or COD, Glass bottle, 125 mL, baked at 450 deg C
+74200      29           LC0089, Polyethylene bottle, 250 mL
+74200      31           LC0239, Poly Bottle, Acid Rinsed, 1 L
+74200      33           Contact NWQL
+74200      35           LC0300, glass bottle, field rinsed, 250 mL
+74200      39           LC0439, steel barrel
+74200      41           LC0440, Glass bottle, narrow-neck, polyethylene seal cap,1L
+74200      43           LC0452, Polyethylene bottle, polyethylene seal cap, 125 mL
+74200      45           LC0489, Glass or polyethylene bottle, 125 mL
+74200      47           LC0490, Contact NWQL
+74200      49           LC0491, Contact NWQL
+74200      51           LC0880 or FCN, Polyethylene bottle, 250 mL
+74200      53           LC0995, Contact NWQL
+74200      55           LC0996, Glass bottle, field rinsed
+74200      57           LC0997, Contact NWQL
+74200      59           CL, septum bottle, 40 mL
+74200      61           GCC, Amber glass bottle, baked at 450 degrees C, 1L
+74200      63           GCV, Amber glass septum vial, 40 mL
+74200      65           RCB, Polyethylene bottle, 250 mL (Same as fixed value 79)
+74200      67           LC0052 or PHE, Glass bottle, baked, 500 mL
+74200      69           LC0113 or DOC, Amber glass bottle, baked at 450 deg C,125mL
+74200      71           LC0114 or TOC, Amber glass bottle, baked at 450 deg C,125mL
+74200      73           LC0127, Amber oil &amp; grease bottle, baked @450deg C, 125 mL
+74200      75           LC0305 or SOC, 0.45 um silver filter in a petri dish
+74200      77           FU, Polyethylene bottle, size dependent on laboratory sched
+74200      79           RCB, Polyethylene bottle, 250 mL (Same as fixed value 65)
+74200      81           RU, poly bottle, field rinsed, 500 mL
+74200      83           LC0050 or TBY, Polyethylene bottle, 125 mL
+74200      85           LC0169 or SUSO, Polyethylene bottle, 500 mL
+74200      87           CC, plastic freezer carton, 1 pt
+74200      89           CU, plastic freezer carton, 1 pt
+74200      91           BGC, wide mouth glass bottle, 1 L
+74200      93           CC, Plastic Freezer Carton, 1 Pt
+74200      95           PP, Contact NWQL
+74200      97           SIZE, untreated
+74200      99           BEN, poly bottle, wide mouth
+74200     101           CHE, glass jar, wide mouth
+74200     103           CHY, glass vial
+74200     105           DIA, contact Atlanta Central Laboratory
+74200     107           PER, contact Atlanta Central Laboratory
+74200     109           SHY, poly bottle
+74200     111           ST, poly bottle
+74200     113           ZOO, contact Atlanta Central Laboratory
+74200     115           LC0055, poly bottle
+74200     117           LC0438, Contact NWQL
+74200     119           LC0616, glass vial
+74200     121           LC1049, wide mouth glass bottle, 1 L
+74200     123           FAM, Glass bottle, acid rinsed, 250 mL
+74200     125           FCU, brown poly bottle, field rinsed, 250 mL
+74200     127           RAM, Glass bottle, acid rinsed, 250 mL
+74200     129           LCO460, poly bottle, field rinsed, 500 mL
+74200     131           LCO881, poly bottle, field rinsed, 125 mL
+74200     133           LC1043, Glass or high-density poly bottle &amp; seal cap, 1L
+74200     135           LC1199, Contact NWQL
+74200     137           LC0019, Amber glass bottle, baked at 450 deg C, 125 mL
+74200     139           LC0306, glass bottle, 125 mL
+74200     141           LC1038, plastic freezer carton, 1 pt
+74200     143           LC0961, Contact NWQL
+74200     145           ALF, Aluminum foil
+74200     147           C18, C-18 SPE Cartridge
+74200     149           CC, Polyethylene bottle, wide-mouthed, 500 mL
+74200     151           CRB, Carbopak-B cartridge
+74200     153           CUR, Polyethylene bottle, wide-mouth, 500 mL
+74200     155           EAM, Amber glass bottle, 250 mL
+74200     157           EBC, Amber glass bottle, teflon cap liner, 1L
+74200     159           ECC, Amber glass bottle, teflon cap liner, 1L
+74200     161           EDV, Amber glass screw-cap vials, teflon-faced septa, 40mL
+74200     163           ELV, Glass screw-cap vials, teflon-faced septa, 60mL
+74200     165           EOV, Amber glass screw-cap val, teflon-faced septa, 40 mL
+74200     167           EPC, High-density poly-vinyl chloride bottle, 1L
+74200     169           ERA, Polyethylene bottle, 500 mL
+74200     171           ERC, Amber polyethylene bottle, 125 mL
+74200     173           ERU, polyethylene bottle, 250 mL
+74200     175           FCA, Brown polyethylene bottle, 125 mL
+74200     177           FCC, Brown polyethylene bottle, 125 mL
+74200     179           FUS, Filtered untreated stable isotopes
+74200     181           IQE, Invertebrate QMH Elitriate: NWQL Tech Memo 98-09
+74200     183           IQL, Invertebrate QMH Large Rare: NWQL Tech Memo 98-09
+74200     185           IQM, Invertebrate QMH Main Body, NWQL Tech Memo 98-09
+74200     187           IRE, Invertebrate RTH Elutriate; NWQL Tech Memo 98-09
+74200     189           IRL, Invertebrate RTH Large Rare: NWQL Tech Memo 98-09
+74200     191           IRM, Invertebrate RTH Main Body: NWQL Tech Memo 98-09
+74200     193           LC0460, Polyethylene bottle, polyethylene seal cap, 250mL
+74200     195           LC0624, Polyethylene bottle, polyethylene seal cap, 500 mL
+74200     197           LC1565, Glass /high-density poly bottle, poly seal cap, 1L
+74200     199           LC1567, Polyethylene bottle, polyethylene seal cap, 125 mL
+74200     201           LC1574, Glass/high-density poly bottle, poly seal cap,125mL
+74200     203           LC1717, Amber glass/high-dens poly bottle, poly seal cap,1L
+74200     205           LC1949, Contact Ty Coplen (703-648-5862)
+74200     207           LC1951, Glass/untrtd high-dens poly bottle,poly seal cap,1L
+74200     209           MBAS, Polyethylene bottle, 250 mL
+74200     211           PIC, Glass fiber filter
+74200     213           RAR, Polyethylene bottle, acid rinsed, 1L
+74200     215           RCA, Brown polyethylene bottle, 125 mL
+74200     217           RCC, Brown polyethylene bottle, 125 mL
+74200     219           RURCT, Copper tube, 1L: NWQL Tech Memo 97.04 &amp; 97.04S
+74200     221           RURCV, Glass vial, 20 mL
+74200     223           RUS, Polyethylene bottle, 250mL, 500mL, or 1L
+74200     225           SC1379, Amber glass bottle, baked @ 450 deg C, 125 mL
+74200     227           SUR, Petri dish or vial
+74200     229           TBI, Ziplock-type bag, glass or poly wide-mouth jar
+74200     231           TPCN, Glass fiber filter, 25 mm
+74200     233           UAS, Supor/glass fiber filter &amp;amber glass septum vial,40mL
+74200     235           WCA, Polyethylene bottle, 125 mL
+74200     237           LC1648, Polyethylene bottle, 250 mL
+74200     239           LC1718, Amber glass/high-dens poly bottle, poly seal cap,1L
+
+
+</pre>
+<h4><a name="82309" id="combination_source">82309</a> CONTAMINATION SOURCE,
+POSSIBLE (CODES)</h4>
+
+
+82309       1           Oil spill
+82309       3           Gas spill
+82309       5           Organic
+82309       7           Pesticide
+82309       9           Herbicide
+82309      11           Insecticide
+82309      13           Feedlot runoff
+82309      15           Salt water
+82309      17           Injection well
+82309      19           Sewage treatment plant
+82309      21           Land spreading
+82309      23           Landfill
+82309      25           Sludge dump
+82309      27           Waste lagoon
+82309      29           Urban runoff
+82309      31           Mine drainage
+82309      33           Construction drainage
+82309      35           Pulp mill outfall
+82309      37           Textile mill outfall
+82309      39           Irrigation runoff
+82309      41           Fertilizer
+82309      43           Dairy operation
+
+
+</pre>
+<h4><a name="82398" id="sampling_method">82398</a> SAMPLING METHOD
+(CODES)</h4>
+
+
+82398      10           Equal width increment (ewi)
+82398      20           Equal discharge increment (edi)
+82398      25           Timed sampling interval
+82398      30           Single vertical
+82398      40           Multiple verticals
+82398      50           Point sample
+82398      55           Composite - Multiple point samples
+82398      60           Weighted bottle
+82398      70           Grab sample  (dip)
+82398      80           Discharge integrated, equal transit rate (etr)
+82398      90           Discharge integrated, centroid
+82398     100           Van Dorn sampler
+82398     110           Sewage sampler
+82398     120           Velocity integrated
+82398     130           Seepage Meter
+82398     200           Zooplankton-net
+82398     210           Benthic invertebrate-mechanical grab
+82398     220           Benthic invertebrate-mechanical dredge
+82398     230           Benthic invertebrate-artificial substrate
+82398     240           Benthic invertebrate-natural substrate
+82398     250           Benthic invertebrate-net
+82398     260           Phytoplankton-net
+82398     270           Phytoplankton-water bottle
+82398     280           Periphyton-natural substrate
+81298     281           Periphyton-Natural Substrate, Depostional Targeted Habitat
+81298     282           Periphyton-Natural Substrate, Richest Targeted Habitat
+82398     290           Periphyton-artificial substrate
+82398     300           Tissue taken with biopsy plug
+82398     900           SuspSed; Pumping - stream sample using a pumping mechanism
+82398     910           SuspSed;Single-stage,nozzle at fixed stage,passively fillng
+82398     920           SuspSed; Box-single ver, depth-int, attached to structure
+82398     930           SuspSed; Partial Depth,depth integrated,part of single vert.
+82398     940           SuspSed; Partial Width - dep/width int, part of x-section
+82398    1000           Bedload, single equal width increment (SEWI)
+82398    1010           Bedload, multiple equal width increment (MEWI)
+82398    1020           Bedload, unequal width increment (UWI)
+82398    4010           Thief sample
+82398    4020           Open-top bailer
+82398    4025           Double-valve bailer
+82398    4030           Suction pump
+82398    4031           Suction lift centrifugal pump
+82398    4032           Suction lift jet pump
+82398    4033           Suction lift peristaltic pump
+82398    4040           Submersible pump
+82398    4041           Submersible bladder pump
+82398    4042           Submersible gas reciprocating pump
+82398    4043           Submersible gas lift pump
+82398    4044           Submersible jet pump
+82398    4045           Submersible multiple impeller (turbine) pump
+82398    4046           Submersible helical rotor pump
+82398    4047           Submersible gear pump
+82398    4048           Submersible gas-displacement pump
+82398    4050           Squeeze pump
+82398    4060           Gas reciprocating pump
+82398    4070           Gas lift
+82398    4080           Peristaltic pump
+82398    4090           Jet pump
+82398    4100           Flowing well
+82398    4110           Resin trap collector
+82398    5010           Sediment core
+82398    8010           Other
+82398    8020           Syringe sample
+82398    8030           Grab sample at water-supply tap
+
+
+</pre>
+<h4><a name="82923" id="atmospheric_deposition">82923</a> ATMOSPHERIC DEPOSITION
+TYPE WET, (CODES)</h4>
+
+
+82923       1           Snow
+82923       2           Hail
+82923       3           Mixture (rain, snow, and or hail)
+82923       4           Rain
+82923       5           Throughfall, rain dripping from a vegetative canopy
+82923       6           Stemflow, rain flowing along tree branches and trunk
+82923       9.99        Unknown
+
+</pre>
+<h4><a name="82305" id="atmospheric_deposition_type">82305</a> ATMOSPHERIC DEPOSITION
+TYPE BULK, (CODES)</h4>
+
+
+83205       1           Snow
+83205       2           Hail
+83205       3           Mixture (rain, snow, and or hail)
+83205       4           Rain
+83205       9.99        Unknown
+
+</pre>
+<h4><a name="84060" id="topography_physiographic">84060</a> TOPOGRAPHY, PHYSIOGRAPHIC
+SETTING (CODES)</h4>
+
+
+84060      10           Alluvial fan
+84060      20           Playa
+84060      30           Stream channel
+84060      40           Local depression
+84060      50           Dunes
+84060      60           Flat surface
+84060      70           Flood plain
+84060      80           Hilltop
+84060      90           Sinkhole
+84060     100           Lake, swamp, or marsh
+84060     110           Mangrove swamp
+84060     120           Offshore (estuary)
+84060     130           Pediment
+84060     140           Hillside (slope)
+84060     150           Terrace, alluvial or marine
+84060     160           Undulating
+84060     170           Valley flat
+84060     180           Upland draw
+
+
+</pre>
+<h4><a name="84143" id="well_purging_condition">84143</a> WELL PURGING CONDITION
+(CODES)</h4>
+
+
+84143     100           Well purged to stable pH
+84143     110           Well purged to stable temperature
+84143     120           Well purged to stable specific conductance
+84143     130           Well purged to stable pH and temperature
+84143     140           Well purged to stable pH and specific conductance
+84143     150           Well purged to stable temperature and specific conductance
+84143     160           Well purged to stable pH, temp. and specific conductance
+84143     170           Well purged, at least three well volumes
+84143     500           Well not purged, water in casing less than 6 hours
+84143     510           Well not purged, water in casing 6-12 hours
+84143     520           Well not purged, water in casing 12-24 hours
+84143     530           Well not purged, water in casing more than 24 hours
+
+
+</pre>
+<h4><a name="84144" id="well_selection_criteria">84144</a> WELL SELECTION CRITERIA
+(CODES)</h4>
+
+
+84144     100           Site selected because it is near/within local problem area
+84144     200           Site selected without regard to local problem area
+
+
+</pre>
+<h4><a name="84145" id="project_component">84145</a> PROJECT COMPONENT
+(CODES)</h4>
+
+
+84145     100           Regional sampling
+84145     200           Targeted sampling (agricultural area)
+84145     300           Targeted sampling (urban or suburban area)
+84145     400           Targeted sampling (naturally occurring substances)
+84145     500           Targeted sampling (local-scale network)
+84145     600           Targeted sampling (other)
+84145     700           Geochemical investigation
+
+</pre>
+<h4><a name="84146" id="land_use_predominant_within_200ft">84146</a> LAND USE, PREDOMINANT,
+WITHIN 200 FEET OF WELL, (CODES)</h4>
+
+
+84146     110           Residential
+84146     120           Commercial and services
+84146     130           Industrial
+84146     170           Other urban or built-up land
+84146     211           Nonirrigated cropland
+84146     212           Irrigated cropland
+84146     213           Pasture
+84146     220           Orchards, groves, vineyards, nurseries
+84146     230           Confined feeding operations
+84146     240           Other agricultural land
+84146     300           Rangeland
+84146     400           Forestland
+84146     500           Water
+84146     600           Wetland
+84146     700           Barren land
+
+
+</pre>
+<h4><a name="84147" id="land_predominant_within_quarter_mile">84147</a> LAND USE, PREDOMINANT,
+WITHIN 0.25 MILE OF WELL (CODES)</h4>
+
+
+84147     110           Residential
+84147     120           Commercial and services
+84147     130           Industrial
+84147     170           Other urban or built-up land
+84147     211           Nonirrigated cropland
+84147     212           Irrigated cropland
+84147     213           Pasture
+84147     220           Orchards, groves, vineyards, nurseries
+84147     230           Confined feeding operations
+84147     240           Other agricultural land
+84147     300           Rangeland
+84147     400           Forestland
+84147     500           Water
+84147     600           Wetland
+84147     700           Barren land
+
+
+</pre>
+<h4><a name="84148" id="land_predominnat_fraction_within_quarter_mile">84148</a> LAND USE, PREDOMINANT
+FRACTION, WITHIN 0.25 MILE OF WELL (CODES)</h4>
+
+
+84148      25           Less than 25 percent
+84148      50           From 26 percent to 50 percent
+84148      75           From 51 percent to 75 percent
+84148     100           From 76 percent to 100 percent
+
+
+</pre>
+<h4><a name="84149" id="land_changes_within_10yr">84149</a> LAND-USE CHANGES WITHIN
+LAST 10 YEARS, WITHIN 0.25 MILE OF WELL (CODES)</h4>
+
+
+84149     100           Yes
+84149     200           Probably
+84149     300           Probably not
+84149     400           No
+
+
+</pre>
+<h4><a name="84164" id="sampler_type">84164</a> SAMPLER TYPE, (CODES)</h4>
+
+
+84164     100           Van Dorn sampler
+84164     110           Sewage sample
+84164     120           Velocity integrated sample
+84164     125           Kemmerer bottle
+84164     130           Drum Seepage Meter
+84164     200           Zooplankton net
+84164     210           Benthic invertebrate-mechanical, grab
+84164     220           Benthic invertebrate-mechancial, dredge
+84164     230           Benthic invertebrate-artificial substrate
+84164     240           Benthic invertebrate-natural substrate
+84164     250           Benthic invertebrate-net
+84164     260           Phytoplankton net
+84164     270           Phytoplankton-water bottle
+84164     280           Periphyton-natural substrate
+84164     290           Periphyton-artificial substrate
+84164    1000           Bedload-Helley-Smith, 3 x 3, area ratio 3.22
+84164    1010           Bedload-Helley-Smith, 6 x 6, area ratio 3.22
+84164    1020           Bedload-Helley-Smith, 3 x 3, area ratio 1.40
+84164    1030           Bedload-Helley-Smith, 6 x 6, area ratio 1.40
+84164    1040           Bedload-Helley-Smith, 6 x 12, area ratio 1.40
+84164    1050           Bedload-Toutle River type 2, 6 x 12, area ratio 1.40
+84164    1060           Bedload-bl-84, 3 x 3, area ration, 1.40
+84164    1070           Bedload-Toutle River type 1, 6 x 6, area ratio 3.22
+84164    1080           Bedload-Hubble #5, 6 x 12, area ratio, 1.40
+84164    1090           FIASP, 3 x 3, area ratio 1.40
+84164    1100           3x3 inch H-S, 1/4-in thick nozzle, 50-100 lbs, cable susp
+84164    1110           3x3 inch H-S, 1/4-in thick nozzle, 100-200 lbs, cable susp
+84164    1120           3x3 inch H-S, 1/4-inch thick nozzle, wading
+84164    1130           3x3 inch H-S, sheet metal nozzle, wading
+84164    1140           3x3 inch FIASP, 1/4-in thick nozzle, 50-100lbs, cable susp
+84164    1150           3x3 inch FIASP, 1/4-inch thick nozzle, wading
+84164    1160           3x3 inch FIASP, sheet metal nozzle, wading
+84164    1170           6x6 in H-S, 1/4-in thick nozzle, 150-200 lbs, cable susp
+84164    3001           Sampler, US DH-48
+84164    3002           Sampler, US DH-59
+84164    3003           Sampler, US DH-75P
+84164    3004           Sampler, US DH-75Q
+84164    3005           Sampler, US DH-76
+84164    3006           Sampler, US D-43
+84164    3007           Sampler, US D-49
+84164    3008           Sampler, US D-49AL
+84164    3009           Sampler, US D-74
+84164    3010           Sampler, US D-74AL
+84164    3011           Sampler, US D-77
+84164    3012           Sampler, US P-46
+84164    3013           Sampler, US P-50
+84164    3014           Sampler, US P-61-A1
+84164    3015           Sampler, US P-63
+84164    3016           Sampler, US P-72
+84164    3017           Sampler, US U-59
+84164    3018           Sampler, US U-73
+84164    3019           Sampler, US PS-69
+84164    3020           Sampler, US PS-69TM
+84164    3021           Sampler, US CS-77
+84164    3022           Sampler, US PS-82
+84164    3023           Sampler, US BMH-53
+84164    3024           Sampler, US BMH-53TM
+84164    3025           Sampler, US BM-54
+84164    3026           Sampler, US BM-54TM
+84164    3027           Sampler, US BMH-60
+84164    3028           Sampler, US BMH-60TM
+84164    3029           Sampler, US RBM-80
+84164    3030           US DH-48 TM
+84164    3031           US DH-48 TM with Teflon gasket and nozzle
+84164    3032           US DH-59 TM
+84164    3033           US DH-59 TM with Teflon gasket and nozzle
+84164    3034           US DH-76 TM
+84164    3035           US DH-76 TM with Teflon gasket and nozzle
+84164    3036           US D-74 TM
+84164    3037           US D-74 AL-TM
+84164    3038           US D-74 AL-TM with Teflon gasket and nozzle
+84164    3039           US D-77 TM
+84164    3040           US D-77 TM modified Teflon bag sampler
+84164    3041           US P-61 AL-TM
+84164    3042           US P-61
+84164    3043           US P-61 TM
+84164    3044           US DH-81
+84164    3045           US DH-81 with Teflon cap and nozzle
+84164    3046           Sampler, D-77 TM, with Reynolds Oven Collapsible Bag
+84164    3047           Sampler, frame-type, plastic bottle with Reynolds Oven Bag
+84164    3048           Sampler, frame-type, Teflon bottle
+84164    3049           Sampler, frame-type, plastic bottle
+84164    3050           Sampler, frame-type, plastic bottle w/Teflon collaps. bag
+84164    3051           US DH-95 Teflon bottle
+84164    3052           US DH-95 plastic bottle
+84164    3053           US D-95 Teflon bottle
+84164    3054           US D-95 plastic bottle
+84164    3055           US D-96 bag sampler
+84164    3057           US D-99 Bag Sampler
+84164    3058           US DH-2 Bag Sampler
+84164    3060           Weighted-bottle sampler
+84164    3061           US WBH-96 weighted-bottle sampler
+84164    3070           Grab sample
+84164    3071           Open-Mouth Bottle
+84164    3080           VOC hand sampler
+84164    4010           Thief sampler
+84164    4020           Open-top bailer
+84164    4025           Double-valve bailer
+84164    4030           Suction pump
+84164    4035           Submesible centrifugal pump
+84164    4040           Submersible positive-pressure pump
+84164    4041           Submersible helical rotor pump
+84164    4045           Submersible gear pump
+84164    4050           Bladder pump
+84164    4055           Inertial Pump
+84164    4060           Gas reciprocating pump
+84164    4070           Gas lift
+84164    4075           Submersible piston pump
+84164    4080           Peristaltic pump
+84164    4090           Jet pump
+84164    4095           Line-shaft turbine pump
+84164    4100           Flowing well
+84164    4110           Resin trap collector
+84164    4115           Sampler, point, automatic
+84164    5010           Box core, long
+84164    5020           Box core, short
+84164    5030           Gravity core
+84164    5040           Piston core
+84164    5050           Push core
+84164    8000           None
+84164    8010           Other
+
+</pre>
+
+<h4><a name="84171" id="horizontal_datum">84171</a> SAMPLE SPLITTER TYPE, FIELD CODE
+</h4>
+
+84171     10   Churn splitter, plastic, 8 liter, cooler-type spigot
+84171     20   Churn splitter, plastic, 14 liter, cooler-type spigot
+84171     30   Churn splitter, plastic, 8 liter, cubitainer-type spigot
+84171     40   Churn splitter, plastic, 14 liter, cubitainer-type spigot
+84171     50   Churn splitter, fluoropolymer, 8 liter (future development)
+84171     60   Churn splitter, fluoropolymer, 14 liter, US SS-1
+84171     70   Cone splitter, plastic
+84171     80   Cone splitter, fluoropolymer
+84171     90   Sieve, wet
+84171    100   Sieve, dry
+84171    110   Riffle splitter (Jones)
+84171    200   Other
+</pre>
+
+
+<h4><a name="84172" id="">84172</a> AIR SAMPLER FILTER TYPE, CODE
+</h4>
+
+84172     10   GFF, Glass fiber filter
+84172     20   QFF, Quartz fiber filter
+84172     30   TF, Teflon filter
+84172     40   Other
+
+</pre>
+<h4><a name="84173" id="">84173</a> AIR SAMPLE TRAP SORBENT TYPE, CODE
+</h4>
+
+84173     10   PUF, Polyurethane foam
+84173     20   PUF/XAD, polyurethane foam plug/XAD resin/PUF plug sandwich
+84173     30   XAD, XAD resin
+84173     40   Tenax, Tenax GC resin
+84173     50   Oasis, Oasis HLB resin
+84173     60   Other
+
+</pre>
+
+
+
+<h4><a name="91112" id="horizontal_datum">91112</a> LATITUDE/LONGITUDE HORIZONTAL DATUM</h4>
+
+
+91112      27           North American Datum of 1927 - NAD27
+91112      83           North American Datum of 1983 - NAD83
+91112     100           Old Alaska (Mainland) and Aleutian Islands Datum  - OLDAK
+91112     110           Old Hawaii - OLDHI
+91112     120           Old Puerto Rico and Virgin Islands Datum - OLDPR
+91112     130           Old American Samoa Datum - OLDSAMOA
+91112     140           Old Guam Datum - OLDGUAM
+
+
+</pre>
+<h4><a name="91113" id="measurement_method">91113</a> LATITUDE/LONGITUDE MEASUREMENT METHOD</h4>
+
+
+91113      10           Calculated from land net
+91113      20           Differentially corrected Global Positioning System (GPS)
+91113      30           Global positioning system, uncorrected (Standard Positioning Service (SPS) and Precise Positioning Service (PPS))
+91113      40           Long-range navigation system
+91113      50           Interpolated from map
+91113      60           Interpolated from Digital Map
+91113      70           Reported
+91113      80           Transit, theodolite, or other surveying method
+91113      99           Unknown
+
+
+</pre>
+<h4><a name="91114" id="coordinate_accuracy">91114</a> LATITUDE/LONGITUDE COORDINATE ACCURACY</h4>
+
+
+91114        1          Accurate to +/- 1 second
+91114        3          Accurate to +/- 3 seconds (Standard Positioning Service (SPS GPS))
+91114        5          Accurate to +/- 5 seconds
+91114       10          Accurate to +/- 10 seconds
+91114       60          Accurate to +/- 1 minute
+91114       99          Unknown
+
+
+</pre>
+<h4><a name="99100" id="blank_type_of_solution">99100</a> BLANK, TYPE OF SOLUTION,
+FIXED VALUE CODE</h4>
+
+
+99100      10           Inorganic-free blank water
+99100      20           Standard reference water sample
+99100      30           Matched matrix
+99100      40           Organic-free water
+99100      50           VOC free water
+99100      60           Sterile saline buffered water
+99100      70           Sterile buffered water PO4/MgCl2
+99100      80           Universal Blank Water (discontinued June 1, 2006)
+99100     100           Inorganic-free water + organic-free water
+99100     110           Inorganic-free+nitrogen-purged organic-free water(voc-free)
+99100     120           Organic-free+nitrogen-purged organic-free water(voc-free)
+99100     130          	Inorganic-free+org-free+nit-purged org-free water(voc-free)
+99100     200           Other
+
+
+</pre>
+<h4><a name="99101" id="blank_source_solution_fixed">99101</a> BLANK, SOURCE OF SOLUTION,
+FIXED VALUE CODE</h4>
+
+
+99101      10           National water quality lab (USGS)
+99101      20           U.S. Environmental Protection Agency
+99101      30           Standatd Reference Water Sample (USGS)
+99101      35           Mix of standard reference water samples
+99101      40           NIST (formerly NBS)
+99101      50           Canadian Inland Waters
+99101      60           District lab
+99101      61           Subdistrict #1 lab
+99101      62           Subdistrict #2 lab
+99101      63           Subdistrict #3 lab
+99101      64           Subdistrict #4 lab
+99101      70           Natural sample
+99101      71           Field office #1 lab
+99101      72           Field office #2 lab
+99101      73           Field office #3 lab
+99101      74           Field office #4 lab
+99101      80           Ocala lab (USGS)
+99101      99.99        Unknown
+99101     100           Chemical supplier
+99101     110           Burdick and Jackson
+99101     120           J.T. Baker
+99101     130           EM Science
+99101     140           EMD Chemicals, Inc/Omnisolve
+99101     150           Ricca Chemical Company
+99101     200           Other
+
+</pre>
+<h4><a name="99102" id="blank_type_sample">99102</a> BLANK, TYPE OF SAMPLE,
+FIXED VALUE CODE</h4>
+
+
+99102       1           Source solution
+99102      10           Shelf (hold)
+99102      20           Refrigerator
+99102      30           Trip
+99102      40           Sampler
+99102      50           Splitter
+99102      60           Filter
+99102      70           Preservation
+99102      80           Equipment
+99102      90           Ambient
+99102     100           Field
+99102     150           lab blank
+99102     200           Other
+
+</pre>
+<h4><a name="99103" id="reference_material">99103</a> REFERENCE MATERIAL,
+SOURCE, FIXED VALUE CODE</h4>
+
+
+99103      10           National water quality lab (USGS)
+99103      20           U.S. Environmental Protection Agency
+99103      30           Standard Reference Water Sample (USGS)
+99103      35           Mix of standard reference water samples
+99103      40           NIST (formerly NBS)
+99103      50           Canadian Inland Waters
+99103      60           District lab
+99103      70           Natural sample
+99103      80           Ocala lab (USGS)
+99103      99.99        Unknown
+99103     100           Chemical supplier
+99103     200           Other
+
+
+</pre>
+<h4><a name="99105" id="replicate_type_fixed">99105</a> REPLICATE, TYPE, FIXED
+VALUE CODE</h4>
+
+
+99105      10           Concurrent
+99105      20           Sequential
+99105      30           Split
+99105      40           Split-concurrent
+99105      50           Split-sequential
+99105     200           Other
+
+
+</pre>
+<h4><a name="99106" id="spike_type_fixed">99106</a> SPIKE, TYPE, FIXED VALUE
+CODE</h4>
+
+
+99106      10           Field
+99106      20           Laboratory
+99106      30           Surrogate
+99106      40           Internal standards
+99106     200           Other
+
+</pre>
+<h4><a name="99107" id="spike_source_fixed">99107</a> SPIKE, SOURCE, FIXED VALUE
+CODE</h4>
+
+
+99107      10           National water quality lab (USGS)
+99107      20           U.S. Environmental Protection Agency
+99107      30           Standard Reference Water Sample (USGS)
+99107      35           Mix of standard reference water samples
+99107      40           NIST (formerly NBS)
+99107      50           Canadian Inland Waters
+99107      60           District lab
+99107      70           Natural sample
+99107      80           Ocala Lab (USGS)
+99107      99.99        Unknown
+99107     100           Chemical supplier
+99107     110           SUPELCO
+99107     120           Protocol Analytical Supplies, Inc.
+99107     200           Other
+
+</pre>
+<h4><a name="99111" id="quality_assurance_data">99111</a> QUALITY ASSURANCE DATA
+TYPE ASSOCIATED WITH SAMPLE, CODE</h4>
+
+
+99111       1           No associated QA data
+99111      10           Blank
+99111      20           Blind sample
+99111      30           Replicate sample
+99111      40           Spike sample
+99111     100           More than one type of qa sample
+99111     110           Cross-section information stored
+99111     120           Well purge information stored
+99111     200           Other
+
+</pre>
+<h4><a name="99112" id="sulphide_water_filtered">99112</a> SULFIDE, WATER, FILTERED,
+FIELD, MILLIGRAMS PER LITER</h4>
+
+
+99112       1           Routine QC (non-topical)
+99112      10           Topical QC for high bias (contamination)
+99112      20           Topical QC for low bias (recovery)
+99112     100           Topical QC for variability due to field equipment
+99112     110           Topical QC for variability due to field collection proc.
+99112     120           Topical QC for variability due to field personnel
+99112     130           Topical QC for variability due to field processing proc.
+99112     140           Topical QC for variability due to ship. &amp; handling proc.
+99112     200           Topical QC for variability due to laboratory
+99112     900           Other topical qc purpose
+
+</pre>
+<h4><a name="99329" id="coliphage_somatic">99329</a> Coliphage, somatic, E.
+coli C-host, 2-stepenrichment presence/absence per 1 liter</h4>
+
+
+99329       1           Present
+99329       2           Absent
+
+</pre>
+<h4><a name="99335" id="colipgef_sepc">99335</a> ColipgeF-spec, famp,
+2-step,pres(1) abs(2)/ 1 L</h4>
+
+
+99335       1           Present
+99335       2           Absent
+
+</pre>
+<h4><a name="99595" id="total_coliform">99595</a> Total coliform, ColilrtPA,
+wtrprs/abs /1L</h4>
+
+
+99595       1           Presence
+99595       2           Absence
+
+</pre>
+<h4><a name="99596" id="e_colicolirt">99596</a> E. coliColilrt PA, water
+prs/abs /1 L</h4>
+
+
+99596       1           Presence
+99596       2           Absence
+
+</pre>
+<h4><a name="99766" id="entero_virus">99766</a> Entero- virus, RT
+pcrpres(1) abs(2) / 50 L</h4>
+
+
+99766       1           Present
+99766       2           Absent
+
+</pre>
+<h4><a name="99767" id="reo_virus">99767</a> Reo- virus, RT pcrpres(1)
+abs(2) / 50 L</h4>
+
+
+99767       1           Present
+99767       2           Absent
+
+</pre>
+<h4><a name="99768" id="rota_virus">99768</a> Rota virus, RT pcrpres(1)
+abs(2) / 50 L</h4>
+
+
+99768       1           Present
+99768       2           Absent
+
+</pre>
+<h4><a name="99769" id="hepatitis_a_virus">99769</a> Hepatitis-A virus, RT
+pcrpres(1) abs(2) / 50 L</h4>
+
+
+99769       1           Present
+99769       2           Absent
+
+</pre>
+<h4><a name="99770" id="norwalk_virus">99770</a> Norwalk virus, RT
+pcrpres(1) abs(2) / 50 L</h4>
+
+
+99770       1           Present
+99770       2           Absent
+
+</pre>
+<h4><a name="99771" id="calici_virus">99771</a> Calici- virus, RT
+pcrpres(1) abs(2) / 50 L</h4>
+
+
+99771       1           Present
+99771       2           Absent
+</pre>
+
+
+<div id="nwisweb_footer">
+
+<div class='clear'></div>
+
+<div id="usgssubfooter">
+<hr>
+	<div id="leftsubfooter">
+		<a href="http://answers.usgs.gov/cgi-bin/gsanswers?pemail=h2oteam&subject=Site+Number:%20&viewnote=%3CH1%3EUSGS+NWIS+Feedback+Request%3C/H1%3E%3Cp%3E%3Cb%3EPlease%20enter%20a%20subject%20in%20the%20form%20below%20that%20briefly%20summarizes%20your%20request%3C/b%3E%3C/p%3E" target="_blank">Questions about sites/data?</a><br />
+		<a href="http://answers.usgs.gov/cgi-bin/gsanswers?pemail=gs-w_support_nwisweb&cemail=gs-w_NWISWeb_Feedback&subject=Site+Number:%20&viewnote=%3CH1%3EUSGS+NWIS+Feedback+Request%3C/H1%3E%3Cp%3E%3Cb%3EPlease%20enter%20a%20subject%20in%20the%20form%20below%20that%20briefly%20summarizes%20your%20request%3C/b%3E%3C/p%3E" target="_blank">Feedback on this web site</a><br />
+		   <a href="http://help.waterdata.usgs.gov/faq/automated-retrievals">Automated retrievals</a>
+ <br />
+		<a href="http://help.waterdata.usgs.gov">Help</a><br />
+	</div>
+
+	<div id="rightsubfooter">
+		<a href="http://water.usgs.gov/data/watertips.html">Data Tips</a><br />
+		<a href="http://ga.water.usgs.gov/edu/dictionary.html">Explanation of terms</a><br />
+		   <!--<a href="/nwis/help/help?form=email">Subscribe for system changes</a>-->
+   <!--<a href="/nwis/subscribe/help?form=email">Subscribe for system changes</a>-->
+   <a href="/nwis/subscribe?form=email">Subscribe for system changes</a>
+ <br />
+		<a href="http://help.waterdata.usgs.gov/news">News</a><br />
+	</div>
+
+</div>
+
+<div class='clear'></div>
+
+
+
+<!-- BEGIN USGS Footer Template -->
+<div id="usgsfooter">
+  <p id="usgsfooterbar">
+  <a href="http://www.usgs.gov/laws/accessibility.html" title="Accessibility Policy (Section 508)">Accessibility</a>
+  <a href="http://www.usgs.gov/laws/accessibility.html" title="plug-in available here">Plug-Ins</a>
+  <a href="http://www.usgs.gov/foia/" title="Freedom of Information Act">FOIA</a>
+  <a href="http://www.usgs.gov/privacy.html" title="Privacy policies of the U.S. Geological Survey.">Privacy</a>
+  <a href="http://www.usgs.gov/policies_notices.html" title="Policies and notices that govern information posted on USGS Web sites.">Policies and Notices</a>
+  </p>
+  <p id="usgsfootertext">
+    <a href="http://usa.gov/"><img src="/nwisweb/icons/USGS_footer_graphic_usagov.jpg" alt="USA.gov logo" title="USAGov: Government Made Easy" width="90" height="26" /></a>
+
+    <a href="http://www.doi.gov/">U.S. Department of the Interior</a> |
+    <a href="http://www.usgs.gov/">U.S. Geological Survey</a><br />
+    <b>Title: Water Quality Samples for USA: Sample Data <br />
+    URL: http://waterdata.usgs.gov/nwis/qwdata?<br /><br /></b>
+    Page Contact Information: <a href="http://answers.usgs.gov/cgi-bin/gsanswers?pemail=gs-w_support_nwisweb&cemail=gs-w_NWISWeb_Feedback&subject=Site+Number:%20&viewnote=%3CH1%3EUSGS+NWIS+Feedback+Request%3C/H1%3E%3Cp%3E%3Cb%3EPlease%20enter%20a%20subject%20in%20the%20form%20below%20that%20briefly%20summarizes%20your%20request%3C/b%3E%3C/p%3E" target="_blank">USGS Water Data Support Team</a><br />
+    Page Last Modified: 2016-01-23 17:42:10 EST<br />
+    <font size="-2"> 0.48 &nbsp; 0.39 vaww02<br /></font>
+   </p>
+</div>
+<br>
+<!-- END USGS Footer Template -->
+</div> <!-- nwisweb_footer -->
+</body>
+</html>

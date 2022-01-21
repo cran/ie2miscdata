@@ -4,22 +4,21 @@
 \name{pmcode_71995}
 \alias{pmcode_71995}
 \title{71995 Water Use, Primary (Codes)}
-\format{A data frame with 131 rows and 3 variables:
+\format{
+A data frame with 131 rows and 3 variables:
 \describe{
 \item{Parameter Code}{USGS Parameter Code}
 \item{Fixed Value}{Fixed Value}
 \item{Fixed Text}{Fixed Text}
-}}
+}
+}
 \usage{
 pmcode_71995
 }
 \description{
 A table containing the USGS Water Use, Primary (Codes) parameter codes.
 }
-\examples{
-pmcode_71995
-}
 \references{
-This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{http://waterdata.usgs.gov/usa/nwis/qwdata?codes_table26_help}.
+This data is from Table 26. Parameter codes with fixed values (USGS Water Quality Samples for USA: Sample Data). See \url{https://help.waterdata.usgs.gov/codes-and-parameters/}.
 }
-
+\keyword{datasets}

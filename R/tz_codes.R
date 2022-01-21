@@ -17,12 +17,10 @@
 #'
 #'
 #' @references
-#' This data is from National Water Information System: Help System Time Zone Codes. See \url{http://help.waterdata.usgs.gov/code/tz_query?fmt=html}.
+#' This data is from National Water Information System: Help System Time Zone Codes. See \url{https://help.waterdata.usgs.gov/code/tz_query?fmt=html}.
 #'
 #'
-#' @docType data
-#' @name tz_codes
-#' @usage tz_codes
-#' @examples
-#' tz_codes
-NULL
+#'
+#'
+"tz_codes"
+#> [1] "tz_codes"
