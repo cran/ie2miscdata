@@ -4,10 +4,11 @@
 # Data source \url{https://help.waterdata.usgs.gov/code/tz_query?fmt=html}
 # National Water Information System: Help System Time Zone Codes
 
-install.load::load_package("data.table", "rvest", "lubridate") # load needed packages
+install.load::load_package("data.table", "rvest") # load needed packages
 
 tz_codes <- read_html("https://help.waterdata.usgs.gov/code/tz_query?fmt=html")
-tz_codes <- read_html("./data-raw/tz_codes.html")
+# or 
+# tz_codes <- read_html("./data-raw/tz_codes.html")
 tz_codes <- html_table(html_nodes(tz_codes, "table"), fill = TRUE)
 tz_codes <- tz_codes[[1]]
 tz_codes <- setDT(tz_codes)

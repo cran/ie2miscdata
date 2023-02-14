@@ -1,0 +1,78 @@
+## ---- warning = FALSE, message = FALSE, out.width = "100%", out.height = "100%"----
+install.load::load_package("ie2miscdata", "USA.state.boundaries", "data.table", "ggplot2", "sf", "spatstat", "maptools")
+# load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
+
+
+data(weather_results)
+# load the weather_results data (containing the site information for USA weather stations)
+
+data(state_boundaries_wgs84)
+# load the state_boundaries_wgs84 data from USA.state.boundaries (for the USA map)
+
+
+## Weather Results
+
+weather_results_map <- copy(weather_results)
+# copy the weather_results using data.table
+
+setnames(weather_results_map, 3:4, c("lat", "lon"))
+# set the names of columns 3 and 4 using data.table
+
+weather_results_map_sf <- st_as_sf(weather_results_map, coords = c("lon", "lat"), crs = "+proj=longlat +datum=NAD83")
+# set the initial projection to longlat using sf
+
+weather_results_map_sf_projected <- st_transform(weather_results_map_sf, "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0")
+# transform the coordinates to match those of the USA_state_boundaries_map data from USA.state.boundaries.data (formerly in USA.state.boundaries)
+
+
+## USA
+
+USA <- state_boundaries_wgs84
+# create the USA object with the same data as state_boundaries_wgs84
+
+USA_projected <- st_transform(USA, "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 +lon_0=-96 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0")
+# transform the coordinates to match those of the USA_state_boundaries_map data from USA.state.boundaries.data (formerly in USA.state.boundaries)
+
+
+# As different methods using sf failed to subset the weather map points within the Southeast, the weather results were transformed back to a sp Spatial object so that spatstat could be used to determine this information
+
+weather_results_map_spatial <- as(weather_results_map_sf_projected, "Spatial")
+# transform to Spatial
+
+weather_results_map_dt <- as.data.table(as.data.frame(weather_results_map_spatial))
+# transform to a data.table
+
+setnames(weather_results_map_dt, c("coords.x1", "coords.x2"), c("lon", "lat"))
+# set the names of columns coords.x1 and coords.x2 using data.table
+
+
+USA_spatial <- as(USA_projected, "Spatial")
+# transform to Spatial
+
+USA_owin <- as.owin(USA_spatial)
+# transform to Window
+
+
+inside_USA <- which(inside.owin(weather_results_map_dt$lon, weather_results_map_dt$lat, USA_owin))
+# determine which locations are within the borders of the USA (including Alaska, Hawai'i, Puerto Rico, and the U.S. Virgin Islands)
+# Source 2
+
+
+weather_results_keep <- weather_results[inside_USA, ]
+# keep only the locations within the USA
+
+weather_results_map_keep <- copy(weather_results_keep)
+# create a data.table copy of the sites that are kept
+
+setnames(weather_results_map_keep, 3:4, c("lat", "lon"))
+# set the names of columns 3 and 4 using data.table
+
+weather_results_map_keep_sf <- st_as_sf(weather_results_map_keep, coords = c("lon", "lat"), crs = "+proj=longlat +datum=WGS84 +ellps=WGS84")
+# set the projection to longlat using sf
+
+# plot the map using ggplot2
+p <- ggplot() + geom_sf(data = USA, colour = "black", fill = "white")
+p <- p + geom_sf(data = weather_results_map_keep_sf, colour = "#3591d1", size = 0.5)
+p <- p + labs(x = "", y = "", title = "USA Engineering Weather Sites Map")
+print(p)
+
