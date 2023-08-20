@@ -1,5 +1,5 @@
 ## ---- warning = FALSE, message = FALSE, out.width = "100%", out.height = "100%"----
-install.load::load_package("ie2miscdata", "USA.state.boundaries", "data.table", "ggplot2", "sf", "spatstat", "maptools")
+install.load::load_package("ie2miscdata", "USA.state.boundaries", "data.table", "ggplot2", "sf", "spatstat.geom")
 # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
 
 
@@ -35,26 +35,21 @@ southeast_projected <- st_transform(southeast, "+proj=aea +lat_1=29.5 +lat_2=45.
 # transform the coordinates to match those of the USA_state_boundaries_map data from USA.state.boundaries.data (formerly in USA.state.boundaries)
 
 
-# As different methods using sf failed to subset the weather map points within the Southeast, the weather results were transformed back to a sp Spatial object so that spatstat could be used to determine this information
+# As different methods using sf failed to subset the weather map points within the Southeastern USA, the weather results geometry was subsetted so that spatstat.geom could be used to determine this information
 
-weather_results_map_spatial <- as(weather_results_map_sf_projected, "Spatial")
-# transform to Spatial
+weather_results_map_dt <- as.data.table(st_coordinates(weather_results_map_sf_projected))
+# transform the coordinates only to a data.table
 
-weather_results_map_dt <- as.data.table(as.data.frame(weather_results_map_spatial))
-# transform to a data.table
-
-setnames(weather_results_map_dt, c("coords.x1", "coords.x2"), c("lon", "lat"))
-# set the names of columns coords.x1 and coords.x2 using data.table
+setnames(weather_results_map_dt, c("X", "Y"), c("lon", "lat"))
+# set the names of columns X and Y using data.table
 
 
-southeast_spatial <- as(southeast_projected, "Spatial")
-# transform to Spatial
-
-southeast_owin <- as.owin(southeast_spatial)
+southeast_owin <- spatstat.geom::as.owin(southeast_projected)
 # transform to Window
 
 
-inside_southeast <- which(inside.owin(weather_results_map_dt$lon, weather_results_map_dt$lat, southeast_owin))
+
+inside_southeast <- which(spatstat.geom::inside.owin(weather_results_map_dt$lon, weather_results_map_dt$lat, southeast_owin))
 # determine which locations are within the borders of the Southeastern USA
 # Source 2
 

@@ -19,6 +19,18 @@ This package currently contains 70 datasets:
 * `weather_results`: Global Engineering Weather Data (US Air Force)
 
 
+
+# Vignette Viewing
+
+If you wish to browse the `ie2miscdata` Vignettes, please copy-and-paste the following code into R:
+
+```R
+library("ie2miscdata")
+
+utils::browseVignettes("ie2miscdata")
+```
+
+
 # Examples (see an example using the weather_results data set in the vignette)
 
 ```R
@@ -55,7 +67,7 @@ tail(pmcode_84164, 10) # last 10 rows
 
 # Disclaimer
 
-This software is in the public domain because it contains materials that originally came from the U.S. Geological Survey, an agency of the United States Department of Interior. For more information, see the official [USGS copyright policy](https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits#copyright)
+This software is in the public domain because it contains materials that originally came from the U.S. Geological Survey (USGS), an agency of the United States (US) Department of Interior (DOI). For more information, see the official [USGS copyright policy](https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits#copyright)
 
 Although this software program has been used by the U.S. Geological Survey (USGS), no warranty, expressed or implied, is made by the USGS or the U.S. Government as to the accuracy and functioning of the program and related program material nor shall the fact of distribution constitute any such warranty, and no responsibility is assumed by the USGS in connection therewith.
 

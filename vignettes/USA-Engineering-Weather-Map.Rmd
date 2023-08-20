@@ -1,27 +1,26 @@
 ---
-title: "iemiscdata: Map of USA Engineering Weather Sites"
+title: "ie2miscdata: Map of USA Engineering Weather Sites"
 author: "Irucka Embry, E.I.T. (EcoC²S)"
 date: "`r Sys.Date()`"
 lang: en-us
 urlcolor: blue
 output:
-  rmarkdown::html_document:
+  rmarkdown::pdf_document:
     highlight: kate
     toc: true
-    theme: readable
+    latex_engine: xelatex
 vignette: >
-  %\VignetteIndexEntry{iemiscdata Map of USA Engineering Weather Sites}
+  %\VignetteIndexEntry{ie2miscdata Map of USA Engineering Weather Sites}
   %\VignetteEngine{knitr::rmarkdown}
-  \usepackage[utf8]{inputenc}
+  %\VignetteEncoding{UTF-8}
 ---
 
-<br />
-<br />
+\bigskip
 
 # Creating a ggplot2 Map of the USA Engineering Weather Sites
 
 ```{r, warning = FALSE, message = FALSE, out.width = "100%", out.height = "100%"}
-install.load::load_package("ie2miscdata", "USA.state.boundaries", "data.table", "ggplot2", "sf", "spatstat", "maptools")
+install.load::load_package("ie2miscdata", "USA.state.boundaries", "data.table", "ggplot2", "sf", "spatstat.geom")
 # load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
 
 
@@ -56,26 +55,20 @@ USA_projected <- st_transform(USA, "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=23 
 # transform the coordinates to match those of the USA_state_boundaries_map data from USA.state.boundaries.data (formerly in USA.state.boundaries)
 
 
-# As different methods using sf failed to subset the weather map points within the Southeast, the weather results were transformed back to a sp Spatial object so that spatstat could be used to determine this information
+# As different methods using sf failed to subset the weather map points within the USA, the weather results geometry was subsetted so that spatstat.geom could be used to determine this information
 
-weather_results_map_spatial <- as(weather_results_map_sf_projected, "Spatial")
-# transform to Spatial
+weather_results_map_dt <- as.data.table(st_coordinates(weather_results_map_sf_projected))
+# transform the coordinates only to a data.table
 
-weather_results_map_dt <- as.data.table(as.data.frame(weather_results_map_spatial))
-# transform to a data.table
-
-setnames(weather_results_map_dt, c("coords.x1", "coords.x2"), c("lon", "lat"))
-# set the names of columns coords.x1 and coords.x2 using data.table
+setnames(weather_results_map_dt, c("X", "Y"), c("lon", "lat"))
+# set the names of columns X and Y using data.table
 
 
-USA_spatial <- as(USA_projected, "Spatial")
-# transform to Spatial
-
-USA_owin <- as.owin(USA_spatial)
+USA_owin <- spatstat.geom::as.owin(USA_projected)
 # transform to Window
 
 
-inside_USA <- which(inside.owin(weather_results_map_dt$lon, weather_results_map_dt$lat, USA_owin))
+inside_USA <- which(spatstat.geom::inside.owin(weather_results_map_dt$lon, weather_results_map_dt$lat, USA_owin))
 # determine which locations are within the borders of the USA (including Alaska, Hawai'i, Puerto Rico, and the U.S. Virgin Islands)
 # Source 2
 
@@ -99,8 +92,8 @@ p <- p + labs(x = "", y = "", title = "USA Engineering Weather Sites Map")
 print(p)
 ```
 
-<br />
-<br />
+\bigskip
+\bigskip
 
 # Sources
 
@@ -108,30 +101,27 @@ Latitude Longitude Coordinates to State Code in R - Stack Overflow answered by J
 
 R-sig-geo - Problem in converting SpatialPolygonsDataFrame to owin object Answer by Roger Bivand on Sep 15, 2006. See https://stat.ethz.ch/pipermail/r-sig-geo/2006-September/001313.html.  
 
-<br />
-<br />
+\bigskip
+\bigskip
 
 # EcoC^2^S Links
 
-[EcoC^2^S Home](https://www.ecoccs.com/index.html)  
-<br />
-[About EcoC^2^S](https://www.ecoccs.com/about_ecoc2s.html)  
-<br />
-[Products](https://www.questionuniverse.com/products.html)  
-<br />
-[EcoC^2^S Media](https://www.ecoccs.com/media.html)  
-<br />
-[EcoC^2^S Resources](https://www.ecoccs.com/resources.html)  
-<br />
-[R Trainings and Resources provided by EcoC^2^S (Irucka Embry, E.I.T.)](https://www.ecoccs.com/rtraining.html)  
+EcoC²S Home -- https://www.ecoccs.com/  
+About EcoC²S -- https://www.ecoccs.com/about_ecoc2s.html  
+Services -- https://www.ecoccs.com/services.html  
+1 Stop Shop -- https://www.ecoccs.com/other_biz.html  
+Products -- https://www.questionuniverse.com/products.html  
+Media -- https://www.ecoccs.com/media.html  
+Resources -- https://www.ecoccs.com/resources.html  
+R Trainings and Resources provided by EcoC²S (Irucka Embry, E.I.T.) -- https://www.ecoccs.com/rtraining.html  
 
-<br />
-<br />
+\bigskip
+\bigskip
 
 # Copyright and License
 
-All R code written by Irucka Embry is distributed under the GPL-3 (or later) license, see the [GNU General Public License (GPL) page](https://www.gnu.org/licenses/gpl-3.0.html).  
+All R code written by Irucka Embry is distributed under the GPL-3 (or later) license, see the [GNU General Public License {GPL} page](https://www.gnu.org/licenses/gpl-3.0.html).  
 
 All written content originally created by Irucka Embry is copyrighted under the Creative Commons Attribution-ShareAlike 4.0 International License. All other written content retains the copyright of the original author(s).  
 
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.  
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).  

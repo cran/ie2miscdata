@@ -7,6 +7,7 @@
 #'   Contractor and/or USGS employee.
 #'
 #'
-#' @docType package
-#' @name ie2miscdata
-NULL
+#'
+#' @keywords internal
+"_PACKAGE"
+#> [1] "_PACKAGE"
